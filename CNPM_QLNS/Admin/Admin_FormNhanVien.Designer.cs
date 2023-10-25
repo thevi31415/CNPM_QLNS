@@ -38,9 +38,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
             this.label2.Location = new System.Drawing.Point(405, 287);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(395, 91);
+            this.label2.Size = new System.Drawing.Size(504, 91);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Nhân viên";
+            this.label2.Text = "Nhân viên [1]";
             // 
             // Admin_FormNhanVien
             // 
