@@ -1,6 +1,6 @@
-﻿namespace CNPM_QLNS
+﻿namespace CNPM_QLNS.Admin
 {
-    partial class Form1
+    partial class Admin_FormNhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(514, 211);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "nhóm 11";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.label2.Location = new System.Drawing.Point(405, 287);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(395, 91);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Nhân viên";
             // 
-            // Form1
+            // Admin_FormNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1303, 689);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1212, 674);
+            this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Admin_FormNhanVien";
+            this.Text = "Admin_FormNhanVien";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -55,7 +59,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
-

@@ -54,31 +54,104 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Admin\Admin_FormChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Admin\Admin_FormChucVu.Designer.cs">
+      <DependentUpon>Admin_FormChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_FormDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormDuAn.Designer.cs">
+      <DependentUpon>Admin_FormDuAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_FormLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormLuong.Designer.cs">
+      <DependentUpon>Admin_FormLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormMain.Designer.cs">
+      <DependentUpon>Admin_FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_FormNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormNhanVien.Designer.cs">
+      <DependentUpon>Admin_FormNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_FormPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormPhongBan.Designer.cs">
+      <DependentUpon>Admin_FormPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_FormPhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormPhuCap.Designer.cs">
+      <DependentUpon>Admin_FormPhuCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_FormTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormTaiKhoan.Designer.cs">
+      <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_FormTongQuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormTongQuan.Designer.cs">
+      <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\Admin_FormChucVu.resx">
+      <DependentUpon>Admin_FormChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormDuAn.resx">
+      <DependentUpon>Admin_FormDuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormLuong.resx">
+      <DependentUpon>Admin_FormLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormMain.resx">
+      <DependentUpon>Admin_FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormNhanVien.resx">
+      <DependentUpon>Admin_FormNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormPhongBan.resx">
+      <DependentUpon>Admin_FormPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormPhuCap.resx">
+      <DependentUpon>Admin_FormPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormTaiKhoan.resx">
+      <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormTongQuan.resx">
+      <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -87,6 +160,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Employees\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconaccount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconaccount1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoverview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconemployees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icondepartment .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconcoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconproject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconloan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconposition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
