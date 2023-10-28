@@ -14,9 +14,10 @@ namespace CNPM_QLNS
 {
     public partial class Admin_FormMain : Form
     {
-        public Admin_FormMain()
+        public Admin_FormMain(string MaNV)
         {
             InitializeComponent();
+            lblTen.Text = MaNV;
         }
 
         public void loadform(object Form)
@@ -33,8 +34,8 @@ namespace CNPM_QLNS
         private void Admin_FormMain_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            this.Width = 1200;
-            this.Height = 750;
+            this.Width = 1250;
+            this.Height = 780;
 
             loadform(new Admin_FormTongQuan());
             lblLink.Text = "Admin / Tổng quan";

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CNPM_QLNS.Employees;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace CNPM_QLNS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin_FormMain());
+            Application.Run(new Admin_FormMain("NV01"));
+           // Application.Run(new NhanVien_FormMain());
         }
     }
 }
