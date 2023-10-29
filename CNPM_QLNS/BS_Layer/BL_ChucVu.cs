@@ -24,7 +24,7 @@ namespace CNPM_QLNS.BS_Layer
             string query = "SELECT * FROM CHUCVU WHERE MaCV = @MaCV";
             SqlParameter[] parameters = new SqlParameter[]
             {
-        new SqlParameter("@MaCV", maCV)
+                 new SqlParameter("@MaCV", maCV)
             };
 
             DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
@@ -47,6 +47,61 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachChucVu;
         }
+        public List<ChucVu> LayDanhSachChucVuTheoTenCV(string tenCV)
+        {
+            List<ChucVu> danhSachChucVu = new List<ChucVu>();
 
+            string query = "SELECT * FROM CHUCVU WHERE TenCV = @TenCV";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                 new SqlParameter("@TenCV", tenCV)
+            };
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    ChucVu chucVu = new ChucVu
+                    {
+                        MaCV = row["MaCV"].ToString(),
+                        TenCV = row["TenCV"].ToString(),
+                        LuongCoBan = Convert.ToInt32(row["LuongCoBan"]),
+                        MoTa = row["MoTa"].ToString()
+                    };
+
+                    danhSachChucVu.Add(chucVu);
+                }
+            }
+
+            return danhSachChucVu;
+        }
+        public List<ChucVu> LayDanhSachTatCaChucVu()
+        {
+            List<ChucVu> danhSachChucVu = new List<ChucVu>();
+
+            string query = "SELECT * FROM CHUCVU";
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, null);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    ChucVu chucVu = new ChucVu
+                    {
+                        MaCV = row["MaCV"].ToString(),
+                        TenCV = row["TenCV"].ToString().Trim(),
+                        LuongCoBan = Convert.ToInt32(row["LuongCoBan"]),
+                        MoTa = row["MoTa"].ToString()
+                    };
+
+                    danhSachChucVu.Add(chucVu);
+                }
+            }
+
+            return danhSachChucVu;
+        }
     }
 }

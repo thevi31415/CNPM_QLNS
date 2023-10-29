@@ -1,5 +1,4 @@
 ﻿using CNPM_QLNS.Admin;
-using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -48,8 +47,9 @@ namespace CNPM_QLNS
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            lblTime.Text = DateTime.Now.TimeString();
-            lbl_Date.Text = DateTime.Now.DateString();
+            lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
+
+            lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)

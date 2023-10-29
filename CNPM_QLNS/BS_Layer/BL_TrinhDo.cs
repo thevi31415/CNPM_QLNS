@@ -49,5 +49,59 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachTrinhDo;
         }
+        public List<TrinhDo> LayDanhSachTrinhDoTheoTenTD(string tenTD)
+        {
+            List<TrinhDo> danhSachTrinhDo = new List<TrinhDo>();
+
+            string query = "SELECT * FROM TRINHDO WHERE TenTD = @TenTD";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                 new SqlParameter("@TenTD", tenTD)
+            };
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    TrinhDo trinhDo = new TrinhDo
+                    {
+                        MaTD = row["MaTD"].ToString(),
+                        TenTD = row["TenTD"].ToString(),
+                        MoTa = row["MoTa"].ToString()
+                    };
+
+                    danhSachTrinhDo.Add(trinhDo);
+                }
+            }
+
+            return danhSachTrinhDo;
+        }
+        public List<TrinhDo> LayDanhSachTatCaTrinhDo()
+        {
+            List<TrinhDo> danhSachTrinhDo = new List<TrinhDo>();
+
+            string query = "SELECT * FROM TRINHDO";
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, null);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    TrinhDo trinhDo = new TrinhDo
+                    {
+                        MaTD = row["MaTD"].ToString(),
+                        TenTD = row["TenTD"].ToString().Trim(),
+                        MoTa = row["MoTa"].ToString()
+                    };
+
+                    danhSachTrinhDo.Add(trinhDo);
+                }
+            }
+
+            return danhSachTrinhDo;
+        }
     }
 }

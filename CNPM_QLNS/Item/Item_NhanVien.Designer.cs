@@ -141,6 +141,7 @@
             this.btnChinhSua.TabIndex = 4;
             this.btnChinhSua.Tag = "Chỉnh sưa";
             this.btnChinhSua.UseVisualStyleBackColor = false;
+            this.btnChinhSua.Click += new System.EventHandler(this.btnChinhSua_Click);
             // 
             // picChanDung
             // 

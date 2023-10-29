@@ -57,7 +57,9 @@
             this.lblPhongBan = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.lblChucVu = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -223,10 +225,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(116)))), ((int)(((byte)(255)))));
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(369, 28);
+            this.label9.Location = new System.Drawing.Point(389, 22);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(405, 38);
             this.label9.TabIndex = 18;
@@ -362,6 +364,16 @@
             this.lblChucVu.TabIndex = 29;
             this.lblChucVu.Text = "Không có";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(116)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1207, 76);
+            this.panel1.TabIndex = 30;
+            // 
             // Admin_FormXemNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -378,7 +390,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblTrangThai);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.lblDiachi);
             this.Controls.Add(this.lblTonGiao);
@@ -397,12 +408,15 @@
             this.Controls.Add(this.lblMaNV);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picChanDung);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin_FormXemNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Admin_FormXemNhanVien";
             this.Load += new System.EventHandler(this.Admin_FormXemNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -439,5 +453,6 @@
         private System.Windows.Forms.Label lblPhongBan;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblChucVu;
+        private System.Windows.Forms.Panel panel1;
     }
 }

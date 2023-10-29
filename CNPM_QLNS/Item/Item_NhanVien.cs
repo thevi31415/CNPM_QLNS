@@ -2,7 +2,6 @@
 using CNPM_QLNS.BS_Layer;
 using CNPM_QLNS.Class;
 using CNPM_QLNS.DB_Layer;
-using Sunny.UI.Win32;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -109,6 +108,12 @@ namespace CNPM_QLNS.Item
         {
             Admin_FormXemNhanVien frmxemnx = new Admin_FormXemNhanVien(nv);
             frmxemnx.ShowDialog();
+        }
+
+        private void btnChinhSua_Click(object sender, EventArgs e)
+        {
+            Admin_FormChinhSuaNhanVien frmchinhsua = new Admin_FormChinhSuaNhanVien(nv, formmain);
+            frmchinhsua.ShowDialog();
         }
     }
 }

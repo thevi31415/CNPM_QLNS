@@ -54,6 +54,9 @@ namespace CNPM_QLNS.Admin
             LoadData();
         }
 
-   
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

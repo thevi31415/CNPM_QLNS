@@ -22,7 +22,7 @@ namespace CNPM_QLNS.Class
         public string MaTD { get; set; }
         public string MaCM { get; set; }
         public string Hinh { get; set; }
-
+   
         public NhanVien()
         {
 

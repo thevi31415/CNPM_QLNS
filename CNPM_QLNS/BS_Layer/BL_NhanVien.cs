@@ -44,7 +44,7 @@ namespace CNPM_QLNS.BS_Layer
                             QueQuan = row["QueQuan"].ToString(),
                             TonGiao = row["TonGiao"].ToString(),
                             DiaChi = row["DiaChi"].ToString(),
-                            TrangThai = row["TrangThai"].ToString(),
+                            TrangThai = row["TrangThai"].ToString().Trim(),
                             MaPB = row["MaPB"].ToString(),
                             MaCV = row["MaCV"].ToString(),
                             MaTD = row["MaTD"].ToString(),
@@ -60,6 +60,62 @@ namespace CNPM_QLNS.BS_Layer
 
           
         }
+        public bool ThemNhanVien(string maNV, string hoTen, string cmnd, string gioiTinh, DateTime ngaySinh, string queQuan, string tonGiao, string diaChi, string trangThai, string maPB, string maCV, string maTD, string maCM, string hinh, bool Excel, string txtFilePath)
+        {
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaNV", maNV),
+        new SqlParameter("@HoTen", hoTen),
+        new SqlParameter("@CMND", cmnd),
+        new SqlParameter("@GioiTinh", gioiTinh),
+        new SqlParameter("@NgaySinh", ngaySinh),
+        new SqlParameter("@QueQuan", queQuan),
+        new SqlParameter("@TonGiao", tonGiao),
+        new SqlParameter("@DiaChi", diaChi),
+        new SqlParameter("@TrangThai", trangThai),
+        new SqlParameter("@MaPB", maPB),
+        new SqlParameter("@MaCV", maCV),
+        new SqlParameter("@MaTD", maTD),
+        new SqlParameter("@MaCM", maCM),
+        new SqlParameter("@Hinh", hinh)
+            };
+
+            string strSQL = "INSERT INTO NHANVIEN (MaNV, HoTen, CMND, GioiTinh, NgaySinh, QueQuan, TonGiao, DiaChi, TrangThai, MaPB, MaCV, MaTD, MaCM, Hinh) " +
+                            "VALUES (@MaNV, @HoTen, @CMND, @GioiTinh, @NgaySinh, @QueQuan, @TonGiao, @DiaChi, @TrangThai, @MaPB, @MaCV, @MaTD, @MaCM, @Hinh)";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
+        public bool CapNhatNhanVien(string maNV, string hoTenNV, string cmnd, string gioiTinh, DateTime ngaySinh, string queQuan, string tonGiao, string diaChi, string trangThai, string maPB, string maCV, string maTD, string maCM, string hinh)
+        {
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaNV", maNV),
+        new SqlParameter("@HoTenNV", hoTenNV),
+        new SqlParameter("@CMND", cmnd),
+        new SqlParameter("@GioiTinh", gioiTinh),
+        new SqlParameter("@NgaySinh", ngaySinh),
+        new SqlParameter("@QueQuan", queQuan),
+        new SqlParameter("@TonGiao", tonGiao),
+        new SqlParameter("@DiaChi", diaChi),
+        new SqlParameter("@TrangThai", trangThai),
+        new SqlParameter("@MaPB", maPB),
+        new SqlParameter("@MaCV", maCV),
+        new SqlParameter("@MaTD", maTD),
+        new SqlParameter("@MaCM", maCM),
+        new SqlParameter("@Hinh", hinh)
+            };
+
+            string strSQL = "UPDATE NHANVIEN SET HoTen=@HoTenNV, CMND=@CMND, GioiTinh=@GioiTinh, NgaySinh=@NgaySinh, QueQuan=@QueQuan, TonGiao=@TonGiao, DiaChi=@DiaChi, TrangThai=@TrangThai, MaPB=@MaPB, MaCV=@MaCV, MaTD=@MaTD, MaCM=@MaCM, Hinh=@Hinh WHERE MaNV=@MaNV";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
+
         public bool XoaNhanVien(string maNV)
         {
             string error = "";
