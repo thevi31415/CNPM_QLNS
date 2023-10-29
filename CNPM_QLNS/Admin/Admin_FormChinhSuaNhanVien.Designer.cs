@@ -31,7 +31,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,13 +52,9 @@
             this.cmbChuyenMon = new System.Windows.Forms.ComboBox();
             this.cmbPhongBan = new System.Windows.Forms.ComboBox();
             this.cmbChucVu = new System.Windows.Forms.ComboBox();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnDong = new System.Windows.Forms.Button();
-            this.picChanDung = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -70,7 +65,16 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnDong = new System.Windows.Forms.Button();
+            this.picChanDung = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,18 +107,6 @@
             this.label12.Size = new System.Drawing.Size(116, 22);
             this.label12.TabIndex = 53;
             this.label12.Text = "Chuyên môn:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(116)))), ((int)(((byte)(255)))));
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(404, 12);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(407, 38);
-            this.label9.TabIndex = 48;
-            this.label9.Text = "CHỈNH SỬA THÔNG TIN";
             // 
             // label8
             // 
@@ -315,52 +307,6 @@
             this.cmbChucVu.Size = new System.Drawing.Size(240, 28);
             this.cmbChucVu.TabIndex = 72;
             // 
-            // btnLuu
-            // 
-            this.btnLuu.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLuu.FlatAppearance.BorderSize = 0;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Image = global::CNPM_QLNS.Properties.Resources.save;
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(420, 466);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(157, 49);
-            this.btnLuu.TabIndex = 73;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // btnDong
-            // 
-            this.btnDong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(135)))), ((int)(((byte)(139)))));
-            this.btnDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnDong.FlatAppearance.BorderSize = 0;
-            this.btnDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDong.ForeColor = System.Drawing.Color.White;
-            this.btnDong.Image = global::CNPM_QLNS.Properties.Resources.iconclose2;
-            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDong.Location = new System.Drawing.Point(607, 466);
-            this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(157, 49);
-            this.btnDong.TabIndex = 47;
-            this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = false;
-            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
-            // 
-            // picChanDung
-            // 
-            this.picChanDung.Image = global::CNPM_QLNS.Properties.Resources.picNone;
-            this.picChanDung.Location = new System.Drawing.Point(96, 124);
-            this.picChanDung.Name = "picChanDung";
-            this.picChanDung.Size = new System.Drawing.Size(182, 255);
-            this.picChanDung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picChanDung.TabIndex = 30;
-            this.picChanDung.TabStop = false;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -391,24 +337,6 @@
             this.label17.Size = new System.Drawing.Size(82, 22);
             this.label17.TabIndex = 51;
             this.label17.Text = "Trình độ:";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::CNPM_QLNS.Properties.Resources.save;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(369, 544);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 49);
-            this.button1.TabIndex = 73;
-            this.button1.Text = "Lưu";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // label10
             // 
@@ -520,6 +448,41 @@
             this.label25.TabIndex = 84;
             this.label25.Text = "(*): Là bắt buộc";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(455, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(407, 38);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "CHỈNH SỬA THÔNG TIN";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(149)))), ((int)(((byte)(241)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1189, 76);
+            this.panel1.TabIndex = 86;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::CNPM_QLNS.Properties.Resources.compose;
+            this.pictureBox1.Location = new System.Drawing.Point(373, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(68, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.ForestGreen;
@@ -537,11 +500,76 @@
             this.button2.Text = "Lưu";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::CNPM_QLNS.Properties.Resources.save;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(369, 544);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(157, 49);
+            this.button1.TabIndex = 73;
+            this.button1.Text = "Lưu";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLuu.FlatAppearance.BorderSize = 0;
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Image = global::CNPM_QLNS.Properties.Resources.save;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(420, 466);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(157, 49);
+            this.btnLuu.TabIndex = 73;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnDong
+            // 
+            this.btnDong.BackColor = System.Drawing.Color.Red;
+            this.btnDong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDong.FlatAppearance.BorderSize = 0;
+            this.btnDong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDong.ForeColor = System.Drawing.Color.White;
+            this.btnDong.Image = global::CNPM_QLNS.Properties.Resources.iconclose2;
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDong.Location = new System.Drawing.Point(607, 466);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(157, 49);
+            this.btnDong.TabIndex = 47;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = false;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
+            // 
+            // picChanDung
+            // 
+            this.picChanDung.Image = global::CNPM_QLNS.Properties.Resources.picNone;
+            this.picChanDung.Location = new System.Drawing.Point(96, 124);
+            this.picChanDung.Name = "picChanDung";
+            this.picChanDung.Size = new System.Drawing.Size(182, 255);
+            this.picChanDung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picChanDung.TabIndex = 30;
+            this.picChanDung.TabStop = false;
+            // 
             // Admin_FormChinhSuaNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 527);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
@@ -574,7 +602,6 @@
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.btnDong);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -590,6 +617,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Admin_FormChinhSuaNhanVien";
             this.Load += new System.EventHandler(this.Admin_FormChinhSuaNhanVien_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -600,7 +630,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnDong;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -640,5 +669,8 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

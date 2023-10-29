@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnThemNhanVien = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.lblHoTen = new System.Windows.Forms.Label();
             this.lblMaNV = new System.Windows.Forms.Label();
             this.panelListNhanVien = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnThem = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -48,8 +48,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnThem);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.btnThemNhanVien);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -74,15 +74,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(268, 21);
             this.textBox1.TabIndex = 0;
-            // 
-            // btnThemNhanVien
-            // 
-            this.btnThemNhanVien.Location = new System.Drawing.Point(45, 12);
-            this.btnThemNhanVien.Name = "btnThemNhanVien";
-            this.btnThemNhanVien.Size = new System.Drawing.Size(222, 39);
-            this.btnThemNhanVien.TabIndex = 0;
-            this.btnThemNhanVien.Text = "button1";
-            this.btnThemNhanVien.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -166,6 +157,24 @@
             this.panelListNhanVien.Size = new System.Drawing.Size(1212, 558);
             this.panelListNhanVien.TabIndex = 0;
             // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnThem.FlatAppearance.BorderSize = 0;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Image = global::CNPM_QLNS.Properties.Resources.add;
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(12, 16);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(242, 47);
+            this.btnThem.TabIndex = 74;
+            this.btnThem.Text = "Thêm nhân viên";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
             // Admin_FormNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -194,7 +203,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel panelListNhanVien;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnThemNhanVien;
         private System.Windows.Forms.Label lblMaNV;
         private System.Windows.Forms.Label lblHoTen;
         private System.Windows.Forms.Label label2;
@@ -202,5 +210,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnThem;
     }
 }

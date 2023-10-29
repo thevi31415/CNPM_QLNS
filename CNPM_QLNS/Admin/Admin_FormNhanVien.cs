@@ -58,5 +58,11 @@ namespace CNPM_QLNS.Admin
         {
 
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Admin_FormThemNhanVien frmthemnv = new Admin_FormThemNhanVien(formmain);
+            frmthemnv.ShowDialog();
+        }
     }
 }

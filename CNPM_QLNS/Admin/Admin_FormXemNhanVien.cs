@@ -34,14 +34,18 @@ namespace CNPM_QLNS.Admin
             lblDiachi.Text = nv.DiaChi.ToString();
             lblNgaySinh.Text = nv.NgaySinh.ToString();
             lblTrangThai.Text = nv.TrangThai.ToString();
-            if(nv.TrangThai.Trim() == "Đang làm việc")
+            if (lblTrangThai.Text == "Đang làm việc")
             {
-                lblTrangThai.BackColor = Color.Green;
+                lblTrangThai.BackColor = ColorTranslator.FromHtml("#0FD99B");
             }
-            else
+            if (lblTrangThai.Text == "Đã nghỉ việc")
             {
-               
-                lblTrangThai.BackColor = Color.Red;
+                lblTrangThai.BackColor = ColorTranslator.FromHtml("#FF0000");
+            }
+            if (lblTrangThai.Text == "Nghỉ việc tạm thời")
+            {
+                lblTrangThai.BackColor = ColorTranslator.FromHtml("#EC9E0C");
+
             }
             listphongban = blphongban.LayDanhSachPhongBanTheoMaPB(nv.MaPB.ToString());
             listchucvu = blchucvu.LayDanhSachChucVuTheoMaCV(nv.MaCV.ToString());
@@ -74,6 +78,11 @@ namespace CNPM_QLNS.Admin
         private void btnDong_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -40,12 +40,24 @@ namespace CNPM_QLNS.Item
             lblNgaySinh.Text = nv.NgaySinh.ToString("dd/MM/yyyy");
             lblTrangThai.Text = nv.TrangThai;
             checkBox1.Size = new Size(200, 200);
+            if(lblTrangThai .Text== "Đang làm việc")
+            {
+                lblTrangThai.BackColor = ColorTranslator.FromHtml("#0FD99B");
+            } 
+            if(lblTrangThai.Text == "Đã nghỉ việc")
+            {
+                lblTrangThai.BackColor = ColorTranslator.FromHtml("#FF0000");
+            }
+            if(lblTrangThai.Text == "Nghỉ việc tạm thời")
+            {
+                lblTrangThai.BackColor = ColorTranslator.FromHtml("#EC9E0C");
 
+            }
         }
         
         private void Item_NhanVien_MouseEnter(object sender, EventArgs e)
         {
-            this.BackColor = ColorTranslator.FromHtml("#EFF6FF");
+            this.BackColor = ColorTranslator.FromHtml("#ABD0F9");
         }
 
         private void Item_NhanVien_MouseLeave(object sender, EventArgs e)

@@ -60,7 +60,7 @@ namespace CNPM_QLNS.BS_Layer
 
           
         }
-        public bool ThemNhanVien(string maNV, string hoTen, string cmnd, string gioiTinh, DateTime ngaySinh, string queQuan, string tonGiao, string diaChi, string trangThai, string maPB, string maCV, string maTD, string maCM, string hinh, bool Excel, string txtFilePath)
+        public bool ThemNhanVien(string maNV, string hoTen, string cmnd, string gioiTinh, DateTime ngaySinh, string queQuan, string tonGiao, string diaChi, string trangThai, string maPB, string maCV, string maTD, string maCM, string hinh)
         {
             string error = "";
 

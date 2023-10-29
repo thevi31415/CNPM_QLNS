@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lblMaNV = new System.Windows.Forms.Label();
-            this.lblTrangThai = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblHoTen = new System.Windows.Forms.Label();
             this.lblNgaySinh = new System.Windows.Forms.Label();
@@ -37,6 +36,7 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnChinhSua = new System.Windows.Forms.Button();
             this.picChanDung = new System.Windows.Forms.PictureBox();
+            this.lblTrangThai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,20 +51,6 @@
             this.lblMaNV.TabIndex = 0;
             this.lblMaNV.Text = "Ma NV";
             this.lblMaNV.Click += new System.EventHandler(this.lblMaNV_Click);
-            // 
-            // lblTrangThai
-            // 
-            this.lblTrangThai.AutoSize = true;
-            this.lblTrangThai.BackColor = System.Drawing.Color.ForestGreen;
-            this.lblTrangThai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangThai.ForeColor = System.Drawing.Color.White;
-            this.lblTrangThai.Location = new System.Drawing.Point(1033, 35);
-            this.lblTrangThai.Name = "lblTrangThai";
-            this.lblTrangThai.Size = new System.Drawing.Size(136, 22);
-            this.lblTrangThai.TabIndex = 1;
-            this.lblTrangThai.Text = "Đang làm việc";
-            this.lblTrangThai.Click += new System.EventHandler(this.lblTrangThai_Click);
             // 
             // checkBox1
             // 
@@ -153,12 +139,29 @@
             this.picChanDung.TabIndex = 3;
             this.picChanDung.TabStop = false;
             // 
+            // lblTrangThai
+            // 
+            this.lblTrangThai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(135)))), ((int)(((byte)(139)))));
+            this.lblTrangThai.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.lblTrangThai.FlatAppearance.BorderSize = 0;
+            this.lblTrangThai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrangThai.ForeColor = System.Drawing.Color.White;
+            this.lblTrangThai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTrangThai.Location = new System.Drawing.Point(1026, 31);
+            this.lblTrangThai.Name = "lblTrangThai";
+            this.lblTrangThai.Size = new System.Drawing.Size(163, 33);
+            this.lblTrangThai.TabIndex = 48;
+            this.lblTrangThai.Text = "Đóng";
+            this.lblTrangThai.UseVisualStyleBackColor = false;
+            // 
             // Item_NhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1315, 97);
+            this.Controls.Add(this.lblTrangThai);
             this.Controls.Add(this.lblGioiTinh);
             this.Controls.Add(this.lblNgaySinh);
             this.Controls.Add(this.lblHoTen);
@@ -166,7 +169,6 @@
             this.Controls.Add(this.btnChinhSua);
             this.Controls.Add(this.picChanDung);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.lblTrangThai);
             this.Controls.Add(this.lblMaNV);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -185,7 +187,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblMaNV;
-        private System.Windows.Forms.Label lblTrangThai;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox picChanDung;
         private System.Windows.Forms.Button btnChinhSua;
@@ -193,5 +194,6 @@
         private System.Windows.Forms.Label lblHoTen;
         private System.Windows.Forms.Label lblNgaySinh;
         private System.Windows.Forms.Label lblGioiTinh;
+        private System.Windows.Forms.Button lblTrangThai;
     }
 }

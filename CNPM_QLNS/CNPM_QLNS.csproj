@@ -102,6 +102,12 @@
     <Compile Include="Admin\Admin_FormTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Admin_FormThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormThemNhanVien.Designer.cs">
+      <DependentUpon>Admin_FormThemNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Admin_FormTongQuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormTaiKhoan.resx">
       <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormThemNhanVien.resx">
+      <DependentUpon>Admin_FormThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormTongQuan.resx">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
@@ -257,6 +266,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compose.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
