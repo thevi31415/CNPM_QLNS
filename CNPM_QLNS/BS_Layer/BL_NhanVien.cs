@@ -10,14 +10,19 @@ using System.Threading.Tasks;
 
 namespace CNPM_QLNS.BS_Layer
 {
-    class BL_NhanVien
+     public class BL_NhanVien
     {
         DBMain db = null;
         public BL_NhanVien()
         {
             db = new DBMain();
         }
-        public List<NhanVien> GetNhanViensFromDatabase()
+
+
+
+
+
+        public List<NhanVien> LayNhanVien ()
         {
             List<NhanVien> nhanViens = new List<NhanVien>();
 
@@ -54,6 +59,22 @@ namespace CNPM_QLNS.BS_Layer
             
 
           
+        }
+        public bool XoaNhanVien(string maNV)
+        {
+            string error = "";
+            DBMain db = new DBMain();
+
+            // Tạo câu truy vấn xóa nhân viên dựa trên MaNV
+            string deleteQuery = "DELETE FROM NHANVIEN WHERE MaNV = @MaNV";
+
+            // Tạo tham số đầu vào
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@MaNV", SqlDbType.NVarChar, 10);
+            parameters[0].Value = maNV;
+
+            // Thực hiện xóa nhân viên
+            return db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
         }
     }
 }

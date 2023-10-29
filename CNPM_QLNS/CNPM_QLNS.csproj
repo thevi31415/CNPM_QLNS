@@ -108,8 +108,24 @@
     <Compile Include="Admin\Admin_FormTongQuan.Designer.cs">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Admin_FormXemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormXemNhanVien.Designer.cs">
+      <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS_Layer\BL_ChucVu.cs" />
+    <Compile Include="BS_Layer\BL_ChuyenMon.cs" />
+    <Compile Include="BS_Layer\BL_Luong.cs" />
     <Compile Include="BS_Layer\BL_NhanVien.cs" />
+    <Compile Include="BS_Layer\BL_PhanCong.cs" />
+    <Compile Include="BS_Layer\BL_PhongBan.cs" />
+    <Compile Include="BS_Layer\BL_TrinhDo.cs" />
+    <Compile Include="Class\ChucVu.cs" />
+    <Compile Include="Class\ChuyenMon.cs" />
     <Compile Include="Class\NhanVien.cs" />
+    <Compile Include="Class\PhongBan.cs" />
+    <Compile Include="Class\TrinhDo.cs" />
     <Compile Include="DB_Layer\DBMain.cs" />
     <Compile Include="Employees\NhanVien_FormMain.cs">
       <SubType>Form</SubType>
@@ -151,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormTongQuan.resx">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormXemNhanVien.resx">
+      <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormMain.resx">
       <DependentUpon>NhanVien_FormMain.cs</DependentUpon>
@@ -220,6 +239,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\picNhanVien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picNone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconclose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconclose2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

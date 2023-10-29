@@ -31,6 +31,11 @@ namespace CNPM_QLNS
             this.panelMain.Tag = f;
             f.Show();
         }
+        public void LoadFormNhanVien()
+        {
+            loadform(new Admin_FormNhanVien(this));
+            lblLink.Text = "Admin / Nhân viên";
+        }
         private void Admin_FormMain_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -66,7 +71,7 @@ namespace CNPM_QLNS
 
         private void btnEmployees_Click(object sender, EventArgs e)
         {
-            loadform(new Admin_FormNhanVien());
+            loadform(new Admin_FormNhanVien(this));
             lblLink.Text = "Admin / Nhân viên";
         }
 

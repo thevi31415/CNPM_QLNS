@@ -63,6 +63,16 @@ namespace CNPM_QLNS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete__2_ {
             get {
                 object obj = ResourceManager.GetObject("delete (2)", resourceCulture);
@@ -86,6 +96,26 @@ namespace CNPM_QLNS.Properties {
         internal static System.Drawing.Bitmap iconaccount {
             get {
                 object obj = ResourceManager.GetObject("iconaccount", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconclose {
+            get {
+                object obj = ResourceManager.GetObject("iconclose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconclose2 {
+            get {
+                object obj = ResourceManager.GetObject("iconclose2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -176,6 +206,16 @@ namespace CNPM_QLNS.Properties {
         internal static System.Drawing.Bitmap picNhanVien {
             get {
                 object obj = ResourceManager.GetObject("picNhanVien", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picNone {
+            get {
+                object obj = ResourceManager.GetObject("picNone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
