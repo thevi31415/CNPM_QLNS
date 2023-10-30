@@ -126,6 +126,7 @@
     <Compile Include="BS_Layer\BL_NhanVien.cs" />
     <Compile Include="BS_Layer\BL_PhanCong.cs" />
     <Compile Include="BS_Layer\BL_PhongBan.cs" />
+    <Compile Include="BS_Layer\BL_TimKiem.cs" />
     <Compile Include="BS_Layer\BL_TrinhDo.cs" />
     <Compile Include="Class\ChucVu.cs" />
     <Compile Include="Class\ChuyenMon.cs" />
@@ -281,6 +282,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\compose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifying-glass1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
