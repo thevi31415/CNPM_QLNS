@@ -56,12 +56,12 @@
             this.label16 = new System.Windows.Forms.Label();
             this.lblChucVu = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDong = new System.Windows.Forms.Button();
             this.picChanDung = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -73,6 +73,7 @@
             this.label1.Size = new System.Drawing.Size(141, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã nhân viên: ";
+      
             // 
             // lblMaNV
             // 
@@ -83,6 +84,7 @@
             this.lblMaNV.Size = new System.Drawing.Size(65, 22);
             this.lblMaNV.TabIndex = 2;
             this.lblMaNV.Text = "12345";
+    
             // 
             // label2
             // 
@@ -93,6 +95,7 @@
             this.label2.Size = new System.Drawing.Size(73, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Họ tên: ";
+         
             // 
             // label3
             // 
@@ -103,6 +106,7 @@
             this.label3.Size = new System.Drawing.Size(125, 22);
             this.label3.TabIndex = 4;
             this.label3.Text = "CMND/CCCD:";
+            
             // 
             // label4
             // 
@@ -113,6 +117,7 @@
             this.label4.Size = new System.Drawing.Size(81, 22);
             this.label4.TabIndex = 5;
             this.label4.Text = "Giới tính:";
+         
             // 
             // label5
             // 
@@ -123,6 +128,7 @@
             this.label5.Size = new System.Drawing.Size(86, 22);
             this.label5.TabIndex = 6;
             this.label5.Text = "Tôn giáo:";
+          
             // 
             // label6
             // 
@@ -133,6 +139,7 @@
             this.label6.Size = new System.Drawing.Size(94, 22);
             this.label6.TabIndex = 7;
             this.label6.Text = "Quê quán:";
+        
             // 
             // label7
             // 
@@ -143,6 +150,7 @@
             this.label7.Size = new System.Drawing.Size(95, 22);
             this.label7.TabIndex = 8;
             this.label7.Text = "Ngày sinh:";
+           
             // 
             // label8
             // 
@@ -153,6 +161,7 @@
             this.label8.Size = new System.Drawing.Size(70, 22);
             this.label8.TabIndex = 9;
             this.label8.Text = "Địa chỉ:";
+          
             // 
             // lblHoTen
             // 
@@ -163,6 +172,7 @@
             this.lblHoTen.Size = new System.Drawing.Size(138, 22);
             this.lblHoTen.TabIndex = 10;
             this.lblHoTen.Text = "Nguyen Van A";
+          
             // 
             // lblCMND
             // 
@@ -173,6 +183,7 @@
             this.lblCMND.Size = new System.Drawing.Size(109, 22);
             this.lblCMND.TabIndex = 11;
             this.lblCMND.Text = "123456789";
+          
             // 
             // lblGioiTinh
             // 
@@ -183,6 +194,7 @@
             this.lblGioiTinh.Size = new System.Drawing.Size(50, 22);
             this.lblGioiTinh.TabIndex = 12;
             this.lblGioiTinh.Text = "Nam";
+          
             // 
             // lblNgaySinh
             // 
@@ -193,6 +205,7 @@
             this.lblNgaySinh.Size = new System.Drawing.Size(94, 22);
             this.lblNgaySinh.TabIndex = 13;
             this.lblNgaySinh.Text = "Không có";
+          
             // 
             // lblQueQuan
             // 
@@ -203,6 +216,7 @@
             this.lblQueQuan.Size = new System.Drawing.Size(94, 22);
             this.lblQueQuan.TabIndex = 14;
             this.lblQueQuan.Text = "Không có";
+       
             // 
             // lblTonGiao
             // 
@@ -213,6 +227,7 @@
             this.lblTonGiao.Size = new System.Drawing.Size(94, 22);
             this.lblTonGiao.TabIndex = 15;
             this.lblTonGiao.Text = "Không có";
+        
             // 
             // lblDiachi
             // 
@@ -223,6 +238,7 @@
             this.lblDiachi.Size = new System.Drawing.Size(94, 22);
             this.lblDiachi.TabIndex = 16;
             this.lblDiachi.Text = "Không có";
+        
             // 
             // label9
             // 
@@ -235,6 +251,7 @@
             this.label9.Size = new System.Drawing.Size(405, 38);
             this.label9.TabIndex = 18;
             this.label9.Text = "THÔNG TIN NHÂN VIÊN";
+          
             // 
             // label10
             // 
@@ -245,6 +262,7 @@
             this.label10.Size = new System.Drawing.Size(97, 22);
             this.label10.TabIndex = 20;
             this.label10.Text = "Trạng thái:";
+        
             // 
             // lblTrangThai
             // 
@@ -257,6 +275,7 @@
             this.lblTrangThai.Size = new System.Drawing.Size(136, 22);
             this.lblTrangThai.TabIndex = 21;
             this.lblTrangThai.Text = "Đang làm việc";
+           
             // 
             // label11
             // 
@@ -267,6 +286,7 @@
             this.label11.Size = new System.Drawing.Size(82, 22);
             this.label11.TabIndex = 22;
             this.label11.Text = "Trình độ:";
+          
             // 
             // lblTrinhDo
             // 
@@ -277,6 +297,7 @@
             this.lblTrinhDo.Size = new System.Drawing.Size(94, 22);
             this.lblTrinhDo.TabIndex = 23;
             this.lblTrinhDo.Text = "Không có";
+          
             // 
             // label12
             // 
@@ -287,6 +308,7 @@
             this.label12.Size = new System.Drawing.Size(116, 22);
             this.label12.TabIndex = 24;
             this.label12.Text = "Chuyên môn:";
+          
             // 
             // lblChuyenMon
             // 
@@ -297,6 +319,7 @@
             this.lblChuyenMon.Size = new System.Drawing.Size(94, 22);
             this.lblChuyenMon.TabIndex = 25;
             this.lblChuyenMon.Text = "Không có";
+         
             // 
             // label14
             // 
@@ -307,6 +330,7 @@
             this.label14.Size = new System.Drawing.Size(102, 22);
             this.label14.TabIndex = 26;
             this.label14.Text = "Phòng ban:";
+         
             // 
             // lblPhongBan
             // 
@@ -317,6 +341,7 @@
             this.lblPhongBan.Size = new System.Drawing.Size(94, 22);
             this.lblPhongBan.TabIndex = 27;
             this.lblPhongBan.Text = "Không có";
+         
             // 
             // label16
             // 
@@ -327,6 +352,7 @@
             this.label16.Size = new System.Drawing.Size(81, 22);
             this.label16.TabIndex = 28;
             this.label16.Text = "Chức vụ:";
+         
             // 
             // lblChucVu
             // 
@@ -337,6 +363,7 @@
             this.lblChucVu.Size = new System.Drawing.Size(94, 22);
             this.lblChucVu.TabIndex = 29;
             this.lblChucVu.Text = "Không có";
+          
             // 
             // panel1
             // 
@@ -348,7 +375,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1207, 76);
             this.panel1.TabIndex = 30;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+           
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::CNPM_QLNS.Properties.Resources.profile__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(373, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(68, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+          
             // 
             // btnDong
             // 
@@ -377,17 +416,7 @@
             this.picChanDung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picChanDung.TabIndex = 0;
             this.picChanDung.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::CNPM_QLNS.Properties.Resources.profile__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(373, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(68, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+        
             // 
             // Admin_FormXemNhanVien
             // 
@@ -431,8 +460,8 @@
             this.Load += new System.EventHandler(this.Admin_FormXemNhanVien_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -24,7 +24,6 @@ namespace CNPM_QLNS.Item
         BL_NhanVien blnv = new BL_NhanVien();
         BL_Luong blluong = new BL_Luong();
         BL_PhanCong blphancog = new BL_PhanCong();
-       
         public Item_NhanVien(NhanVien nv, Admin_FormMain formnmain)
         {
             InitializeComponent();

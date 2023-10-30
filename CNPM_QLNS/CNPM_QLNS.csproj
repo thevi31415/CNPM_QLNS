@@ -120,18 +120,27 @@
     <Compile Include="Admin\Admin_FormXemNhanVien.Designer.cs">
       <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="BS_Layer\BL_ChucVu.cs" />
     <Compile Include="BS_Layer\BL_ChuyenMon.cs" />
+    <Compile Include="BS_Layer\BL_DangNhap.cs" />
     <Compile Include="BS_Layer\BL_Luong.cs" />
     <Compile Include="BS_Layer\BL_NhanVien.cs" />
     <Compile Include="BS_Layer\BL_PhanCong.cs" />
     <Compile Include="BS_Layer\BL_PhongBan.cs" />
+    <Compile Include="BS_Layer\BL_TaiKhoan.cs" />
     <Compile Include="BS_Layer\BL_TimKiem.cs" />
     <Compile Include="BS_Layer\BL_TrinhDo.cs" />
     <Compile Include="Class\ChucVu.cs" />
     <Compile Include="Class\ChuyenMon.cs" />
     <Compile Include="Class\NhanVien.cs" />
     <Compile Include="Class\PhongBan.cs" />
+    <Compile Include="Class\TaiKhoan.cs" />
     <Compile Include="Class\TrinhDo.cs" />
     <Compile Include="DB_Layer\DBMain.cs" />
     <Compile Include="Employees\NhanVien_FormMain.cs">
@@ -139,6 +148,12 @@
     </Compile>
     <Compile Include="Employees\NhanVien_FormMain.Designer.cs">
       <DependentUpon>NhanVien_FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\NhanVien_FormNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\NhanVien_FormNhanVien.Designer.cs">
+      <DependentUpon>NhanVien_FormNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Item\Item_NhanVien.cs">
       <SubType>Form</SubType>
@@ -184,8 +199,14 @@
     <EmbeddedResource Include="Admin\Admin_FormXemNhanVien.resx">
       <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormMain.resx">
       <DependentUpon>NhanVien_FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\NhanVien_FormNhanVien.resx">
+      <DependentUpon>NhanVien_FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_NhanVien.resx">
       <DependentUpon>Item_NhanVien.cs</DependentUpon>
@@ -291,6 +312,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\magnifying-glass1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

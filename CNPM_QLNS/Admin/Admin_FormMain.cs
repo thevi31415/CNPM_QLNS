@@ -52,11 +52,6 @@ namespace CNPM_QLNS
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
-        private void panelMain_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnAccount_Click(object sender, EventArgs e)
         {
             loadform(new Admin_FormTaiKhoan());

@@ -147,5 +147,10 @@ namespace CNPM_QLNS.Admin
 
             }
         }
+
+        private void Admin_FormThemNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

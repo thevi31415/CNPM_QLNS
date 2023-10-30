@@ -108,11 +108,7 @@ namespace CNPM_QLNS.Admin
         }
 
     
-        private void txtMaNV_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+    
         private void btnDong_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -182,9 +178,5 @@ namespace CNPM_QLNS.Admin
         
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

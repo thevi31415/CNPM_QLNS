@@ -10,21 +10,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CNPM_QLNS.Admin
+namespace CNPM_QLNS.Employees
 {
-    public partial class Admin_FormXemNhanVien : Form
+    public partial class NhanVien_FormNhanVien : Form
     {
+        public NhanVien nv;
         BL_PhongBan blphongban = new BL_PhongBan();
         BL_ChucVu blchucvu = new BL_ChucVu();
         BL_TrinhDo bltrinhdo = new BL_TrinhDo();
         BL_ChuyenMon blchuyenmon = new BL_ChuyenMon();
         List<PhongBan> listphongban = new List<PhongBan>();
-        List<ChucVu>   listchucvu = new List<ChucVu>();
-        List<TrinhDo>  listtrinhdo = new List<TrinhDo>();
+        List<ChucVu> listchucvu = new List<ChucVu>();
+        List<TrinhDo> listtrinhdo = new List<TrinhDo>();
         List<ChuyenMon> listchuyenmon = new List<ChuyenMon>();
-        public Admin_FormXemNhanVien(NhanVien nv)
+        public NhanVien_FormNhanVien(NhanVien nv)
         {
             InitializeComponent();
+            this.nv = nv;
             lblMaNV.Text = nv.MaNV.ToString();
             lblHoTen.Text = nv.HoTen.ToString();
             lblCMND.Text = nv.CMND.ToString();
@@ -55,31 +57,29 @@ namespace CNPM_QLNS.Admin
             {
                 lblPhongBan.Text = listphongban[0].TenPhongBan.ToString();
             }
-            if(listchucvu.Count > 0)
+            if (listchucvu.Count > 0)
             {
                 //  lblChucVu.Text = blchucvu.LayDanhSachChucVuTheoMaCV(nv.MaCV)[0].TenCV.ToString();
                 lblChucVu.Text = listchucvu[0].TenCV.ToString();
             }
-            if(listtrinhdo.Count > 0)
+            if (listtrinhdo.Count > 0)
             {
                 lblTrinhDo.Text = listtrinhdo[0].TenTD.ToString();
             }
-            if(listchuyenmon.Count > 0)
+            if (listchuyenmon.Count > 0)
             {
                 lblChuyenMon.Text = listchuyenmon[0].TenCM.ToString();
             }
         }
 
-        private void Admin_FormXemNhanVien_Load(object sender, EventArgs e)
+        private void NhanVien_FormNhanVien_Load(object sender, EventArgs e)
         {
 
         }
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
 
-    
+        }
     }
 }

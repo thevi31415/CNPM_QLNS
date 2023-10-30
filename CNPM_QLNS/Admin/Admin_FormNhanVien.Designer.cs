@@ -102,6 +102,7 @@
             this.panelListNhanVien.Name = "panelListNhanVien";
             this.panelListNhanVien.Size = new System.Drawing.Size(1212, 533);
             this.panelListNhanVien.TabIndex = 80;
+     
             // 
             // lblMaNV
             // 

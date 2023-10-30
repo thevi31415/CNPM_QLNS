@@ -68,18 +68,8 @@ namespace CNPM_QLNS.Admin
             LoadData(nhanVienList);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-    
-
-        private void panelListNhanVien_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+     
+  
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             string ThuocTinhTimKiem = "";
@@ -99,7 +89,7 @@ namespace CNPM_QLNS.Admin
             {
                 ketquatimkiemnv = timKiem.TimKiemNhanVien(txtTimKiem.Text.ToString().Trim(), ThuocTinhTimKiem);
             }
-          
+         
           //  MessageBox.Show(ketquatimkiemnv.Count().ToString());
             LoadData(ketquatimkiemnv);
         }
@@ -145,5 +135,6 @@ namespace CNPM_QLNS.Admin
                check = 2;
             }
         }
+
     }
 }

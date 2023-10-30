@@ -196,7 +196,7 @@
             this.txtMaNV.Size = new System.Drawing.Size(147, 30);
             this.txtMaNV.TabIndex = 59;
             this.txtMaNV.Text = "NV01";
-            this.txtMaNV.TextChanged += new System.EventHandler(this.txtMaNV_TextChanged);
+         
             // 
             // txtHoTen
             // 
@@ -470,7 +470,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1189, 76);
             this.panel1.TabIndex = 86;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+          
             // 
             // pictureBox1
             // 
