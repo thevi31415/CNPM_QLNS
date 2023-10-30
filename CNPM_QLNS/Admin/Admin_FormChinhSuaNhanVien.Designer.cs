@@ -39,7 +39,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtMaNV = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.cmbGioiTinh = new System.Windows.Forms.ComboBox();
@@ -73,6 +72,7 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
             this.picChanDung = new System.Windows.Forms.PictureBox();
+            this.txtMaNV = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).BeginInit();
@@ -187,16 +187,6 @@
             this.label1.Size = new System.Drawing.Size(141, 22);
             this.label1.TabIndex = 31;
             this.label1.Text = "Mã nhân viên: ";
-            // 
-            // txtMaNV
-            // 
-            this.txtMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNV.Location = new System.Drawing.Point(239, 80);
-            this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(147, 30);
-            this.txtMaNV.TabIndex = 59;
-            this.txtMaNV.Text = "NV01";
-         
             // 
             // txtHoTen
             // 
@@ -354,7 +344,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(523, 182);
+            this.label11.Location = new System.Drawing.Point(523, 188);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(33, 42);
             this.label11.TabIndex = 76;
@@ -398,7 +388,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(578, 242);
+            this.label21.Location = new System.Drawing.Point(609, 221);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(33, 42);
             this.label21.TabIndex = 80;
@@ -470,7 +460,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1189, 76);
             this.panel1.TabIndex = 86;
-          
             // 
             // pictureBox1
             // 
@@ -564,11 +553,23 @@
             this.picChanDung.TabIndex = 30;
             this.picChanDung.TabStop = false;
             // 
+            // txtMaNV
+            // 
+            this.txtMaNV.AutoSize = true;
+            this.txtMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNV.Location = new System.Drawing.Point(239, 83);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Size = new System.Drawing.Size(76, 29);
+            this.txtMaNV.TabIndex = 87;
+            this.txtMaNV.Text = "NV01";
+            // 
             // Admin_FormChinhSuaNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 527);
+            this.Controls.Add(this.dtpNgaySinh);
+            this.Controls.Add(this.txtMaNV);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label25);
@@ -592,11 +593,9 @@
             this.Controls.Add(this.ricTextDiaChi);
             this.Controls.Add(this.txtTonGiao);
             this.Controls.Add(this.txtQueQuan);
-            this.Controls.Add(this.dtpNgaySinh);
             this.Controls.Add(this.cmbGioiTinh);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtHoTen);
-            this.Controls.Add(this.txtMaNV);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label17);
@@ -640,7 +639,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox picChanDung;
-        private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.ComboBox cmbGioiTinh;
@@ -672,5 +670,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label txtMaNV;
     }
 }
