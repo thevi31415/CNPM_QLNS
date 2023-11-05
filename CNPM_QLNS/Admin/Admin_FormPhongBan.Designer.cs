@@ -28,37 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelListPhongBan = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // label2
+            // panel1
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.label2.Location = new System.Drawing.Point(441, 292);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(421, 91);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Phòng ban";
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1212, 129);
+            this.panel1.TabIndex = 0;
+            // 
+            // panelListPhongBan
+            // 
+            this.panelListPhongBan.AutoScroll = true;
+            this.panelListPhongBan.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelListPhongBan.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelListPhongBan.Location = new System.Drawing.Point(0, 129);
+            this.panelListPhongBan.Margin = new System.Windows.Forms.Padding(0);
+            this.panelListPhongBan.Name = "panelListPhongBan";
+            this.panelListPhongBan.Size = new System.Drawing.Size(1212, 545);
+            this.panelListPhongBan.TabIndex = 81;
+            this.panelListPhongBan.Paint += new System.Windows.Forms.PaintEventHandler(this.panelListPhongBan_Paint);
             // 
             // Admin_FormPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1212, 674);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panelListPhongBan);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin_FormPhongBan";
             this.Text = "Admin_FormPhongBan";
+            this.Load += new System.EventHandler(this.Admin_FormPhongBan_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.FlowLayoutPanel panelListPhongBan;
     }
 }

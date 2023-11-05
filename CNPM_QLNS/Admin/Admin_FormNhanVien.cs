@@ -136,5 +136,9 @@ namespace CNPM_QLNS.Admin
             }
         }
 
+        private void panelListNhanVien_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -80,7 +80,7 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachPhongBan;
         }
-        public List<PhongBan> LayDanhSachTatCaPhongBan()
+        public List<PhongBan> LayPhongBan()
         {
             List<PhongBan> danhSachPhongBan = new List<PhongBan>();
 

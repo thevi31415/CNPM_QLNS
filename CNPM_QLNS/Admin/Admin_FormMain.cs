@@ -72,7 +72,7 @@ namespace CNPM_QLNS
 
         private void btnDepartments_Click(object sender, EventArgs e)
         {
-            loadform(new Admin_FormPhongBan());
+            loadform(new Admin_FormPhongBan(this));
             lblLink.Text = "Admin / Phòng ban";
         }
 

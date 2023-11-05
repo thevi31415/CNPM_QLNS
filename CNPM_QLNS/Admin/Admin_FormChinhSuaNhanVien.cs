@@ -55,7 +55,7 @@ namespace CNPM_QLNS.Admin
             listtrinhdo = bltrinhdo.LayDanhSachTatCaTrinhDo();
             listchuyenmon = blchuyenmon.LayDanhSachTatCaChuyenMon();
             listchucvu = blchucvu.LayDanhSachTatCaChucVu();
-            listphongban = blphongban.LayDanhSachTatCaPhongBan();
+            listphongban = blphongban.LayPhongBan();
             foreach (TrinhDo trinhdo in listtrinhdo)
             {
                 cmbTrinhDo.Items.Add(trinhdo.TenTD); 
