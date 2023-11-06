@@ -13,5 +13,7 @@ namespace CNPM_QLNS.Class
         public string MaTrPhong { get; set; }
         public string DiaDiem { get; set; }
         public string MoTa { get; set; }
+
+        public int SoLuongNV { get; set; }
     }
 }

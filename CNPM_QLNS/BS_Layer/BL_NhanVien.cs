@@ -59,7 +59,45 @@ namespace CNPM_QLNS.BS_Layer
             return danhSachNhanVien;
         }
 
+        public List<NhanVien> LayNhanVienChuaThuocPhongBan()
+        {
+            List<NhanVien> nhanViens = new List<NhanVien>();
 
+            string query = "SELECT * FROM NHANVIEN WHERE MaPB IS NULL";
+
+            SqlParameter[] parameters = null;
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    NhanVien nv = new NhanVien
+                    {
+                        MaNV = row["MaNV"].ToString(),
+                        HoTen = row["HoTen"].ToString(),
+                        CMND = row["CMND"].ToString(),
+                        GioiTinh = row["GioiTinh"].ToString(),
+                        NgaySinh = Convert.ToDateTime(row["NgaySinh"]),
+                        QueQuan = row["QueQuan"].ToString(),
+                        TonGiao = row["TonGiao"].ToString(),
+                        DiaChi = row["DiaChi"].ToString(),
+                        TrangThai = row["TrangThai"].ToString().Trim(),
+                        MaPB = row["MaPB"].ToString(),
+                        MaCV = row["MaCV"].ToString(),
+                        MaTD = row["MaTD"].ToString(),
+                        MaCM = row["MaCM"].ToString(),
+                        Hinh = row["Hinh"].ToString()
+                    };
+
+                    nhanViens.Add(nv);
+                }
+            }
+            return nhanViens;
+
+
+
+        }
 
 
         public List<NhanVien> LayNhanVien ()

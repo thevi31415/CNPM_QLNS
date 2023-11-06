@@ -35,6 +35,12 @@ namespace CNPM_QLNS
             loadform(new Admin_FormNhanVien(this));
             lblLink.Text = "Admin / Nhân viên";
         }
+      
+        public void LoadFormPhongBan()
+        {
+            loadform(new Admin_FormPhongBan(this));
+            lblLink.Text = "Admin / Phòng ban";
+        }
         private void Admin_FormMain_Load(object sender, EventArgs e)
         {
             timer1.Start();
