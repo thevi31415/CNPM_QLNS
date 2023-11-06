@@ -138,6 +138,7 @@
             this.picChanDung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picChanDung.TabIndex = 3;
             this.picChanDung.TabStop = false;
+            this.picChanDung.Click += new System.EventHandler(this.picChanDung_Click);
             // 
             // lblTrangThai
             // 
@@ -154,6 +155,7 @@
             this.lblTrangThai.TabIndex = 48;
             this.lblTrangThai.Text = "Đóng";
             this.lblTrangThai.UseVisualStyleBackColor = false;
+            this.lblTrangThai.Click += new System.EventHandler(this.lblTrangThai_Click_1);
             // 
             // Item_NhanVien
             // 

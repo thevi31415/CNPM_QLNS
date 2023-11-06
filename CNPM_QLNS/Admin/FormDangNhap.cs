@@ -29,6 +29,9 @@ namespace CNPM_QLNS.Admin
         {
             if (bltaikhoan.LayTaiKhoanTheoEmailMatKhau(txtEmail.Text, txtMatKhau.Text).Count() > 0)
             {
+
+
+
                 tk = bltaikhoan.LayTaiKhoanTheoEmailMatKhau(txtEmail.Text, txtMatKhau.Text)[0];
 
                 if (tk.PhanQuyen == "Admin")

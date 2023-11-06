@@ -126,5 +126,15 @@ namespace CNPM_QLNS.Item
             Admin_FormChinhSuaNhanVien frmchinhsua = new Admin_FormChinhSuaNhanVien(nv, formmain);
             frmchinhsua.ShowDialog();
         }
+
+        private void picChanDung_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTrangThai_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CNPM_QLNS.Admin;
+using CNPM_QLNS.BS_Layer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +14,12 @@ namespace CNPM_QLNS
 {
     public partial class Admin_FormMain : Form
     {
+        BL_TaiKhoan bltk = new BL_TaiKhoan();
         public Admin_FormMain(string MaNV)
         {
             InitializeComponent();
             lblTen.Text = MaNV;
+            bltk.SetTruyCapThoiGianHienTai(MaNV.Trim());
         }
 
         public void loadform(object Form)
@@ -41,6 +44,11 @@ namespace CNPM_QLNS
             loadform(new Admin_FormPhongBan(this));
             lblLink.Text = "Admin / Phòng ban";
         }
+        public void LoadFormTaiKhoan()
+        {
+            loadform(new Admin_FormTaiKhoan(this));
+            lblLink.Text = "Admin / Tài khoản";
+        }
         private void Admin_FormMain_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -60,7 +68,7 @@ namespace CNPM_QLNS
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
-            loadform(new Admin_FormTaiKhoan());
+            loadform(new Admin_FormTaiKhoan(this));
             lblLink.Text = "Admin / Tài khoản";
         }
 

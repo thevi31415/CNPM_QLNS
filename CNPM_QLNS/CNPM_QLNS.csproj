@@ -120,6 +120,12 @@
     <Compile Include="Admin\Admin_FormTongQuan.Designer.cs">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Admin_FormXemChinhSuaTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormXemChinhSuaTaiKhoan.Designer.cs">
+      <DependentUpon>Admin_FormXemChinhSuaTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Admin_FormXemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,12 @@
     <Compile Include="Item\Item_PhongBan.Designer.cs">
       <DependentUpon>Item_PhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item\Item_TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\Item_TaiKhoan.Designer.cs">
+      <DependentUpon>Item_TaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Admin\Admin_ChiTietPhongBan.resx">
@@ -229,6 +241,9 @@
     <EmbeddedResource Include="Admin\Admin_FormTongQuan.resx">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormXemChinhSuaTaiKhoan.resx">
+      <DependentUpon>Admin_FormXemChinhSuaTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormXemNhanVien.resx">
       <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_PhongBan.resx">
       <DependentUpon>Item_PhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_TaiKhoan.resx">
+      <DependentUpon>Item_TaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -375,6 +393,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invisible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
