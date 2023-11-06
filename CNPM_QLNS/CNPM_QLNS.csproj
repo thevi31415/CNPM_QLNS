@@ -114,6 +114,12 @@
     <Compile Include="Admin\Admin_FormThemNhanVien.Designer.cs">
       <DependentUpon>Admin_FormThemNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Admin_FormThemTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormThemTaiKhoan.Designer.cs">
+      <DependentUpon>Admin_FormThemTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Admin_FormTongQuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormThemNhanVien.resx">
       <DependentUpon>Admin_FormThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormThemTaiKhoan.resx">
+      <DependentUpon>Admin_FormThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormTongQuan.resx">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>

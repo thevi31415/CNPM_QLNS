@@ -17,6 +17,45 @@ namespace CNPM_QLNS.BS_Layer
         {
             db = new DBMain();
         }
+        public List<NhanVien> LayDanhSachNhanVienChuaCoTaiKhoan()
+        {
+            List<NhanVien> danhSachNhanVien = new List<NhanVien>();
+
+            string query = "SELECT NV.* " +
+                           "FROM NHANVIEN NV " +
+                           "LEFT JOIN TAIKHOAN TK ON NV.MaNV = TK.MaNV " +
+                           "WHERE TK.MaNV IS NULL";
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, null);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    NhanVien nhanVien = new NhanVien
+                    {
+                        MaNV = row["MaNV"].ToString(),
+                        HoTen = row["HoTen"].ToString(),
+                        CMND = row["CMND"].ToString(),
+                        GioiTinh = row["GioiTinh"].ToString(),
+                        NgaySinh = (DateTime)row["NgaySinh"],
+                        QueQuan = row["QueQuan"].ToString(),
+                        TonGiao = row["TonGiao"].ToString(),
+                        DiaChi = row["DiaChi"].ToString(),
+                        TrangThai = row["TrangThai"].ToString(),
+                        MaPB = row["MaPB"].ToString(),
+                        MaCV = row["MaCV"].ToString(),
+                        MaTD = row["MaTD"].ToString(),
+                        MaCM = row["MaCM"].ToString(),
+                        Hinh = row["Hinh"].ToString()
+                    };
+
+                    danhSachNhanVien.Add(nhanVien);
+                }
+            }
+
+            return danhSachNhanVien;
+        }
 
         public List<NhanVien> LayDanhSachNhanVienTheoMaNV(string maNV)
         {

@@ -37,7 +37,7 @@
             this.lblMaNV = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cbMaNV = new System.Windows.Forms.CheckBox();
-            this.cbHoTen = new System.Windows.Forms.CheckBox();
+            this.cbEmail = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -66,6 +66,8 @@
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(475, 47);
             this.txtTimKiem.TabIndex = 84;
+            this.txtTimKiem.Enter += new System.EventHandler(this.txtTimKiem_Enter);
+            this.txtTimKiem.Leave += new System.EventHandler(this.txtTimKiem_Leave);
             // 
             // label3
             // 
@@ -137,17 +139,19 @@
             this.cbMaNV.TabIndex = 90;
             this.cbMaNV.Text = "Mã NV";
             this.cbMaNV.UseVisualStyleBackColor = true;
+            this.cbMaNV.CheckedChanged += new System.EventHandler(this.cbMaNV_CheckedChanged);
             // 
-            // cbHoTen
+            // cbEmail
             // 
-            this.cbHoTen.AutoSize = true;
-            this.cbHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbHoTen.Location = new System.Drawing.Point(543, 52);
-            this.cbHoTen.Name = "cbHoTen";
-            this.cbHoTen.Size = new System.Drawing.Size(86, 24);
-            this.cbHoTen.TabIndex = 89;
-            this.cbHoTen.Text = "Họ Tên";
-            this.cbHoTen.UseVisualStyleBackColor = true;
+            this.cbEmail.AutoSize = true;
+            this.cbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEmail.Location = new System.Drawing.Point(543, 52);
+            this.cbEmail.Name = "cbEmail";
+            this.cbEmail.Size = new System.Drawing.Size(73, 24);
+            this.cbEmail.TabIndex = 89;
+            this.cbEmail.Text = "Email";
+            this.cbEmail.UseVisualStyleBackColor = true;
+            this.cbEmail.CheckedChanged += new System.EventHandler(this.cbEmail_CheckedChanged);
             // 
             // panel3
             // 
@@ -176,6 +180,7 @@
             this.btnTimKiem.Size = new System.Drawing.Size(56, 47);
             this.btnTimKiem.TabIndex = 86;
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnThem
             // 
@@ -193,6 +198,7 @@
             this.btnThem.TabIndex = 85;
             this.btnThem.Text = "Thêm tài khoản";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // Admin_FormTaiKhoan
             // 
@@ -206,7 +212,7 @@
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbMaNV);
-            this.Controls.Add(this.cbHoTen);
+            this.Controls.Add(this.cbEmail);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin_FormTaiKhoan";
@@ -232,7 +238,7 @@
         private System.Windows.Forms.Label lblMaNV;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.CheckBox cbMaNV;
-        private System.Windows.Forms.CheckBox cbHoTen;
+        private System.Windows.Forms.CheckBox cbEmail;
         private System.Windows.Forms.Panel panel3;
     }
 }

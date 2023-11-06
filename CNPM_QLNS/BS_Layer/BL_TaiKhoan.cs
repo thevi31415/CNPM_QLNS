@@ -77,6 +77,26 @@ namespace CNPM_QLNS.BS_Layer
             }
             return taiKhoans;
         }
+        public bool ThemTaiKhoan(string maNV, string email, string matKhau, string phanQuyen, string trangThai, DateTime truyCap)
+        {
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaNV", maNV),
+        new SqlParameter("@Email", email),
+        new SqlParameter("@MatKhau", matKhau),
+        new SqlParameter("@PhanQuyen", phanQuyen),
+        new SqlParameter("@TrangThai", trangThai),
+        new SqlParameter("@TruyCap", truyCap)
+            };
+
+            string strSQL = "INSERT INTO TAIKHOAN (MaNV, Email, MatKhau, PhanQuyen, TrangThai, TruyCap) VALUES (@MaNV, @Email, @MatKhau, @PhanQuyen, @TrangThai, @TruyCap)";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
+
         public bool CapNhatTaiKhoan(string maNV, string email, string matKhau, string phanQuyen, string trangThai)
         {
             string error = "";
