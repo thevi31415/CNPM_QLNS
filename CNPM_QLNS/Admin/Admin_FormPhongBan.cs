@@ -82,5 +82,11 @@ namespace CNPM_QLNS.Admin
         {
 
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            Admin_ThemPhongBan frmthemnv = new Admin_ThemPhongBan(formmain);
+            frmthemnv.ShowDialog();
+        }
     }
 }

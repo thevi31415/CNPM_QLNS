@@ -126,6 +126,12 @@
     <Compile Include="Admin\Admin_FormXemNhanVien.Designer.cs">
       <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Admin_ThemPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_ThemPhongBan.Designer.cs">
+      <DependentUpon>Admin_ThemPhongBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormXemNhanVien.resx">
       <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_ThemPhongBan.resx">
+      <DependentUpon>Admin_ThemPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>

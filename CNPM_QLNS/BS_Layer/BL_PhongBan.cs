@@ -18,6 +18,25 @@ namespace CNPM_QLNS.BS_Layer
         {
             db = new DBMain();
         }
+        public bool ThemPhongBan(string maPB, string tenPhongBan, string maTrPhong, string diaDiem, string moTa)
+        {
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaPB", maPB),
+        new SqlParameter("@TenPhongBan", tenPhongBan),
+        new SqlParameter("@MaTrPhong", maTrPhong),
+        new SqlParameter("@DiaDiem", diaDiem),
+        new SqlParameter("@MoTa", moTa)
+            };
+
+            string strSQL = "INSERT INTO PHONGBAN (MaPB, TenPhongBan, MaTrPhong, DiaDiem, MoTa) " +
+                            "VALUES (@MaPB, @TenPhongBan, @MaTrPhong, @DiaDiem, @MoTa)";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
         public bool CapNhatPhongBan(string maPB, string tenPhongBan, string diaDiem, string moTa, string maTrPhong)
         {
             DBMain db = new DBMain();
