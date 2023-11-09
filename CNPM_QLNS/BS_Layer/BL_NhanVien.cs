@@ -249,5 +249,41 @@ namespace CNPM_QLNS.BS_Layer
             // Thực hiện xóa nhân viên
             return db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
         }
+        public NhanVien LayNhanVienTheoMa(string maNV)
+        {
+            string query = "SELECT * FROM NHANVIEN WHERE MaNV = @MaNV";
+            SqlParameter[] parameters = {
+        new SqlParameter("@MaNV", maNV)
+    };
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                DataRow row = result.Tables[0].Rows[0];
+                NhanVien nv = new NhanVien
+                {
+                    MaNV = row["MaNV"].ToString(),
+                    HoTen = row["HoTen"].ToString(),
+                    CMND = row["CMND"].ToString(),
+                    GioiTinh = row["GioiTinh"].ToString(),
+                    NgaySinh = Convert.ToDateTime(row["NgaySinh"]),
+                    QueQuan = row["QueQuan"].ToString(),
+                    TonGiao = row["TonGiao"].ToString(),
+                    DiaChi = row["DiaChi"].ToString(),
+                    TrangThai = row["TrangThai"].ToString().Trim(),
+                    MaPB = row["MaPB"].ToString(),
+                    MaCV = row["MaCV"].ToString(),
+                    MaTD = row["MaTD"].ToString(),
+                    MaCM = row["MaCM"].ToString(),
+                    Hinh = row["Hinh"].ToString()
+                };
+
+                return nv;
+            }
+
+            return null; // Trả về null nếu không tìm thấy nhân viên với Mã nhân viên tương ứng.
+        }
+
     }
 }

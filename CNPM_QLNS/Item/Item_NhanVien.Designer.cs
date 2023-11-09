@@ -28,29 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblMaNV = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.lblHoTen = new System.Windows.Forms.Label();
-            this.lblNgaySinh = new System.Windows.Forms.Label();
-            this.lblGioiTinh = new System.Windows.Forms.Label();
+            this.picChanDung = new System.Windows.Forms.PictureBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnChinhSua = new System.Windows.Forms.Button();
-            this.picChanDung = new System.Windows.Forms.PictureBox();
+            this.lblMaNV = new System.Windows.Forms.Label();
+            this.lblGioiTinh = new System.Windows.Forms.Label();
+            this.lblNgaySinh = new System.Windows.Forms.Label();
+            this.lblHoTen = new System.Windows.Forms.Label();
             this.lblTrangThai = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblMaNV
-            // 
-            this.lblMaNV.AutoSize = true;
-            this.lblMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaNV.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblMaNV.Location = new System.Drawing.Point(142, 37);
-            this.lblMaNV.Name = "lblMaNV";
-            this.lblMaNV.Size = new System.Drawing.Size(69, 22);
-            this.lblMaNV.TabIndex = 0;
-            this.lblMaNV.Text = "Ma NV";
-            this.lblMaNV.Click += new System.EventHandler(this.lblMaNV_Click);
             // 
             // checkBox1
             // 
@@ -63,41 +51,16 @@
             this.checkBox1.TabIndex = 2;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // lblHoTen
+            // picChanDung
             // 
-            this.lblHoTen.AutoSize = true;
-            this.lblHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoTen.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblHoTen.Location = new System.Drawing.Point(309, 37);
-            this.lblHoTen.Name = "lblHoTen";
-            this.lblHoTen.Size = new System.Drawing.Size(70, 22);
-            this.lblHoTen.TabIndex = 6;
-            this.lblHoTen.Text = "HoTen";
-            this.lblHoTen.Click += new System.EventHandler(this.lblHoTen_Click);
-            // 
-            // lblNgaySinh
-            // 
-            this.lblNgaySinh.AutoSize = true;
-            this.lblNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgaySinh.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblNgaySinh.Location = new System.Drawing.Point(532, 35);
-            this.lblNgaySinh.Name = "lblNgaySinh";
-            this.lblNgaySinh.Size = new System.Drawing.Size(96, 22);
-            this.lblNgaySinh.TabIndex = 7;
-            this.lblNgaySinh.Text = "NgaySinh";
-            this.lblNgaySinh.Click += new System.EventHandler(this.lblNgaySinh_Click);
-            // 
-            // lblGioiTinh
-            // 
-            this.lblGioiTinh.AutoSize = true;
-            this.lblGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGioiTinh.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblGioiTinh.Location = new System.Drawing.Point(845, 35);
-            this.lblGioiTinh.Name = "lblGioiTinh";
-            this.lblGioiTinh.Size = new System.Drawing.Size(86, 22);
-            this.lblGioiTinh.TabIndex = 8;
-            this.lblGioiTinh.Text = "GioiTinh";
-            this.lblGioiTinh.Click += new System.EventHandler(this.lblGioiTinh_Click);
+            this.picChanDung.Image = global::CNPM_QLNS.Properties.Resources.picNhanVien;
+            this.picChanDung.Location = new System.Drawing.Point(32, 5);
+            this.picChanDung.Name = "picChanDung";
+            this.picChanDung.Size = new System.Drawing.Size(80, 80);
+            this.picChanDung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picChanDung.TabIndex = 3;
+            this.picChanDung.TabStop = false;
+            this.picChanDung.Click += new System.EventHandler(this.picChanDung_Click);
             // 
             // btnXoa
             // 
@@ -129,16 +92,53 @@
             this.btnChinhSua.UseVisualStyleBackColor = false;
             this.btnChinhSua.Click += new System.EventHandler(this.btnChinhSua_Click);
             // 
-            // picChanDung
+            // lblMaNV
             // 
-            this.picChanDung.Image = global::CNPM_QLNS.Properties.Resources.picNhanVien;
-            this.picChanDung.Location = new System.Drawing.Point(32, 5);
-            this.picChanDung.Name = "picChanDung";
-            this.picChanDung.Size = new System.Drawing.Size(80, 80);
-            this.picChanDung.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picChanDung.TabIndex = 3;
-            this.picChanDung.TabStop = false;
-            this.picChanDung.Click += new System.EventHandler(this.picChanDung_Click);
+            this.lblMaNV.AutoSize = true;
+            this.lblMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaNV.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblMaNV.Location = new System.Drawing.Point(142, 37);
+            this.lblMaNV.Name = "lblMaNV";
+            this.lblMaNV.Size = new System.Drawing.Size(69, 22);
+            this.lblMaNV.TabIndex = 0;
+            this.lblMaNV.Text = "Ma NV";
+            this.lblMaNV.Click += new System.EventHandler(this.lblMaNV_Click);
+            // 
+            // lblGioiTinh
+            // 
+            this.lblGioiTinh.AutoSize = true;
+            this.lblGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGioiTinh.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblGioiTinh.Location = new System.Drawing.Point(845, 35);
+            this.lblGioiTinh.Name = "lblGioiTinh";
+            this.lblGioiTinh.Size = new System.Drawing.Size(86, 22);
+            this.lblGioiTinh.TabIndex = 8;
+            this.lblGioiTinh.Text = "GioiTinh";
+            this.lblGioiTinh.Click += new System.EventHandler(this.lblGioiTinh_Click);
+            // 
+            // lblNgaySinh
+            // 
+            this.lblNgaySinh.AutoSize = true;
+            this.lblNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgaySinh.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblNgaySinh.Location = new System.Drawing.Point(532, 35);
+            this.lblNgaySinh.Name = "lblNgaySinh";
+            this.lblNgaySinh.Size = new System.Drawing.Size(96, 22);
+            this.lblNgaySinh.TabIndex = 7;
+            this.lblNgaySinh.Text = "NgaySinh";
+            this.lblNgaySinh.Click += new System.EventHandler(this.lblNgaySinh_Click);
+            // 
+            // lblHoTen
+            // 
+            this.lblHoTen.AutoSize = true;
+            this.lblHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHoTen.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblHoTen.Location = new System.Drawing.Point(309, 37);
+            this.lblHoTen.Name = "lblHoTen";
+            this.lblHoTen.Size = new System.Drawing.Size(70, 22);
+            this.lblHoTen.TabIndex = 6;
+            this.lblHoTen.Text = "HoTen";
+            this.lblHoTen.Click += new System.EventHandler(this.lblHoTen_Click);
             // 
             // lblTrangThai
             // 
@@ -187,15 +187,14 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblMaNV;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox picChanDung;
-        private System.Windows.Forms.Button btnChinhSua;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Label lblHoTen;
-        private System.Windows.Forms.Label lblNgaySinh;
+        private System.Windows.Forms.Button btnChinhSua;
+        private System.Windows.Forms.Label lblMaNV;
         private System.Windows.Forms.Label lblGioiTinh;
+        private System.Windows.Forms.Label lblNgaySinh;
+        private System.Windows.Forms.Label lblHoTen;
         private System.Windows.Forms.Button lblTrangThai;
     }
 }
