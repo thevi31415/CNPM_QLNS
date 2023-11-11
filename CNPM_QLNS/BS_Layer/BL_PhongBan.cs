@@ -188,7 +188,7 @@ namespace CNPM_QLNS.BS_Layer
            
             string error = "";
             DBMain db = new DBMain();
-            if (this.LaySoLuongNhanVienMoiPhongBan(maPB) > 0)
+            if (this.LaySoLuongNhanVienMoiPhongBan(maPB) >= 0)
             {
                 // Bước 1: Đặt MaTrPhong là NULL trong bảng NHANVIEN
                 string updateNhanVienQuery = "UPDATE NHANVIEN SET MaPB = NULL WHERE MaPB = @MaPB";
