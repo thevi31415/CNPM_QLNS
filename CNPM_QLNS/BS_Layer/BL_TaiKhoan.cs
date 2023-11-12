@@ -144,6 +144,22 @@ namespace CNPM_QLNS.BS_Layer
 
             return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
         }
+
+        public bool NhanVien_CapNhatTaiKhoan(string maNV, string email, string matKhau)
+        {
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaNV", maNV),
+        new SqlParameter("@Email", email),
+        new SqlParameter("@MatKhau", matKhau)
+            };
+
+            string strSQL = "UPDATE TAIKHOAN SET Email=@Email, MatKhau=@MatKhau WHERE MaNV=@MaNV";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
         public bool SetTruyCapThoiGianHienTai(string maNV)
         {
             string error = "";
