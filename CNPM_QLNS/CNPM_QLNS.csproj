@@ -120,6 +120,12 @@
     <Compile Include="Admin\Admin_FormThemTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormThemTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Admin_FormTinhLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormTinhLuong.Designer.cs">
+      <DependentUpon>Admin_FormTinhLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Admin_FormTongQuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormThemTaiKhoan.resx">
       <DependentUpon>Admin_FormThemTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormTinhLuong.resx">
+      <DependentUpon>Admin_FormTinhLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormTongQuan.resx">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
@@ -442,6 +451,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter-filled-tool-symbol.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

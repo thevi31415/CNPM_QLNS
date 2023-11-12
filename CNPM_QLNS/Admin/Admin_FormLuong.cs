@@ -16,6 +16,7 @@ namespace CNPM_QLNS.Admin
     public partial class Admin_FormLuong : Form
     {
         public List<Luong> luongList = new List<Luong>();
+        public List<Luong> luongListloc = new List<Luong>();
         public List<NhanVien> ketquatimkiemnv = new List<NhanVien>();
         BL_Luong luong = new BL_Luong();
         BL_TimKiem timKiem = new BL_TimKiem();
@@ -24,6 +25,8 @@ namespace CNPM_QLNS.Admin
         public Admin_FormLuong()
         {
             InitializeComponent();
+           dtpHienThiLuong.Format = DateTimePickerFormat.Custom;
+           dtpHienThiLuong.CustomFormat = "MM/yyyy";
         }
         public void LoadData(List<Luong> luongList)
         {
@@ -55,6 +58,25 @@ namespace CNPM_QLNS.Admin
         {
             this.luongList = luong.LayLuong();
             LoadData(luongList);
+        }
+
+        private void dtpHienThiLuong_CloseUp(object sender, EventArgs e)
+        {
+            dtpHienThiLuong.Value = new DateTime(dtpHienThiLuong.Value.Year, dtpHienThiLuong.Value.Month, 1);
+        }
+
+        private void btnLoc_Click(object sender, EventArgs e)
+        {
+            luongListloc = luong.LayLuongTheoThangNam(dtpHienThiLuong.Value.Month, dtpHienThiLuong.Value.Year);
+            LoadData(luongListloc);
+           
+        }
+
+        private void btnTinhLuong_Click(object sender, EventArgs e)
+        {
+            Admin_FormTinhLuong formtinhluong = new Admin_FormTinhLuong();
+            formtinhluong.ShowDialog(this);
+
         }
     }
 }

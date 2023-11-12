@@ -17,6 +17,43 @@ namespace CNPM_QLNS.BS_Layer
         {
             db = new DBMain();
         }
+        public List<Luong> LayLuongTheoThangNam(int thang, int nam)
+        {
+            List<Luong> luongs = new List<Luong>();
+
+            string query = "SELECT * FROM LUONG WHERE Thang = @Thang AND Nam = @Nam";
+            SqlParameter[] parameters =
+            {
+        new SqlParameter("@Thang", thang),
+        new SqlParameter("@Nam", nam)
+    };
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    Luong luong = new Luong
+                    {
+                        MaNV = row["MaNV"].ToString(),
+                        MaLuong = row["MaLuong"].ToString(),
+                        MaCV = row["MaCV"].ToString(),
+                        Thang = Convert.ToInt32(row["Thang"]),
+                        Nam = Convert.ToInt32(row["Nam"]),
+                        NgayCong = Convert.ToInt32(row["NgayCong"]),
+                        PhuCap = row["PhuCap"].ToString(),
+                        KyLuat = row["KyLuat"].ToString(),
+                        TongLuong = Convert.ToDouble(row["TongLuong"])
+                    };
+
+                    luongs.Add(luong);
+                }
+            }
+
+            return luongs;
+        }
+
         public List<Luong> LayLuong()
         {
             List<Luong> luongs = new List<Luong>();
@@ -56,7 +93,7 @@ namespace CNPM_QLNS.BS_Layer
             string query = "SELECT * FROM LUONG WHERE MaNV = @MaNV";
             SqlParameter[] parameters = new SqlParameter[]
             {
-        new SqlParameter("@MaNV", maNV)
+                new SqlParameter("@MaNV", maNV)
             };
 
             DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);

@@ -35,6 +35,8 @@
             this.lblHoTen = new System.Windows.Forms.Label();
             this.lblMaNV = new System.Windows.Forms.Label();
             this.panelListLuong = new System.Windows.Forms.FlowLayoutPanel();
+            this.dtpHienThiLuong = new System.Windows.Forms.DateTimePicker();
+            this.btnLoc = new System.Windows.Forms.Button();
             this.btnTinhLuong = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -115,6 +117,34 @@
             this.panelListLuong.Size = new System.Drawing.Size(1095, 506);
             this.panelListLuong.TabIndex = 83;
             // 
+            // dtpHienThiLuong
+            // 
+            this.dtpHienThiLuong.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHienThiLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHienThiLuong.Location = new System.Drawing.Point(769, 54);
+            this.dtpHienThiLuong.Name = "dtpHienThiLuong";
+            this.dtpHienThiLuong.Size = new System.Drawing.Size(200, 30);
+            this.dtpHienThiLuong.TabIndex = 84;
+            this.dtpHienThiLuong.CloseUp += new System.EventHandler(this.dtpHienThiLuong_CloseUp);
+            // 
+            // btnLoc
+            // 
+            this.btnLoc.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLoc.FlatAppearance.BorderSize = 0;
+            this.btnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoc.ForeColor = System.Drawing.Color.White;
+            this.btnLoc.Image = global::CNPM_QLNS.Properties.Resources.filter_filled_tool_symbol;
+            this.btnLoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoc.Location = new System.Drawing.Point(988, 29);
+            this.btnLoc.Name = "btnLoc";
+            this.btnLoc.Size = new System.Drawing.Size(116, 47);
+            this.btnLoc.TabIndex = 85;
+            this.btnLoc.Text = "Lọc";
+            this.btnLoc.UseVisualStyleBackColor = false;
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
+            // 
             // btnTinhLuong
             // 
             this.btnTinhLuong.BackColor = System.Drawing.Color.ForestGreen;
@@ -131,6 +161,7 @@
             this.btnTinhLuong.TabIndex = 81;
             this.btnTinhLuong.Text = "Tính lương";
             this.btnTinhLuong.UseVisualStyleBackColor = false;
+            this.btnTinhLuong.Click += new System.EventHandler(this.btnTinhLuong_Click);
             // 
             // Admin_FormLuong
             // 
@@ -138,6 +169,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1121, 673);
+            this.Controls.Add(this.btnLoc);
+            this.Controls.Add(this.dtpHienThiLuong);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelListLuong);
             this.Controls.Add(this.btnTinhLuong);
@@ -161,5 +194,7 @@
         private System.Windows.Forms.Label lblMaNV;
         private System.Windows.Forms.FlowLayoutPanel panelListLuong;
         private System.Windows.Forms.Button btnTinhLuong;
+        private System.Windows.Forms.DateTimePicker dtpHienThiLuong;
+        private System.Windows.Forms.Button btnLoc;
     }
 }
