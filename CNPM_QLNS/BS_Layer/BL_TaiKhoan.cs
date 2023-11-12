@@ -77,6 +77,36 @@ namespace CNPM_QLNS.BS_Layer
             }
             return taiKhoans;
         }
+
+        public List<TaiKhoan> Lay1TaiKhoan(string maNV)
+        {
+            List<TaiKhoan> taiKhoan = new List<TaiKhoan>();
+
+            string query = "SELECT * FROM TAIKHOAN WHERE MaNV = @MaNV";
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+                new SqlParameter("@MaNV", maNV) 
+            };
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameterValues);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    TaiKhoan tk = new TaiKhoan
+                    {
+                        MaNV = row["MaNV"].ToString(),
+                        Email = row["Email"].ToString(),
+                        MatKhau = row["MatKhau"].ToString(),
+                        PhanQuyen = row["PhanQuyen"].ToString(),
+                        TrangThai = row["TrangThai"].ToString(),
+                        TruyCap = Convert.ToDateTime(row["TruyCap"])
+                    };
+                    taiKhoan.Add(tk);
+                }
+            }
+            return taiKhoan;
+        }
         public bool ThemTaiKhoan(string maNV, string email, string matKhau, string phanQuyen, string trangThai, DateTime truyCap)
         {
             string error = "";
@@ -111,6 +141,22 @@ namespace CNPM_QLNS.BS_Layer
             };
 
             string strSQL = "UPDATE TAIKHOAN SET Email=@Email, MatKhau=@MatKhau, PhanQuyen=@PhanQuyen, TrangThai=@TrangThai WHERE MaNV=@MaNV";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
+        public bool NhanVien_CapNhatTaiKhoan(string maNV, string email, string matKhau)
+        {
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaNV", maNV),
+        new SqlParameter("@Email", email),
+        new SqlParameter("@MatKhau", matKhau)
+            };
+
+            string strSQL = "UPDATE TAIKHOAN SET Email=@Email, MatKhau=@MatKhau WHERE MaNV=@MaNV";
 
             return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
         }
