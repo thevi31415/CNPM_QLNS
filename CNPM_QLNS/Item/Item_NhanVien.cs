@@ -24,6 +24,8 @@ namespace CNPM_QLNS.Item
         BL_NhanVien blnv = new BL_NhanVien();
         BL_Luong blluong = new BL_Luong();
         BL_PhanCong blphancog = new BL_PhanCong();
+        BL_PhongBan blphongban = new BL_PhongBan();
+        BL_TaiKhoan bltaikhoan = new BL_TaiKhoan();
         public Item_NhanVien(NhanVien nv, Admin_FormMain formnmain)
         {
             InitializeComponent();
@@ -74,9 +76,9 @@ namespace CNPM_QLNS.Item
         {
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa nhân viên này? \n Chú ý: Khi xóa sẽ xóa tất cả thông tin của nhân viên đó (Lương, Dự Án, Phòng Ban, ...) ra khỏi hệ thống.", "Xác nhận xóa", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                
 
-
+                blphongban.SetNullMaPBNhanVien(nv.MaPB);
+                bltaikhoan.XoaTaiKhoan(nv.MaNV);
                 if (blphancog.XoaPhanCong(lblMaNV.Text.ToString()) &&
                     blluong.XoaLuong(lblMaNV.Text.ToString()) && blnv.XoaNhanVien(lblMaNV.Text.ToString()) ==true)
                 {

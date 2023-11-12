@@ -198,6 +198,9 @@ namespace CNPM_QLNS.BS_Layer
 
                 // Thực hiện cập nhật MaPB trong bảng NHANVIEN
                 bool updateResult = db.MyExecuteNonQuery(updateNhanVienQuery, CommandType.Text, ref error, updateNhanVienParameters);
+                
+                
+                
                 return (updateResult);
             }
             else

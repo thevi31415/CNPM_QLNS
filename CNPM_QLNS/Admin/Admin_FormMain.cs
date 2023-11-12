@@ -104,7 +104,7 @@ namespace CNPM_QLNS
 
         private void btnSalary_Click(object sender, EventArgs e)
         {
-            loadform(new Admin_FormLuong());
+            loadform(new Admin_FormLuong(this));
             lblLink.Text = "Admin / Lương";
         }
 

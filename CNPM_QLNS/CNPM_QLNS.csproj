@@ -175,6 +175,7 @@
     <Compile Include="BS_Layer\BL_NhanVien.cs" />
     <Compile Include="BS_Layer\BL_PhanCong.cs" />
     <Compile Include="BS_Layer\BL_PhongBan.cs" />
+    <Compile Include="BS_Layer\BL_PhuCap.cs" />
     <Compile Include="BS_Layer\BL_TaiKhoan.cs" />
     <Compile Include="BS_Layer\BL_TimKiem.cs" />
     <Compile Include="BS_Layer\BL_TrinhDo.cs" />
@@ -183,6 +184,7 @@
     <Compile Include="Class\Luong.cs" />
     <Compile Include="Class\NhanVien.cs" />
     <Compile Include="Class\PhongBan.cs" />
+    <Compile Include="Class\PhuCap.cs" />
     <Compile Include="Class\TaiKhoan.cs" />
     <Compile Include="Class\TrinhDo.cs" />
     <Compile Include="DB_Layer\DBMain.cs" />

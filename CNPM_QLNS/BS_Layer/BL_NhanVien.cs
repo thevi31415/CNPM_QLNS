@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CNPM_QLNS.BS_Layer
 {
@@ -247,7 +248,17 @@ namespace CNPM_QLNS.BS_Layer
             parameters[0].Value = maNV;
 
             // Thực hiện xóa nhân viên
-            return db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
+          //  return db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
+            // Thực hiện xóa nhân viên
+            bool success = db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
+
+            // Hiển thị thông báo nếu có lỗi xảy ra
+            if (!success)
+            {
+                MessageBox.Show("Xóa nhân viên không thành công. Lỗi: " + error, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return success;
         }
         public NhanVien LayNhanVienTheoMa(string maNV)
         {
