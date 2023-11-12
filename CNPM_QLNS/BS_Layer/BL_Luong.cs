@@ -138,6 +138,11 @@ namespace CNPM_QLNS.BS_Layer
             return db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
         }
 
+        public int TinhLuong(int luongCoBan, int soNgayCong, int phuCap, int kyLuat)
+        {
+            int tongLuong = (luongCoBan * soNgayCong) + phuCap - kyLuat;
+            return tongLuong;
+        }
 
     }
 }

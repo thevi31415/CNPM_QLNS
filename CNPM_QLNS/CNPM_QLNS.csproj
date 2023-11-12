@@ -171,6 +171,7 @@
     <Compile Include="BS_Layer\BL_ChucVu.cs" />
     <Compile Include="BS_Layer\BL_ChuyenMon.cs" />
     <Compile Include="BS_Layer\BL_DangNhap.cs" />
+    <Compile Include="BS_Layer\BL_KyLuat.cs" />
     <Compile Include="BS_Layer\BL_Luong.cs" />
     <Compile Include="BS_Layer\BL_NhanVien.cs" />
     <Compile Include="BS_Layer\BL_PhanCong.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="BS_Layer\BL_TrinhDo.cs" />
     <Compile Include="Class\ChucVu.cs" />
     <Compile Include="Class\ChuyenMon.cs" />
+    <Compile Include="Class\KyLuat.cs" />
     <Compile Include="Class\Luong.cs" />
     <Compile Include="Class\NhanVien.cs" />
     <Compile Include="Class\PhongBan.cs" />
