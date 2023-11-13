@@ -17,6 +17,7 @@ namespace CNPM_QLNS.Employees
     {
         public string MaNV;
         BL_NhanVien blnhanvien = new BL_NhanVien();
+        BL_TaiKhoan bltaikhoan = new BL_TaiKhoan();
         public NhanVien_FormMain(string MaNV)
         {
             InitializeComponent();
@@ -38,6 +39,11 @@ namespace CNPM_QLNS.Employees
         {
 
         }
+        public void LoadFormTaiKhoan()
+        {
+            loadform(new NhanVien_FormTaiKhoan(this));
+            lblLink.Text = "Admin / Tài khoản";
+        }
 
         private void btnEmployees_Click(object sender, EventArgs e)
         {
@@ -45,6 +51,13 @@ namespace CNPM_QLNS.Employees
             nv = blnhanvien.LayDanhSachNhanVienTheoMaNV(MaNV)[0];
             loadform(new NhanVien_FormNhanVien(nv));
             lblLink.Text = "Admin / Nhân viên";
+        }
+
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+            TaiKhoan tk = new TaiKhoan();
+            tk = bltaikhoan.Lay1TaiKhoan(MaNV);
+            loadform(new NhanVien_FormTaiKhoan(this));
         }
     }
 }

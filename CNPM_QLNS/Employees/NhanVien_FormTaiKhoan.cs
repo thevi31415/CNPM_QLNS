@@ -16,18 +16,16 @@ namespace CNPM_QLNS.Employees
 {
     public partial class NhanVien_FormTaiKhoan : Form
     {
-        public List<TaiKhoan> taikhoanlist;
+        public TaiKhoan taiKhoan;
         BL_TaiKhoan tk = new BL_TaiKhoan();
         public NhanVien_FormMain nv_formMain;
-        int check = 0;
+        public Admin_FormMain formMain;
         public NhanVien_FormTaiKhoan(NhanVien_FormMain nvFormMain)
         {
             InitializeComponent();
             this.nv_formMain = nvFormMain;
-            this.taikhoanlist = tk.Lay1TaiKhoan(this.nv_formMain.MaNV);
-            check = 1;
         }
-        public void LoadData(List<TaiKhoan> tkList)
+        public void LoadData()
         {
 
             panelListTaiKhoan.Controls.Clear();
@@ -35,36 +33,21 @@ namespace CNPM_QLNS.Employees
             //  nvList = nv.LayNhanVien();
             panelListTaiKhoan.Padding = new Padding(10, 0, 10, 0);
             // MessageBox.Show(taikhoanlist.Count().ToString());
-            if (tkList.Count > 0)
-            {
+            
                 //  MessageBox.Show(nhanVienList.Count().ToString());
-                foreach (TaiKhoan taikhoan in tkList)
-                {
-                    Item_TaiKhoan item_taikhoan = new Item_TaiKhoan(nv_formMain, taikhoan); // Pass the reference
-                    item_taikhoan.TopLevel = false;
-                    panelListTaiKhoan.Controls.Add(item_taikhoan);
-                    item_taikhoan.Show();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Khong tim thay nhan vien nao =)))");
-            }
-
-
-        }
-        private void Admin_FormTaiKhoan_Load(object sender, EventArgs e)
-        {
-            LoadData(this.taikhoanlist);
+            Item_TaiKhoan item_taikhoan = new Item_TaiKhoan(formMain, nv_formMain, taiKhoan); // Pass the reference
+            item_taikhoan.TopLevel = false;
+            panelListTaiKhoan.Controls.Add(item_taikhoan);
+            item_taikhoan.Show();
         }
         private void NhanVien_FormTaiKhoan_Load(object sender, EventArgs e)
         {
-
+            LoadData();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            NhanVien_FormSuaTaiKhoan formSuaTK = new NhanVien_FormSuaTaiKhoan();
+            NhanVien_FormSuaTaiKhoan formSuaTK = new NhanVien_FormSuaTaiKhoan(taiKhoan);
             formSuaTK.ShowDialog();
         }
     }

@@ -200,6 +200,12 @@
     <Compile Include="Employees\NhanVien_FormNhanVien.Designer.cs">
       <DependentUpon>NhanVien_FormNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employees\NhanVien_FormSuaTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\NhanVien_FormSuaTaiKhoan.Designer.cs">
+      <DependentUpon>NhanVien_FormSuaTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employees\NhanVien_FormTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormNhanVien.resx">
       <DependentUpon>NhanVien_FormNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\NhanVien_FormSuaTaiKhoan.resx">
+      <DependentUpon>NhanVien_FormSuaTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormTaiKhoan.resx">
       <DependentUpon>NhanVien_FormTaiKhoan.cs</DependentUpon>

@@ -331,6 +331,7 @@
             this.btnAccount.TabIndex = 3;
             this.btnAccount.Text = "Tài khoản";
             this.btnAccount.UseVisualStyleBackColor = false;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // btnOverview
             // 
