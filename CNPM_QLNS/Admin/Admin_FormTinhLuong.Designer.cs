@@ -256,6 +256,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "Admin_FormTinhLuong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Admin_FormTinhLuong";
             this.Load += new System.EventHandler(this.Admin_FormTinhLuong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

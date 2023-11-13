@@ -143,6 +143,16 @@ namespace CNPM_QLNS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap export {
+            get {
+                object obj = ResourceManager.GetObject("export", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap filter_filled_tool_symbol {
             get {
                 object obj = ResourceManager.GetObject("filter-filled-tool-symbol", resourceCulture);
@@ -406,6 +416,16 @@ namespace CNPM_QLNS.Properties {
         internal static System.Drawing.Bitmap security {
             get {
                 object obj = ResourceManager.GetObject("security", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap staff {
+            get {
+                object obj = ResourceManager.GetObject("staff", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

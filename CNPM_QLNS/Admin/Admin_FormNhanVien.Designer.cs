@@ -41,6 +41,7 @@
             this.cbHoTen = new System.Windows.Forms.CheckBox();
             this.cbMaNV = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnXuatNhanVien = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -201,12 +202,31 @@
             this.label4.TabIndex = 83;
             this.label4.Text = "Tìm kiếm theo:";
             // 
+            // btnXuatNhanVien
+            // 
+            this.btnXuatNhanVien.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnXuatNhanVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnXuatNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnXuatNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXuatNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatNhanVien.ForeColor = System.Drawing.Color.White;
+            this.btnXuatNhanVien.Image = global::CNPM_QLNS.Properties.Resources.add;
+            this.btnXuatNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXuatNhanVien.Location = new System.Drawing.Point(292, 14);
+            this.btnXuatNhanVien.Name = "btnXuatNhanVien";
+            this.btnXuatNhanVien.Size = new System.Drawing.Size(136, 47);
+            this.btnXuatNhanVien.TabIndex = 84;
+            this.btnXuatNhanVien.Text = "Thêm nhân viên";
+            this.btnXuatNhanVien.UseVisualStyleBackColor = false;
+            this.btnXuatNhanVien.Click += new System.EventHandler(this.btnXuatNhanVien_Click);
+            // 
             // Admin_FormNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1212, 674);
+            this.Controls.Add(this.btnXuatNhanVien);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cbMaNV);
             this.Controls.Add(this.cbHoTen);
@@ -241,5 +261,6 @@
         private System.Windows.Forms.CheckBox cbHoTen;
         private System.Windows.Forms.CheckBox cbMaNV;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnXuatNhanVien;
     }
 }
