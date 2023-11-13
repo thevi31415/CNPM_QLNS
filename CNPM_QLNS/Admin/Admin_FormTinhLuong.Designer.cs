@@ -42,7 +42,7 @@
             this.dtpNgayTinhLuong = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtTinhLuong = new System.Windows.Forms.RichTextBox();
+            this.txtMoTa = new System.Windows.Forms.RichTextBox();
             this.btnTinhLuong = new System.Windows.Forms.Button();
             this.cmbKyLuat = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -188,13 +188,14 @@
             this.label6.TabIndex = 104;
             this.label6.Text = "Mô tả";
             // 
-            // txtTinhLuong
+            // txtMoTa
             // 
-            this.txtTinhLuong.Location = new System.Drawing.Point(724, 204);
-            this.txtTinhLuong.Name = "txtTinhLuong";
-            this.txtTinhLuong.Size = new System.Drawing.Size(505, 231);
-            this.txtTinhLuong.TabIndex = 105;
-            this.txtTinhLuong.Text = "";
+            this.txtMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMoTa.Location = new System.Drawing.Point(724, 204);
+            this.txtMoTa.Name = "txtMoTa";
+            this.txtMoTa.Size = new System.Drawing.Size(505, 231);
+            this.txtMoTa.TabIndex = 105;
+            this.txtMoTa.Text = "";
             // 
             // btnTinhLuong
             // 
@@ -241,7 +242,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cmbKyLuat);
             this.Controls.Add(this.btnTinhLuong);
-            this.Controls.Add(this.txtTinhLuong);
+            this.Controls.Add(this.txtMoTa);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpNgayTinhLuong);
@@ -281,7 +282,7 @@
         private System.Windows.Forms.DateTimePicker dtpNgayTinhLuong;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RichTextBox txtTinhLuong;
+        private System.Windows.Forms.RichTextBox txtMoTa;
         private System.Windows.Forms.Button btnTinhLuong;
         private System.Windows.Forms.ComboBox cmbKyLuat;
         private System.Windows.Forms.Label label7;

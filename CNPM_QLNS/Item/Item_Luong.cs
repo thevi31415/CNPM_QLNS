@@ -18,6 +18,7 @@ namespace CNPM_QLNS.Item
     {
         public Luong luong;
         BL_NhanVien blnv = new BL_NhanVien();
+        BL_Luong blluong = new BL_Luong();
         public Admin_FormMain formmain;
         public NhanVien nv;
         DBMain db = new DBMain();
@@ -60,6 +61,15 @@ namespace CNPM_QLNS.Item
         {
             Admin_FormXemLuong xemluong = new Admin_FormXemLuong(nv);
             xemluong.ShowDialog();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if(blluong.XoaLuongMaNVVaMaLuong(luong.MaNV, luong.MaLuong))
+            {
+                MessageBox.Show("Xóa thành công !");
+                formmain.LoadFormLuong();
+            }
         }
     }
 }

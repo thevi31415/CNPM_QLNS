@@ -83,7 +83,7 @@ namespace CNPM_QLNS.BS_Layer
                     luongs.Add(luong);
                 }
             }
-
+            luongs.Reverse();
             return luongs;
         }
         public List<Luong> LayLuongTheoMaNV(string maNV)
@@ -121,6 +121,22 @@ namespace CNPM_QLNS.BS_Layer
 
             return luongs;
         }
+        public bool XoaLuongMaNVVaMaLuong(string maNV, string maLuong)
+        {
+            string error = "";
+
+            // Tạo câu truy vấn xóa lương dựa trên MaNV và MaLuong
+            string deleteQuery = "DELETE FROM LUONG WHERE MaNV = @MaNV AND MaLuong = @MaLuong";
+
+            SqlParameter[] parameters = new SqlParameter[2];
+            parameters[0] = new SqlParameter("@MaNV", SqlDbType.NVarChar, 10);
+            parameters[0].Value = maNV;
+
+            parameters[1] = new SqlParameter("@MaLuong", SqlDbType.NVarChar, 10);
+            parameters[1].Value = maLuong;
+
+            return db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
+        }
 
         public bool XoaLuong(string maNV)
         {
@@ -138,10 +154,33 @@ namespace CNPM_QLNS.BS_Layer
             return db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
         }
 
-        public int TinhLuong(int luongCoBan, int soNgayCong, int phuCap, int kyLuat)
+        public float TinhLuong(int luongCoBan, int soNgayCong, int phuCap, int kyLuat)
         {
-            int tongLuong = (luongCoBan * soNgayCong) + phuCap - kyLuat;
+            float tongLuong =(float)(luongCoBan * soNgayCong) + phuCap - kyLuat;
             return tongLuong;
+        }
+        public bool ThemThongTinLuong(string maNV, string maLuong, string maCV, int thang, int nam, int ngayCong, string phuCap, string kyLuat, string moTa, float tongLuong)
+        {
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaNV", maNV),
+        new SqlParameter("@MaLuong", maLuong),
+        new SqlParameter("@MaCV", maCV),
+        new SqlParameter("@Thang", thang),
+        new SqlParameter("@Nam", nam),
+        new SqlParameter("@NgayCong", ngayCong),
+        new SqlParameter("@PhuCap", phuCap),
+        new SqlParameter("@KyLuat", kyLuat),
+        new SqlParameter("@MoTa", moTa),
+        new SqlParameter("@TongLuong", tongLuong)
+            };
+
+            string strSQL = "INSERT INTO LUONG (MaNV, MaLuong, MaCV, Thang, Nam, NgayCong, PhuCap, KyLuat, MoTa, TongLuong) " +
+                            "VALUES (@MaNV, @MaLuong, @MaCV, @Thang, @Nam, @NgayCong, @PhuCap, @KyLuat, @MoTa, @TongLuong)";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
         }
 
     }

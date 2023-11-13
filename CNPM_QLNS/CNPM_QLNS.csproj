@@ -190,6 +190,18 @@
     <Compile Include="Class\TaiKhoan.cs" />
     <Compile Include="Class\TrinhDo.cs" />
     <Compile Include="DB_Layer\DBMain.cs" />
+    <Compile Include="Employees\NhanVien_FormDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\NhanVien_FormDoiMatKhau.Designer.cs">
+      <DependentUpon>NhanVien_FormDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\NhanVien_FormLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\NhanVien_FormLuong.Designer.cs">
+      <DependentUpon>NhanVien_FormLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employees\NhanVien_FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,6 +311,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_ThemNhanVienVaoPhongBan.resx">
       <DependentUpon>Admin_ThemNhanVienVaoPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\NhanVien_FormDoiMatKhau.resx">
+      <DependentUpon>NhanVien_FormDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\NhanVien_FormLuong.resx">
+      <DependentUpon>NhanVien_FormLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormMain.resx">
       <DependentUpon>NhanVien_FormMain.cs</DependentUpon>
@@ -467,6 +485,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\filter-filled-tool-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

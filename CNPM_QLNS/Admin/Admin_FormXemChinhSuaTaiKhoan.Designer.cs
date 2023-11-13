@@ -38,13 +38,13 @@
             this.cmbTrangThai = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.lblTruyCap = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -169,6 +169,18 @@
             this.panel1.Size = new System.Drawing.Size(1164, 76);
             this.panel1.TabIndex = 31;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(459, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(403, 38);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "THÔNG TIN TÀI KHOẢN";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -228,18 +240,6 @@
             this.label1.Size = new System.Drawing.Size(136, 25);
             this.label1.TabIndex = 33;
             this.label1.Text = "Mã nhân viên:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(459, 19);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(403, 38);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "THÔNG TIN TÀI KHOẢN";
             // 
             // lblTruyCap
             // 

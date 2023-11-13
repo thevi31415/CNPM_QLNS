@@ -14,11 +14,12 @@ namespace CNPM_QLNS.Admin
 {
     public partial class Admin_FormTinhLuong : Form
     {
-        Admin_FormMain formMain;
+        public Admin_FormMain formMain;
         BL_NhanVien blnv = new BL_NhanVien();
         BL_PhuCap blphucap = new BL_PhuCap();
         BL_KyLuat blkyluat = new BL_KyLuat();
         BL_ChucVu blchucvu = new BL_ChucVu();
+        BL_Luong blluong = new BL_Luong();
         List<PhuCap> phuCaplist= new List<PhuCap>();
         List<NhanVien> NhanVienList = new List<NhanVien>(); 
         List <KyLuat> KyLuatList = new List<KyLuat>();
@@ -81,10 +82,43 @@ namespace CNPM_QLNS.Admin
 
 
             motnhanvien = blnv.LayDanhSachNhanVienTheoMaNV(MaNV);
-
             int luongcoban = blchucvu.LayDanhSachChucVuTheoMaCV(motnhanvien[0].MaCV)[0].LuongCoBan;
-          //  int songaycong = txtSoNgayCong
-            MessageBox.Show(luongcoban.ToString());
+
+            if(txtSoNgayCong.Text.Trim()=="" || txtMaLuong.Text.Trim() == "")
+            {
+                MessageBox.Show("Bạn chưa nhập đầy đủ thông tin ! Vui lòng nhập lại !");
+            }
+            else
+            {
+
+                int songaycong = Convert.ToInt32(txtSoNgayCong.Text);
+                int kyluat = 0;
+                int phucap = 0;
+                if (blkyluat.LayDanhSachKyLuatTheoMaKL(MaKL).Count() > 0)
+                {
+                    kyluat = blkyluat.LayDanhSachKyLuatTheoMaKL(MaKL)[0].TienPhat; 
+                }
+                if (blphucap.LayThongTinPhuCapTheoMaPC(MaPC).Count() > 0)
+                {
+                   phucap =  blphucap.LayThongTinPhuCapTheoMaPC(MaPC)[0].GiaTriPC;
+                }
+
+                float tongluong = blluong.TinhLuong(luongcoban, songaycong, phucap, kyluat);
+
+                if(blluong.ThemThongTinLuong(MaNV, txtMaLuong.Text.Trim(), motnhanvien[0].MaCV, dtpNgayTinhLuong.Value.Month
+                    , dtpNgayTinhLuong.Value.Year,songaycong, MaPC, MaKL, txtMoTa.Text, tongluong))
+                {
+                    MessageBox.Show("Tính lương thành công !");
+                    formMain.LoadFormLuong();
+                }
+                else
+                {
+                    MessageBox.Show("Không thể tính !");
+                }
+             //   MessageBox.Show(tongluong.ToString());
+
+            }
+            
         }
     }
 }
