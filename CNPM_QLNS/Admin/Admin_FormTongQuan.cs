@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace CNPM_QLNS.Admin
 {
@@ -80,7 +81,7 @@ namespace CNPM_QLNS.Admin
 
         private void Admin_FormTongQuan_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnXuatDuAn_Click(object sender, EventArgs e)
