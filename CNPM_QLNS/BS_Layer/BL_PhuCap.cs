@@ -3,6 +3,7 @@ using CNPM_QLNS.DB_Layer;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,6 +42,34 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachPhuCap;
         }
+        public List<PhuCap> LayThongTinPhuCapTheoMaPC(string maPC)
+        {
+            List<PhuCap> danhSachPhuCap = new List<PhuCap>();
 
+            string query = "SELECT * FROM PHUCAP WHERE MaPC = @MaPC";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+        new SqlParameter("@MaPC", maPC)
+            };
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    PhuCap phuCap = new PhuCap
+                    {
+                        MaPC = row["MaPC"].ToString(),
+                        LoaiPC = row["LoaiPC"].ToString(),
+                        GiaTriPC = Convert.ToInt32(row["GiaTriPC"])
+                    };
+
+                    danhSachPhuCap.Add(phuCap);
+                }
+            }
+
+            return danhSachPhuCap;
+        }
     }
 }

@@ -173,6 +173,7 @@ namespace CNPM_QLNS.BS_Layer
                         nhanViens.Add(nv);
                     }
                 }
+              nhanViens.Reverse();
               return nhanViens;
             
 

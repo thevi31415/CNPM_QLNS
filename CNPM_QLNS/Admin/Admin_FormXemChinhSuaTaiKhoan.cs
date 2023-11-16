@@ -95,5 +95,7 @@ namespace CNPM_QLNS.Admin
                 btnShowPass.Image = Properties.Resources.view;
             }
         }
+
+       
     }
 }

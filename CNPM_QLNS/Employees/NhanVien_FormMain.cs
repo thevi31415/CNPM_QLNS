@@ -18,10 +18,11 @@ namespace CNPM_QLNS.Employees
         public string MaNV;
         BL_NhanVien blnhanvien = new BL_NhanVien();
         BL_TaiKhoan bltaikhoan = new BL_TaiKhoan();
+        BL_Luong blluong = new BL_Luong();
         public NhanVien_FormMain(string MaNV)
         {
             InitializeComponent();
-            this.MaNV = MaNV;
+            this.MaNV = MaNV.Trim();
             lblTen.Text = MaNV;
         }
         public void loadform(object Form)
@@ -39,11 +40,6 @@ namespace CNPM_QLNS.Employees
         {
 
         }
-        public void LoadFormTaiKhoan()
-        {
-            loadform(new NhanVien_FormTaiKhoan(this));
-            lblLink.Text = "Admin / Tài khoản";
-        }
 
         private void btnEmployees_Click(object sender, EventArgs e)
         {
@@ -55,9 +51,27 @@ namespace CNPM_QLNS.Employees
 
         private void btnAccount_Click(object sender, EventArgs e)
         {
-            TaiKhoan tk = new TaiKhoan();
-            tk = bltaikhoan.Lay1TaiKhoan(MaNV);
-            loadform(new NhanVien_FormTaiKhoan(this));
+            TaiKhoan taiKhoan = new TaiKhoan();
+            if (bltaikhoan.Lay1TaiKhoan(MaNV).Count > 0)
+            {
+                taiKhoan = bltaikhoan.Lay1TaiKhoan(MaNV)[0];
+                loadform(new NhanVien_FormTaiKhoan(taiKhoan));
+                lblLink.Text = "Admin / Tài khoản";
+            }
+            else
+            {
+                MessageBox.Show("Chưa có tài khoản !");
+            }
+        }
+
+        private void btnSalary_Click(object sender, EventArgs e)
+        {
+
+            NhanVien nv = new NhanVien();
+            nv = blnhanvien.LayDanhSachNhanVienTheoMaNV(MaNV)[0];
+            loadform(new NhanVien_FormLuong(nv, null));
+            lblLink.Text = "Admin / Lương";
+          
         }
     }
 }

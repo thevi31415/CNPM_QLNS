@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CNPM_QLNS.BS_Layer
 {
@@ -107,18 +108,39 @@ namespace CNPM_QLNS.BS_Layer
             }
             return taiKhoan;
         }
+        public bool DoiMatKhau(string maNV, string matKhauMoi)
+        {
+            DBMain db = new DBMain();
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+                new SqlParameter("@MaNV", maNV),
+                new SqlParameter("@MatKhauMoi", matKhauMoi)
+            };
+
+            string strSQL = "UPDATE TAIKHOAN SET MatKhau = @MatKhauMoi WHERE MaNV = @MaNV";
+
+            bool check =  db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+            if (check == false)
+            {
+                MessageBox.Show(error);
+            }
+            return check;
+        }
+
         public bool ThemTaiKhoan(string maNV, string email, string matKhau, string phanQuyen, string trangThai, DateTime truyCap)
         {
             string error = "";
 
             SqlParameter[] parameterValues = new SqlParameter[]
             {
-        new SqlParameter("@MaNV", maNV),
-        new SqlParameter("@Email", email),
-        new SqlParameter("@MatKhau", matKhau),
-        new SqlParameter("@PhanQuyen", phanQuyen),
-        new SqlParameter("@TrangThai", trangThai),
-        new SqlParameter("@TruyCap", truyCap)
+                new SqlParameter("@MaNV", maNV),
+                new SqlParameter("@Email", email),
+                new SqlParameter("@MatKhau", matKhau),
+                new SqlParameter("@PhanQuyen", phanQuyen),
+                new SqlParameter("@TrangThai", trangThai),
+                new SqlParameter("@TruyCap", truyCap)
             };
 
             string strSQL = "INSERT INTO TAIKHOAN (MaNV, Email, MatKhau, PhanQuyen, TrangThai, TruyCap) VALUES (@MaNV, @Email, @MatKhau, @PhanQuyen, @TrangThai, @TruyCap)";

@@ -16,39 +16,123 @@ namespace CNPM_QLNS.Employees
 {
     public partial class NhanVien_FormTaiKhoan : Form
     {
-        public TaiKhoan taiKhoan;
-        BL_TaiKhoan tk = new BL_TaiKhoan();
+        public List<TaiKhoan> taikhoanlist;
+
+        BL_TaiKhoan tkBL = new BL_TaiKhoan();
         public NhanVien_FormMain nv_formMain;
-        public Admin_FormMain formMain;
-        public NhanVien_FormTaiKhoan(NhanVien_FormMain nvFormMain)
+        public TaiKhoan tk;
+        int check = 0;
+        public NhanVien_FormTaiKhoan(TaiKhoan tk)
         {
             InitializeComponent();
-            this.nv_formMain = nvFormMain;
+            check = 1;
+            this.tk = tk;
+            lblMaNV.Text = tk.MaNV;
+            lblEmail.Text = tk.Email;
+            lblTrangThai.Text = tk.TrangThai;
+            if (tk.TrangThai.Trim() == "Active")
+            {
+                lblTrangThai.BackColor = ColorTranslator.FromHtml("#04A144");
+            }
+            else
+            {
+                lblTrangThai.BackColor = ColorTranslator.FromHtml("#F70000");
+            }
+            if (tk.PhanQuyen.Trim() == "Admin")
+            {
+                lblPhanQuyen.BackColor = ColorTranslator.FromHtml("#2337C6");
+            }
+            else
+            {
+                lblPhanQuyen.BackColor = ColorTranslator.FromHtml("#870001");
+            }
+            lblPhanQuyen.Text = tk.PhanQuyen;
+            lblTruyCap.Text = tk.TruyCap.ToString();
         }
-        public void LoadData()
+        public void LoadData(List<TaiKhoan> tkList)
         {
 
-            panelListTaiKhoan.Controls.Clear();
+           /* panelListTaiKhoan.Controls.Clear();
 
             //  nvList = nv.LayNhanVien();
             panelListTaiKhoan.Padding = new Padding(10, 0, 10, 0);
             // MessageBox.Show(taikhoanlist.Count().ToString());
-            
+            if (tkList.Count > 0)
+            {
                 //  MessageBox.Show(nhanVienList.Count().ToString());
-            Item_TaiKhoan item_taikhoan = new Item_TaiKhoan(formMain, nv_formMain, taiKhoan); // Pass the reference
-            item_taikhoan.TopLevel = false;
-            panelListTaiKhoan.Controls.Add(item_taikhoan);
-            item_taikhoan.Show();
+                foreach (TaiKhoan taikhoan in tkList)
+                {
+                    Item_TaiKhoan item_taikhoan = new Item_TaiKhoan(nv_formMain, taikhoan); // Pass the reference
+                    item_taikhoan.TopLevel = false;
+                    panelListTaiKhoan.Controls.Add(item_taikhoan);
+                    item_taikhoan.Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Khong tim thay nhan vien nao =)))");
+            }
+*/
+
         }
-        private void NhanVien_FormTaiKhoan_Load(object sender, EventArgs e)
+        private void Admin_FormTaiKhoan_Load(object sender, EventArgs e)
         {
-            LoadData();
+            
         }
+       
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            NhanVien_FormSuaTaiKhoan formSuaTK = new NhanVien_FormSuaTaiKhoan(taiKhoan);
-            formSuaTK.ShowDialog();
+          /*  NhanVien_FormSuaTaiKhoan formSuaTK = new NhanVien_FormSuaTaiKhoan();
+            formSuaTK.ShowDialog();*/
+        }
+
+      
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NhanVien_FormTaiKhoan_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblPhanQuyen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMaNV_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            NhanVien_FormDoiMatKhau dmk = new NhanVien_FormDoiMatKhau(tk);
+            dmk.ShowDialog();
         }
     }
 }

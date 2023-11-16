@@ -118,6 +118,7 @@
             this.btnXoa.Size = new System.Drawing.Size(38, 38);
             this.btnXoa.TabIndex = 51;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // pictureBox1
             // 
