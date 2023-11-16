@@ -20,7 +20,7 @@ namespace CNPM_QLNS.Admin
         BL_PhongBan pb = new BL_PhongBan();
         BL_TimKiem timKiem = new BL_TimKiem();
         public Admin_FormMain formmain;
-        int check = 0;
+      //  int check = 0;
         public Admin_FormPhongBan(Admin_FormMain formmain)
         {
             InitializeComponent();
