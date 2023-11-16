@@ -57,6 +57,11 @@ namespace CNPM_QLNS.Item
                 lblTrangThai.BackColor = ColorTranslator.FromHtml("#EC9E0C");
 
             }
+            if (this.chiTietPhongBan == null)
+            {
+                btnXoa.Enabled = false;
+                btnXoa.BackColor = ColorTranslator.FromHtml("#BBBBBB");
+            }
         }
 
         private void Item_NhanVienPhongBan_MouseDown(object sender, MouseEventArgs e)
@@ -76,13 +81,22 @@ namespace CNPM_QLNS.Item
 
         private void Item_NhanVienPhongBan_MouseClick(object sender, MouseEventArgs e)
         {
-            Admin_FormXemNhanVien frmxemnx = new Admin_FormXemNhanVien(nv);
-            frmxemnx.ShowDialog();
+            if (this.chiTietPhongBan != null)
+            {
+                Admin_FormXemNhanVien frmxemnx = new Admin_FormXemNhanVien(nv);
+                frmxemnx.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Không thể xem thông tin  nhân viên");
+            }
+           
 
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+          
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa nhân viên này ra khỏi phòng ban?" + nv.MaNV, "Xác nhận xóa", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
 
