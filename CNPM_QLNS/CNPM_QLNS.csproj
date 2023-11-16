@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EPPlus, Version=7.0.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
       <HintPath>..\packages\EPPlus.7.0.1\lib\net462\EPPlus.dll</HintPath>
     </Reference>
@@ -45,6 +49,18 @@
     <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net46\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>D:\Student Life\Second Year\Second Semester\Windows Programming\End-of-term Project\My Team's Branch\QLNS_ADO.NET_Final-master\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization">
+      <HintPath>D:\Student Life\Second Year\Second Semester\Windows Programming\End-of-term Project\My Team's Branch\QLNS_ADO.NET_Final-master\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design">
+      <HintPath>D:\Student Life\Second Year\Second Semester\Windows Programming\End-of-term Project\My Team's Branch\QLNS_ADO.NET_Final-master\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>D:\Student Life\Second Year\Second Semester\Windows Programming\End-of-term Project\My Team's Branch\QLNS_ADO.NET_Final-master\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -56,7 +72,9 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Security" />
     <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -92,10 +110,10 @@
     <Compile Include="Admin\Admin_FormDuAn.Designer.cs">
       <DependentUpon>Admin_FormDuAn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormLuong.cs">
+    <Compile Include="Admin\Luong\Admin_FormLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormLuong.Designer.cs">
+    <Compile Include="Admin\Luong\Admin_FormLuong.Designer.cs">
       <DependentUpon>Admin_FormLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Admin_FormMain.cs">
@@ -140,10 +158,10 @@
     <Compile Include="Admin\Admin_FormThemTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormThemTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormTinhLuong.cs">
+    <Compile Include="Admin\Luong\Admin_FormTinhLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormTinhLuong.Designer.cs">
+    <Compile Include="Admin\Luong\Admin_FormTinhLuong.Designer.cs">
       <DependentUpon>Admin_FormTinhLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Admin_FormTongQuan.cs">
@@ -158,10 +176,10 @@
     <Compile Include="Admin\Admin_FormXemChinhSuaTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormXemChinhSuaTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormXemLuong.cs">
+    <Compile Include="Admin\Luong\Admin_FormXemLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormXemLuong.Designer.cs">
+    <Compile Include="Admin\Luong\Admin_FormXemLuong.Designer.cs">
       <DependentUpon>Admin_FormXemLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Admin_FormXemNhanVien.cs">
@@ -188,6 +206,12 @@
     <Compile Include="Admin\Admin_ThemNhanVienVaoPhongBan.Designer.cs">
       <DependentUpon>Admin_ThemNhanVienVaoPhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Luong\Admin_FormReportLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Luong\Admin_FormReportLuong.Designer.cs">
+      <DependentUpon>Admin_FormReportLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="BS_Layer\BL_ChucVu.cs" />
     <Compile Include="BS_Layer\BL_ChuyenMon.cs" />
     <Compile Include="BS_Layer\BL_DangNhap.cs" />
@@ -210,6 +234,11 @@
     <Compile Include="Class\PhuCap.cs" />
     <Compile Include="Class\TaiKhoan.cs" />
     <Compile Include="Class\TrinhDo.cs" />
+    <Compile Include="DataSetQLNS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetQLNS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DB_Layer\DBMain.cs" />
     <Compile Include="Employees\NhanVien_FormDoiMatKhau.cs">
       <SubType>Form</SubType>
@@ -291,7 +320,7 @@
     <EmbeddedResource Include="Admin\Admin_FormDuAn.resx">
       <DependentUpon>Admin_FormDuAn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormLuong.resx">
+    <EmbeddedResource Include="Admin\Luong\Admin_FormLuong.resx">
       <DependentUpon>Admin_FormLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormMain.resx">
@@ -315,7 +344,7 @@
     <EmbeddedResource Include="Admin\Admin_FormThemTaiKhoan.resx">
       <DependentUpon>Admin_FormThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormTinhLuong.resx">
+    <EmbeddedResource Include="Admin\Luong\Admin_FormTinhLuong.resx">
       <DependentUpon>Admin_FormTinhLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormTongQuan.resx">
@@ -324,7 +353,7 @@
     <EmbeddedResource Include="Admin\Admin_FormXemChinhSuaTaiKhoan.resx">
       <DependentUpon>Admin_FormXemChinhSuaTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormXemLuong.resx">
+    <EmbeddedResource Include="Admin\Luong\Admin_FormXemLuong.resx">
       <DependentUpon>Admin_FormXemLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormXemNhanVien.resx">
@@ -338,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_ThemNhanVienVaoPhongBan.resx">
       <DependentUpon>Admin_ThemNhanVienVaoPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Luong\Admin_FormReportLuong.resx">
+      <DependentUpon>Admin_FormReportLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormDoiMatKhau.resx">
       <DependentUpon>NhanVien_FormDoiMatKhau.cs</DependentUpon>
@@ -377,6 +409,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportLuong.rdlc" />
+    <None Include="DataSetQLNS.xsc">
+      <DependentUpon>DataSetQLNS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetQLNS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="DataSetQLNS.xss">
+      <DependentUpon>DataSetQLNS.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -524,6 +567,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_thongke.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
