@@ -34,7 +34,7 @@ namespace CNPM_QLNS.Employees
         private void btnLuu_Click(object sender, EventArgs e)
         {
             BL_TaiKhoan bltk = new BL_TaiKhoan();
-            if(txtMatKhauOld.Text.Trim() == bltk.Lay1TaiKhoan(tk.MaNV)[0].MatKhau.Trim())
+            if(txtMatKhauOld.Text.Trim() == bltk.Lay1TaiKhoan(tk.MaNV).MatKhau.Trim())
             {
                 if(bltk.DoiMatKhau(tk.MaNV, txtMatKhauNew.Text.Trim()))
                 {

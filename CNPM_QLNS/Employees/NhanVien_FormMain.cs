@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -52,16 +53,9 @@ namespace CNPM_QLNS.Employees
         private void btnAccount_Click(object sender, EventArgs e)
         {
             TaiKhoan taiKhoan = new TaiKhoan();
-            if (bltaikhoan.Lay1TaiKhoan(MaNV).Count > 0)
-            {
-                taiKhoan = bltaikhoan.Lay1TaiKhoan(MaNV)[0];
-                loadform(new NhanVien_FormTaiKhoan(taiKhoan));
+                taiKhoan = bltaikhoan.Lay1TaiKhoan(MaNV);
+                
                 lblLink.Text = "Admin / Tài khoản";
-            }
-            else
-            {
-                MessageBox.Show("Chưa có tài khoản !");
-            }
         }
 
         private void btnSalary_Click(object sender, EventArgs e)
@@ -72,6 +66,11 @@ namespace CNPM_QLNS.Employees
             loadform(new NhanVien_FormLuong(nv, null));
             lblLink.Text = "Admin / Lương";
           
+        }
+
+        public void LoadFormTaiKhoan()
+        {
+
         }
     }
 }

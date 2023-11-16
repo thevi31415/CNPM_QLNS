@@ -79,5 +79,11 @@ namespace CNPM_QLNS.Admin
             formtinhluong.ShowDialog(this);
 
         }
+
+        private void btnReportLuong_Click(object sender, EventArgs e)
+        {
+            Admin_FormReportLuong admin_FormReportLuong = new Admin_FormReportLuong();
+            admin_FormReportLuong.ShowDialog(this);
+        }
     }
 }

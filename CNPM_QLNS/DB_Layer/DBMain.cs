@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.ReportingServices.Diagnostics.Internal;
 
 namespace CNPM_QLNS.DB_Layer
 {
@@ -19,7 +20,7 @@ namespace CNPM_QLNS.DB_Layer
             conn = new SqlConnection(ConnStr);
             comm = conn.CreateCommand();
         }
-        public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct, SqlParameter[] parameters)
+        public System.Data.DataSet ExecuteQueryDataSet(string strSQL, CommandType ct, SqlParameter[] parameters)
         {
             if (conn.State == ConnectionState.Open)
                 conn.Close();
@@ -35,7 +36,7 @@ namespace CNPM_QLNS.DB_Layer
                 }
             }
             da = new SqlDataAdapter(comm);
-            DataSet ds = new DataSet();
+            System.Data.DataSet ds = new System.Data.DataSet();
             da.Fill(ds);
             return ds;
         }

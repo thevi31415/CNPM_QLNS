@@ -36,6 +36,7 @@
             this.lblMaNV = new System.Windows.Forms.Label();
             this.panelListLuong = new System.Windows.Forms.FlowLayoutPanel();
             this.dtpHienThiLuong = new System.Windows.Forms.DateTimePicker();
+            this.btnReportLuong = new System.Windows.Forms.Button();
             this.btnLoc = new System.Windows.Forms.Button();
             this.btnTinhLuong = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
@@ -121,11 +122,29 @@
             // 
             this.dtpHienThiLuong.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpHienThiLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpHienThiLuong.Location = new System.Drawing.Point(769, 54);
+            this.dtpHienThiLuong.Location = new System.Drawing.Point(520, 46);
             this.dtpHienThiLuong.Name = "dtpHienThiLuong";
             this.dtpHienThiLuong.Size = new System.Drawing.Size(200, 30);
             this.dtpHienThiLuong.TabIndex = 84;
             this.dtpHienThiLuong.CloseUp += new System.EventHandler(this.dtpHienThiLuong_CloseUp);
+            // 
+            // btnReportLuong
+            // 
+            this.btnReportLuong.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnReportLuong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnReportLuong.FlatAppearance.BorderSize = 0;
+            this.btnReportLuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportLuong.ForeColor = System.Drawing.Color.White;
+            this.btnReportLuong.Image = global::CNPM_QLNS.Properties.Resources.iconoverview;
+            this.btnReportLuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportLuong.Location = new System.Drawing.Point(740, 29);
+            this.btnReportLuong.Name = "btnReportLuong";
+            this.btnReportLuong.Size = new System.Drawing.Size(242, 47);
+            this.btnReportLuong.TabIndex = 86;
+            this.btnReportLuong.Text = "Thống kê lương";
+            this.btnReportLuong.UseVisualStyleBackColor = false;
+            this.btnReportLuong.Click += new System.EventHandler(this.btnReportLuong_Click);
             // 
             // btnLoc
             // 
@@ -169,6 +188,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1121, 673);
+            this.Controls.Add(this.btnReportLuong);
             this.Controls.Add(this.btnLoc);
             this.Controls.Add(this.dtpHienThiLuong);
             this.Controls.Add(this.panel3);
@@ -196,5 +216,6 @@
         private System.Windows.Forms.Button btnTinhLuong;
         private System.Windows.Forms.DateTimePicker dtpHienThiLuong;
         private System.Windows.Forms.Button btnLoc;
+        private System.Windows.Forms.Button btnReportLuong;
     }
 }

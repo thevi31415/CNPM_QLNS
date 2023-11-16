@@ -2,6 +2,7 @@
 using CNPM_QLNS.BS_Layer;
 using CNPM_QLNS.Class;
 using CNPM_QLNS.DB_Layer;
+using CNPM_QLNS.Employees;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace CNPM_QLNS.Item
 
         public NhanVien nv;
         public Admin_FormMain formmain;
+        public NhanVien_FormMain nv_formMain;
         DBMain db = new DBMain();
         BL_NhanVien blnv = new BL_NhanVien();
         BL_Luong blluong = new BL_Luong();
