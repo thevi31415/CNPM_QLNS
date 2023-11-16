@@ -49,17 +49,23 @@
     <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net46\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.Common">
-      <HintPath>D:\Student Life\Second Year\Second Semester\Windows Programming\End-of-term Project\My Team's Branch\QLNS_ADO.NET_Final-master\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.DataVisualization">
-      <HintPath>D:\Student Life\Second Year\Second Semester\Windows Programming\End-of-term Project\My Team's Branch\QLNS_ADO.NET_Final-master\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.Design">
-      <HintPath>D:\Student Life\Second Year\Second Semester\Windows Programming\End-of-term Project\My Team's Branch\QLNS_ADO.NET_Final-master\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.WinForms">
-      <HintPath>D:\Student Life\Second Year\Second Semester\Windows Programming\End-of-term Project\My Team's Branch\QLNS_ADO.NET_Final-master\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1576.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
@@ -86,28 +92,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Admin_ChiTietPhongBan.cs">
+    <Compile Include="Admin\PhongBan\Admin_ChiTietPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_ChiTietPhongBan.Designer.cs">
+    <Compile Include="Admin\PhongBan\Admin_ChiTietPhongBan.Designer.cs">
       <DependentUpon>Admin_ChiTietPhongBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormChinhSuaNhanVien.cs">
+    <Compile Include="Admin\NhanVien\Admin_FormChinhSuaNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormChinhSuaNhanVien.Designer.cs">
+    <Compile Include="Admin\NhanVien\Admin_FormChinhSuaNhanVien.Designer.cs">
       <DependentUpon>Admin_FormChinhSuaNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormChucVu.cs">
+    <Compile Include="Admin\ChucVu\Admin_FormChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormChucVu.Designer.cs">
+    <Compile Include="Admin\ChucVu\Admin_FormChucVu.Designer.cs">
       <DependentUpon>Admin_FormChucVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormDuAn.cs">
+    <Compile Include="Admin\DuAn\Admin_FormDuAn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormDuAn.Designer.cs">
+    <Compile Include="Admin\DuAn\Admin_FormDuAn.Designer.cs">
       <DependentUpon>Admin_FormDuAn.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Luong\Admin_FormLuong.cs">
@@ -122,40 +128,40 @@
     <Compile Include="Admin\Admin_FormMain.Designer.cs">
       <DependentUpon>Admin_FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormNhanVien.cs">
+    <Compile Include="Admin\NhanVien\Admin_FormNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormNhanVien.Designer.cs">
+    <Compile Include="Admin\NhanVien\Admin_FormNhanVien.Designer.cs">
       <DependentUpon>Admin_FormNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormPhongBan.cs">
+    <Compile Include="Admin\PhongBan\Admin_FormPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormPhongBan.Designer.cs">
+    <Compile Include="Admin\PhongBan\Admin_FormPhongBan.Designer.cs">
       <DependentUpon>Admin_FormPhongBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormPhuCap.cs">
+    <Compile Include="Admin\PhuCap\Admin_FormPhuCap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormPhuCap.Designer.cs">
+    <Compile Include="Admin\PhuCap\Admin_FormPhuCap.Designer.cs">
       <DependentUpon>Admin_FormPhuCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormTaiKhoan.cs">
+    <Compile Include="Admin\TaiKhoan\Admin_FormTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormTaiKhoan.Designer.cs">
+    <Compile Include="Admin\TaiKhoan\Admin_FormTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormThemNhanVien.cs">
+    <Compile Include="Admin\NhanVien\Admin_FormThemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormThemNhanVien.Designer.cs">
+    <Compile Include="Admin\NhanVien\Admin_FormThemNhanVien.Designer.cs">
       <DependentUpon>Admin_FormThemNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormThemTaiKhoan.cs">
+    <Compile Include="Admin\TaiKhoan\Admin_FormThemTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormThemTaiKhoan.Designer.cs">
+    <Compile Include="Admin\TaiKhoan\Admin_FormThemTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormThemTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Luong\Admin_FormTinhLuong.cs">
@@ -170,10 +176,10 @@
     <Compile Include="Admin\Admin_FormTongQuan.Designer.cs">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormXemChinhSuaTaiKhoan.cs">
+    <Compile Include="Admin\TaiKhoan\Admin_FormXemChinhSuaTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormXemChinhSuaTaiKhoan.Designer.cs">
+    <Compile Include="Admin\TaiKhoan\Admin_FormXemChinhSuaTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormXemChinhSuaTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Luong\Admin_FormXemLuong.cs">
@@ -182,16 +188,16 @@
     <Compile Include="Admin\Luong\Admin_FormXemLuong.Designer.cs">
       <DependentUpon>Admin_FormXemLuong.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_FormXemNhanVien.cs">
+    <Compile Include="Admin\NhanVien\Admin_FormXemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_FormXemNhanVien.Designer.cs">
+    <Compile Include="Admin\NhanVien\Admin_FormXemNhanVien.Designer.cs">
       <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_ThemPhongBan.cs">
+    <Compile Include="Admin\PhongBan\Admin_ThemPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_ThemPhongBan.Designer.cs">
+    <Compile Include="Admin\PhongBan\Admin_ThemPhongBan.Designer.cs">
       <DependentUpon>Admin_ThemPhongBan.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\FormDangNhap.cs">
@@ -200,10 +206,10 @@
     <Compile Include="Admin\FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin_ThemNhanVienVaoPhongBan.cs">
+    <Compile Include="Admin\NhanVien\Admin_ThemNhanVienVaoPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin_ThemNhanVienVaoPhongBan.Designer.cs">
+    <Compile Include="Admin\NhanVien\Admin_ThemNhanVienVaoPhongBan.Designer.cs">
       <DependentUpon>Admin_ThemNhanVienVaoPhongBan.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Luong\Admin_FormReportLuong.cs">
@@ -308,16 +314,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Admin\Admin_ChiTietPhongBan.resx">
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Admin\PhongBan\Admin_ChiTietPhongBan.resx">
       <DependentUpon>Admin_ChiTietPhongBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormChinhSuaNhanVien.resx">
+    <EmbeddedResource Include="Admin\NhanVien\Admin_FormChinhSuaNhanVien.resx">
       <DependentUpon>Admin_FormChinhSuaNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormChucVu.resx">
+    <EmbeddedResource Include="Admin\ChucVu\Admin_FormChucVu.resx">
       <DependentUpon>Admin_FormChucVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormDuAn.resx">
+    <EmbeddedResource Include="Admin\DuAn\Admin_FormDuAn.resx">
       <DependentUpon>Admin_FormDuAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Luong\Admin_FormLuong.resx">
@@ -326,22 +333,22 @@
     <EmbeddedResource Include="Admin\Admin_FormMain.resx">
       <DependentUpon>Admin_FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormNhanVien.resx">
+    <EmbeddedResource Include="Admin\NhanVien\Admin_FormNhanVien.resx">
       <DependentUpon>Admin_FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormPhongBan.resx">
+    <EmbeddedResource Include="Admin\PhongBan\Admin_FormPhongBan.resx">
       <DependentUpon>Admin_FormPhongBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormPhuCap.resx">
+    <EmbeddedResource Include="Admin\PhuCap\Admin_FormPhuCap.resx">
       <DependentUpon>Admin_FormPhuCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormTaiKhoan.resx">
+    <EmbeddedResource Include="Admin\TaiKhoan\Admin_FormTaiKhoan.resx">
       <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormThemNhanVien.resx">
+    <EmbeddedResource Include="Admin\NhanVien\Admin_FormThemNhanVien.resx">
       <DependentUpon>Admin_FormThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormThemTaiKhoan.resx">
+    <EmbeddedResource Include="Admin\TaiKhoan\Admin_FormThemTaiKhoan.resx">
       <DependentUpon>Admin_FormThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Luong\Admin_FormTinhLuong.resx">
@@ -350,22 +357,22 @@
     <EmbeddedResource Include="Admin\Admin_FormTongQuan.resx">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormXemChinhSuaTaiKhoan.resx">
+    <EmbeddedResource Include="Admin\TaiKhoan\Admin_FormXemChinhSuaTaiKhoan.resx">
       <DependentUpon>Admin_FormXemChinhSuaTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Luong\Admin_FormXemLuong.resx">
       <DependentUpon>Admin_FormXemLuong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_FormXemNhanVien.resx">
+    <EmbeddedResource Include="Admin\NhanVien\Admin_FormXemNhanVien.resx">
       <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_ThemPhongBan.resx">
+    <EmbeddedResource Include="Admin\PhongBan\Admin_ThemPhongBan.resx">
       <DependentUpon>Admin_ThemPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin_ThemNhanVienVaoPhongBan.resx">
+    <EmbeddedResource Include="Admin\NhanVien\Admin_ThemNhanVienVaoPhongBan.resx">
       <DependentUpon>Admin_ThemNhanVienVaoPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Luong\Admin_FormReportLuong.resx">
@@ -410,6 +417,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportLuong.rdlc" />
+    <EmbeddedResource Include="Reports\ReportLuongNV.rdlc" />
     <None Include="DataSetQLNS.xsc">
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>
     </None>
@@ -570,6 +578,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_thongke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

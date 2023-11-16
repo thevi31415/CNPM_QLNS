@@ -49,7 +49,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -64,6 +64,7 @@
                           <Width>1pt</Width>
                         </BottomBorder>
                         <BackgroundColor>Teal</BackgroundColor>
+                        <VerticalAlign>Top</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -90,7 +91,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -105,6 +106,7 @@
                           <Width>1pt</Width>
                         </BottomBorder>
                         <BackgroundColor>Teal</BackgroundColor>
+                        <VerticalAlign>Top</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -131,7 +133,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -146,6 +148,7 @@
                           <Width>1pt</Width>
                         </BottomBorder>
                         <BackgroundColor>Teal</BackgroundColor>
+                        <VerticalAlign>Top</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -172,7 +175,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -187,6 +190,7 @@
                           <Width>1pt</Width>
                         </BottomBorder>
                         <BackgroundColor>Teal</BackgroundColor>
+                        <VerticalAlign>Top</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -213,7 +217,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -228,6 +232,7 @@
                           <Width>1pt</Width>
                         </BottomBorder>
                         <BackgroundColor>Teal</BackgroundColor>
+                        <VerticalAlign>Top</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -254,7 +259,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -269,6 +274,7 @@
                           <Width>1pt</Width>
                         </BottomBorder>
                         <BackgroundColor>Teal</BackgroundColor>
+                        <VerticalAlign>Top</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -295,7 +301,7 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Right</TextAlign>
+                            <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
@@ -310,6 +316,7 @@
                           <Width>1pt</Width>
                         </BottomBorder>
                         <BackgroundColor>Teal</BackgroundColor>
+                        <VerticalAlign>Top</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -332,22 +339,27 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Var(Fields!LuongCoBan.Value)</Value>
+                              <Value>=Fields!LuongCoBan.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>LuongCoBan</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>1.5pt</Width>
                         </Border>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>GhostWhite</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -365,22 +377,27 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Var(Fields!Thang.Value)</Value>
+                              <Value>=Fields!Thang.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Thang</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>1.5pt</Width>
                         </Border>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>GhostWhite</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -398,22 +415,27 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Var(Fields!Nam.Value)</Value>
+                              <Value>=Fields!Nam.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Nam</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>1.5pt</Width>
                         </Border>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>GhostWhite</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -431,22 +453,27 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Var(Fields!NgayCong.Value)</Value>
+                              <Value>=Fields!NgayCong.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>NgayCong</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>1.5pt</Width>
                         </Border>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>GhostWhite</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -464,22 +491,27 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Var(Fields!GiaTriPC.Value)</Value>
+                              <Value>=Fields!GiaTriPC.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>GiaTriPC</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>1.5pt</Width>
                         </Border>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>GhostWhite</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -497,22 +529,27 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Var(Fields!TienPhat.Value)</Value>
+                              <Value>=Fields!TienPhat.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>TienPhat</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>1.5pt</Width>
                         </Border>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>GhostWhite</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -530,22 +567,27 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Var(Fields!LuongCoBan.Value + (-200000)*(26-Fields!NgayCong.Value) + Fields!GiaTriPC.Value - Fields!TienPhat.Value)</Value>
+                              <Value>=Fields!LuongCoBan.Value + (-200000)*(26-Fields!NgayCong.Value) + Fields!GiaTriPC.Value - Fields!TienPhat.Value</Value>
                               <Style>
-                                <FontWeight>Normal</FontWeight>
+                                <FontWeight>Bold</FontWeight>
                                 <Color>#333333</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>TongLuong</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Style>None</Style>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>1.5pt</Width>
                         </Border>
-                        <BackgroundColor>White</BackgroundColor>
+                        <BackgroundColor>GhostWhite</BackgroundColor>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -591,7 +633,7 @@
                           </TextRun>
                         </TextRuns>
                         <Style>
-                          <TextAlign>Right</TextAlign>
+                          <TextAlign>Center</TextAlign>
                         </Style>
                       </Paragraph>
                     </Paragraphs>
@@ -606,6 +648,7 @@
                         <Width>1pt</Width>
                       </BottomBorder>
                       <BackgroundColor>Teal</BackgroundColor>
+                      <VerticalAlign>Top</VerticalAlign>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -646,20 +689,20 @@
                             </Style>
                           </TextRun>
                         </TextRuns>
-                        <Style />
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>MaNV</rd:DefaultName>
                     <Style>
                       <Border>
-                        <Style>None</Style>
-                      </Border>
-                      <BottomBorder>
-                        <Color>LightGrey</Color>
+                        <Color>Gray</Color>
                         <Style>Solid</Style>
-                        <Width>1pt</Width>
-                      </BottomBorder>
-                      <BackgroundColor>White</BackgroundColor>
+                        <Width>1.5pt</Width>
+                      </Border>
+                      <BackgroundColor>GhostWhite</BackgroundColor>
+                      <VerticalAlign>Middle</VerticalAlign>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -674,7 +717,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSetQLNS</DataSetName>
+        <DataSetName>DataSetLuong</DataSetName>
         <Top>3.25in</Top>
         <Left>0.76333in</Left>
         <Height>0.5in</Height>
@@ -723,7 +766,6 @@
                   <FontFamily>Bahnschrift SemiBold SemiConden</FontFamily>
                   <FontSize>24pt</FontSize>
                   <FontWeight>ExtraBold</FontWeight>
-                  <Color>Navy</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -792,7 +834,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!Thang.Value, "DataSetQLNS")</Value>
+                <Value>10</Value>
                 <Style>
                   <FontFamily>Bahnschrift SemiBold SemiConden</FontFamily>
                   <FontSize>13pt</FontSize>
@@ -827,7 +869,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!Nam.Value, "DataSetQLNS")</Value>
+                <Value>2023</Value>
                 <Style>
                   <FontFamily>Bahnschrift SemiBold SemiConden</FontFamily>
                   <FontSize>13pt</FontSize>
@@ -933,9 +975,7 @@
     <Height>8.45833in</Height>
     <Style>
       <Border>
-        <Color>AliceBlue</Color>
-        <Style>Solid</Style>
-        <Width>3pt</Width>
+        <Style>None</Style>
       </Border>
       <BackgroundColor>AliceBlue</BackgroundColor>
     </Style>
@@ -943,7 +983,7 @@
   <Width>11.13333in</Width>
   <Page>
     <PageHeader>
-      <Height>1.75in</Height>
+      <Height>1.75833in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>

@@ -21,6 +21,8 @@ namespace CNPM_QLNS.Admin
         {
             // TODO: This line of code loads data into the 'dataSetQLNS.ReportLuongNV' table. You can move, or remove it, as needed.
             this.reportLuongNVTableAdapter.Fill(this.dataSetQLNS.ReportLuongNV);
+            // TODO: This line of code loads data into the 'dataSetQLNS.ReportLuongNV' table. You can move, or remove it, as needed.
+            this.reportLuongNVTableAdapter.Fill(this.dataSetQLNS.ReportLuongNV);
 
             this.reportViewer.RefreshReport();
         }
