@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CNPM_QLNS.Class;
+using System.Windows.Forms;
 
 namespace CNPM_QLNS.BS_Layer
 {
@@ -161,6 +162,7 @@ namespace CNPM_QLNS.BS_Layer
         }
         public bool ThemThongTinLuong(string maNV, string maLuong, string maCV, int thang, int nam, int ngayCong, string phuCap, string kyLuat, string moTa, float tongLuong)
         {
+            DBMain db = new DBMain();
             string error = "";
 
             SqlParameter[] parameterValues = new SqlParameter[]
@@ -179,8 +181,12 @@ namespace CNPM_QLNS.BS_Layer
 
             string strSQL = "INSERT INTO LUONG (MaNV, MaLuong, MaCV, Thang, Nam, NgayCong, PhuCap, KyLuat, MoTa, TongLuong) " +
                             "VALUES (@MaNV, @MaLuong, @MaCV, @Thang, @Nam, @NgayCong, @PhuCap, @KyLuat, @MoTa, @TongLuong)";
-
-            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+            bool check = db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+            if (check == false)
+            {
+                MessageBox.Show(error);
+            }
+            return check;
         }
 
     }
