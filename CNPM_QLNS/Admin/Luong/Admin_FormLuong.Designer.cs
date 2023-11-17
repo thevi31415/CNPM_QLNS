@@ -122,7 +122,7 @@
             // 
             this.dtpHienThiLuong.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpHienThiLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpHienThiLuong.Location = new System.Drawing.Point(520, 46);
+            this.dtpHienThiLuong.Location = new System.Drawing.Point(771, 46);
             this.dtpHienThiLuong.Name = "dtpHienThiLuong";
             this.dtpHienThiLuong.Size = new System.Drawing.Size(200, 30);
             this.dtpHienThiLuong.TabIndex = 84;
@@ -138,9 +138,9 @@
             this.btnReportLuong.ForeColor = System.Drawing.Color.White;
             this.btnReportLuong.Image = global::CNPM_QLNS.Properties.Resources.iconoverview;
             this.btnReportLuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportLuong.Location = new System.Drawing.Point(740, 29);
+            this.btnReportLuong.Location = new System.Drawing.Point(319, 29);
             this.btnReportLuong.Name = "btnReportLuong";
-            this.btnReportLuong.Size = new System.Drawing.Size(242, 47);
+            this.btnReportLuong.Size = new System.Drawing.Size(213, 47);
             this.btnReportLuong.TabIndex = 86;
             this.btnReportLuong.Text = "Thống kê lương";
             this.btnReportLuong.UseVisualStyleBackColor = false;
