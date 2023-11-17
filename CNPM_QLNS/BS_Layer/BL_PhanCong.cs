@@ -6,7 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using CNPM_QLNS.Class;
 
 namespace CNPM_QLNS.BS_Layer
 {
@@ -28,6 +28,16 @@ namespace CNPM_QLNS.BS_Layer
 
             return db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
         }
-
+        public bool ThemNhanVienVaoDuAn(PhanCong pc)
+        {
+			db.OpenConnect();
+			SqlCommand cmd = new SqlCommand("EXEC Proc_ThemNhanVien_VaoDuAn @MaNV, @MaDA, @ThoiGian", db.OpenConnect());
+			cmd.Parameters.AddWithValue("@MaNV", pc.MaNV);
+			cmd.Parameters.AddWithValue("@MaDA", pc.MaDA);
+			cmd.Parameters.AddWithValue("@ThoiGian", pc.ThoiGian);
+			int rowsAffected = cmd.ExecuteNonQuery();
+			db.CloseConnect();
+			return rowsAffected > 0;
+		}
     }
 }

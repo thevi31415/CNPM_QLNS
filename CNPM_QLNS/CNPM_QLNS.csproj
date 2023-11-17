@@ -68,6 +68,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Admin_ChiTietDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_ChiTietDuAn.Designer.cs">
+      <DependentUpon>Admin_ChiTietDuAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Admin_ChiTietPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,12 @@
     </Compile>
     <Compile Include="Admin\Admin_FormTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_FormThemDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_FormThemDuAn.Designer.cs">
+      <DependentUpon>Admin_FormThemDuAn.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Admin_FormThemNhanVien.cs">
       <SubType>Form</SubType>
@@ -191,6 +203,7 @@
     <Compile Include="BS_Layer\BL_ChucVu.cs" />
     <Compile Include="BS_Layer\BL_ChuyenMon.cs" />
     <Compile Include="BS_Layer\BL_DangNhap.cs" />
+    <Compile Include="BS_Layer\BL_DuAn.cs" />
     <Compile Include="BS_Layer\BL_KyLuat.cs" />
     <Compile Include="BS_Layer\BL_Luong.cs" />
     <Compile Include="BS_Layer\BL_NhanVien.cs" />
@@ -203,9 +216,11 @@
     <Compile Include="BS_Layer\BL_XuatExcel.cs" />
     <Compile Include="Class\ChucVu.cs" />
     <Compile Include="Class\ChuyenMon.cs" />
+    <Compile Include="Class\DuAn.cs" />
     <Compile Include="Class\KyLuat.cs" />
     <Compile Include="Class\Luong.cs" />
     <Compile Include="Class\NhanVien.cs" />
+    <Compile Include="Class\PhanCong.cs" />
     <Compile Include="Class\PhongBan.cs" />
     <Compile Include="Class\PhuCap.cs" />
     <Compile Include="Class\TaiKhoan.cs" />
@@ -241,6 +256,12 @@
     <Compile Include="Employees\NhanVien_FormTaiKhoan.Designer.cs">
       <DependentUpon>NhanVien_FormTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item\Item_DuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\Item_DuAn.Designer.cs">
+      <DependentUpon>Item_DuAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item\Item_Luong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +294,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\Admin_ChiTietDuAn.resx">
+      <DependentUpon>Admin_ChiTietDuAn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_ChiTietPhongBan.resx">
       <DependentUpon>Admin_ChiTietPhongBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -302,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormTaiKhoan.resx">
       <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_FormThemDuAn.resx">
+      <DependentUpon>Admin_FormThemDuAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormThemNhanVien.resx">
       <DependentUpon>Admin_FormThemNhanVien.cs</DependentUpon>
@@ -347,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormTaiKhoan.resx">
       <DependentUpon>NhanVien_FormTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_DuAn.resx">
+      <DependentUpon>Item_DuAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_Luong.resx">
       <DependentUpon>Item_Luong.cs</DependentUpon>

@@ -19,6 +19,7 @@ namespace CNPM_QLNS.DB_Layer
             conn = new SqlConnection(ConnStr);
             comm = conn.CreateCommand();
         }
+
         public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct, SqlParameter[] parameters)
         {
             if (conn.State == ConnectionState.Open)
@@ -70,5 +71,21 @@ namespace CNPM_QLNS.DB_Layer
             }
             return f;
         }
-    }
+
+		public SqlConnection OpenConnect()
+		{
+			if (conn.State == ConnectionState.Closed)
+			{
+				conn.Open();
+			}
+			return conn;
+		}
+		public void CloseConnect()
+		{
+			if (conn.State == ConnectionState.Open)
+			{
+				conn.Close();
+			}
+		}
+	}
 }
