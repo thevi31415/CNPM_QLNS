@@ -11,27 +11,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CNPM_QLNS.Admin
+namespace CNPM_QLNS.Employees
 {
-    public partial class Admin_FormPhongBan : Form
+    public partial class NhanVien_FormPhongBan : Form
     {
         public List<PhongBan> phongBanList = new List<PhongBan>();
         public List<PhongBan> ketquatimkiemnv = new List<PhongBan>();
+        public NhanVien nv;
         BL_PhongBan pb = new BL_PhongBan();
-        BL_TimKiem timKiem = new BL_TimKiem();
-        public Admin_FormMain formmain;
-        int check = 0;
-        public Admin_FormPhongBan(Admin_FormMain formmain)
+        public NhanVien_FormPhongBan(NhanVien nv)
         {
             InitializeComponent();
-            this.formmain = formmain;
-        }
+            this.nv = nv;
 
+        }
         public void LoadData(List<PhongBan> pbList)
         {
             panelListPhongBan.Controls.Clear();
             this.phongBanList = pb.LayPhongBan();
-          
+
             if (pbList.Count > 0)
             {
                 int itemsPerRow = 3; // Số mục trên mỗi hàng
@@ -41,7 +39,7 @@ namespace CNPM_QLNS.Admin
                 foreach (PhongBan phongBan in pbList)
                 {
                     // Tạo một Item_PhongBan mới
-                    Item_PhongBan item_phongban = new Item_PhongBan(phongBan, formmain); // Pass the reference
+                   Item_PhongBanNhanVien item_phongban = new Item_PhongBanNhanVien(phongBan); // Pass the reference
                     item_phongban.TopLevel = false;
 
                     // Kiểm tra nếu chúng ta cần tạo một hàng mới
@@ -67,26 +65,15 @@ namespace CNPM_QLNS.Admin
             }
         }
 
-        private void panelListNhanVien_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Admin_FormPhongBan_Load(object sender, EventArgs e)
-        {
-            this.phongBanList = pb.LayPhongBan();
-            LoadData(phongBanList);
-        }
-
         private void panelListPhongBan_Paint(object sender, PaintEventArgs e)
         {
-
+           
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void NhanVien_FormPhongBan_Load(object sender, EventArgs e)
         {
-            Admin_ThemPhongBan frmthemnv = new Admin_ThemPhongBan(formmain);
-            frmthemnv.ShowDialog();
+            this.phongBanList = pb.LayDanhSachPhongBanTheoMaPB(nv.MaPB);
+            LoadData(phongBanList);
         }
     }
 }

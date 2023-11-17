@@ -11,7 +11,7 @@ namespace CNPM_QLNS.BS_Layer
 {
     public class BL_XuatExcel
     {
-        public void ExportToExcel(List<NhanVien> nhanViens, string filePath)
+        public void ExportToExcelNhanVien(List<NhanVien> nhanViens, string filePath)
         {
             // Tạo một FileInfo object từ đường dẫn file
             var file = new FileInfo(filePath);
@@ -53,6 +53,75 @@ namespace CNPM_QLNS.BS_Layer
                 package.Save();
             }
         }
+        public void ExportToExcelPhongBan(List<PhongBan> phongbans, string filePath)
+        {
+            // Tạo một FileInfo object từ đường dẫn file
+            var file = new FileInfo(filePath);
+
+            using (ExcelPackage package = new ExcelPackage(file))
+            {
+                // Tạo một sheet có tên "NhanVien"
+                ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("PhongBan");
+
+                // Tiêu đề cột
+                worksheet.Cells[1, 1].Value = "MaPB";
+                worksheet.Cells[1, 2].Value = "TenPhongBan";
+                worksheet.Cells[1, 3].Value = "MaTrPhong";
+                worksheet.Cells[1, 4].Value = "DiaDiem";
+                worksheet.Cells[1, 5].Value = "MoTa";
+                // Thêm các tiêu đề cột khác ở đây...
+
+                // Dữ liệu từ danh sách các nhân viên
+                for (int i = 0; i < phongbans.Count; i++)
+                {
+                    var phongban = phongbans[i];
+                    worksheet.Cells[i + 2, 1].Value = phongban.MaPB;
+                    worksheet.Cells[i + 2, 2].Value = phongban.TenPhongBan;
+                    worksheet.Cells[i + 2, 3].Value = phongban.MaTrPhong;
+                    worksheet.Cells[i + 2, 4].Value = phongban.DiaDiem;
+                    worksheet.Cells[i + 2, 5].Value = phongban.MoTa;
+                    // Thêm dữ liệu các cột khác ở đây...
+                }
+
+                // Lưu file Excel
+                package.Save();
+            }
+        }
+        public void ExportToExcelDuAn(List<DuAn> duans, string filePath)
+        {
+            // Tạo một FileInfo object từ đường dẫn file
+            var file = new FileInfo(filePath);
+
+            using (ExcelPackage package = new ExcelPackage(file))
+            {
+                // Tạo một sheet có tên "DuAn"
+                ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("DuAn");
+
+                // Tiêu đề cột
+                worksheet.Cells[1, 1].Value = "MaDA";
+                worksheet.Cells[1, 2].Value = "TenDA";
+                worksheet.Cells[1, 3].Value = "GiaTri";
+                worksheet.Cells[1, 4].Value = "NgayBatDau";
+                worksheet.Cells[1, 5].Value = "TrangThai";
+                // Thêm các tiêu đề cột khác ở đây...
+
+                // Dữ liệu từ danh sách các dự án
+                for (int i = 0; i < duans.Count; i++)
+                {
+                    var duan = duans[i];
+                    worksheet.Cells[i + 2, 1].Value = duan.MaDA;
+                    worksheet.Cells[i + 2, 2].Value = duan.TenDA;
+                    worksheet.Cells[i + 2, 3].Value = duan.GiaTri;
+                    worksheet.Cells[i + 2, 4].Value = duan.NgayBatDau.ToString("yyyy-MM-dd");
+                    worksheet.Cells[i + 2, 5].Value = duan.TrangThai;
+                    // Thêm dữ liệu các cột khác ở đây...
+                }
+
+                // Lưu file Excel
+                package.Save();
+            }
+        }
+
     }
 
 }

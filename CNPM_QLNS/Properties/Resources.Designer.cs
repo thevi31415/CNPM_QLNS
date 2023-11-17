@@ -163,6 +163,16 @@ namespace CNPM_QLNS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_thongke {
+            get {
+                object obj = ResourceManager.GetObject("icon_thongke", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconaccount {
             get {
                 object obj = ResourceManager.GetObject("iconaccount", resourceCulture);
@@ -426,6 +436,16 @@ namespace CNPM_QLNS.Properties {
         internal static System.Drawing.Bitmap staff {
             get {
                 object obj = ResourceManager.GetObject("staff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap staff11 {
+            get {
+                object obj = ResourceManager.GetObject("staff11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

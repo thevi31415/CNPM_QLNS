@@ -1,6 +1,7 @@
 ﻿using CNPM_QLNS.Admin;
 using CNPM_QLNS.BS_Layer;
 using CNPM_QLNS.Class;
+using CNPM_QLNS.Employees;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,12 +16,14 @@ namespace CNPM_QLNS.Item
 {
     public partial class Item_TaiKhoan : Form
     {
+        public NhanVien_FormMain nv_formMain;
         public Admin_FormMain formMain;
         public TaiKhoan tk;
         BL_TaiKhoan bltk = new BL_TaiKhoan();
-        public Item_TaiKhoan(Admin_FormMain formMain, TaiKhoan tk)
+        public Item_TaiKhoan(Admin_FormMain formMain, NhanVien_FormMain nv_formMain, TaiKhoan tk)
         {
             InitializeComponent();
+            this.nv_formMain = nv_formMain;
             this.formMain = formMain;
             this.tk = tk;
         }

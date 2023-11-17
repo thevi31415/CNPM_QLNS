@@ -155,7 +155,7 @@ namespace CNPM_QLNS.Admin
             {
                 // Tạo đối tượng ExcelExport và xuất file Excel
                 BL_XuatExcel excelExport = new BL_XuatExcel();
-                excelExport.ExportToExcel(nhanVienList, saveFileDialog.FileName);
+                excelExport.ExportToExcelNhanVien(nhanVienList, saveFileDialog.FileName);
 
                 MessageBox.Show("Xuất file Excel thành công!");
 

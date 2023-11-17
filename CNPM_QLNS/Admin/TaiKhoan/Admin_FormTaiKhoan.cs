@@ -1,5 +1,6 @@
 ﻿using CNPM_QLNS.BS_Layer;
 using CNPM_QLNS.Class;
+using CNPM_QLNS.Employees;
 using CNPM_QLNS.Item;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace CNPM_QLNS.Admin
         BL_TaiKhoan tk = new BL_TaiKhoan();
         public List<TaiKhoan> ketquatimkiemtk = new List<TaiKhoan>();
         public Admin_FormMain formain;
+        public NhanVien_FormMain nv_formMain;
         BL_TimKiem timKiem = new BL_TimKiem();
         int check = 0;
         public Admin_FormTaiKhoan(Admin_FormMain formmain)
@@ -45,7 +47,7 @@ namespace CNPM_QLNS.Admin
                 //  MessageBox.Show(nhanVienList.Count().ToString());
                 foreach (TaiKhoan taikhoan in tkList)
                 {
-                    Item_TaiKhoan item_taikhoan = new Item_TaiKhoan(formain, taikhoan); // Pass the reference
+                    Item_TaiKhoan item_taikhoan = new Item_TaiKhoan(formain, nv_formMain, taikhoan) ; // Pass the reference
                     item_taikhoan.TopLevel = false;
                     panelListTaiKhoan.Controls.Add(item_taikhoan);
                     item_taikhoan.Show();

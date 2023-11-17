@@ -79,17 +79,17 @@ namespace CNPM_QLNS.BS_Layer
             return taiKhoans;
         }
 
-        public List<TaiKhoan> Lay1TaiKhoan(string maNV)
+        public TaiKhoan Lay1TaiKhoan(string maNV)
         {
-            List<TaiKhoan> taiKhoan = new List<TaiKhoan>();
-
-            string query = "SELECT * FROM TAIKHOAN WHERE MaNV = @MaNV";
+            TaiKhoan taiKhoan = new TaiKhoan();
             SqlParameter[] parameterValues = new SqlParameter[]
             {
-                new SqlParameter("@MaNV", maNV) 
+                new SqlParameter("@MaNV", maNV)
             };
-            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameterValues);
-
+            
+            string query = "SELECT * FROM TAIKHOAN WHERE MaNV = @MaNV";
+            DataSet result = this.db.ExecuteQueryDataSet(query, CommandType.Text, parameterValues);
+            
             if (result != null && result.Tables.Count > 0)
             {
                 foreach (DataRow row in result.Tables[0].Rows)
@@ -103,7 +103,7 @@ namespace CNPM_QLNS.BS_Layer
                         TrangThai = row["TrangThai"].ToString(),
                         TruyCap = Convert.ToDateTime(row["TruyCap"])
                     };
-                    taiKhoan.Add(tk);
+                    taiKhoan = tk;
                 }
             }
             return taiKhoan;
