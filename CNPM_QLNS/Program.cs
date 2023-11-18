@@ -18,9 +18,9 @@ namespace CNPM_QLNS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-   // Application.Run(new Admin_FormMain("NV01"));
-     //   Application.Run(new NhanVien_FormMain("NV05"));
-        Application.Run(new FormDangNhap());
+        //Application.Run(new Admin_FormMain("NV01"));
+        Application.Run(new NhanVien_FormMain("NV05"));
+        //Application.Run(new FormDangNhap());
         }
     }
 }
