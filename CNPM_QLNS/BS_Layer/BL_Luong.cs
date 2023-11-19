@@ -54,7 +54,43 @@ namespace CNPM_QLNS.BS_Layer
 
             return luongs;
         }
+        public List<Luong> LayLuong1NVTheoThangNam(string maNV, int thang, int nam)
+        {
+            List<Luong> luongs = new List<Luong>();
 
+            string query = "SELECT * FROM LUONG WHERE LUONG.MaNV = @MaNV AND Thang = @Thang AND Nam = @Nam";
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@MaNV", maNV),
+        new SqlParameter("@Thang", thang),
+        new SqlParameter("@Nam", nam)
+    };
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    Luong luong = new Luong
+                    {
+                        MaNV = row["MaNV"].ToString(),
+                        MaLuong = row["MaLuong"].ToString(),
+                        MaCV = row["MaCV"].ToString(),
+                        Thang = Convert.ToInt32(row["Thang"]),
+                        Nam = Convert.ToInt32(row["Nam"]),
+                        NgayCong = Convert.ToInt32(row["NgayCong"]),
+                        PhuCap = row["PhuCap"].ToString(),
+                        KyLuat = row["KyLuat"].ToString(),
+                        TongLuong = Convert.ToDouble(row["TongLuong"])
+                    };
+
+                    luongs.Add(luong);
+                }
+            }
+
+            return luongs;
+        }
         public List<Luong> LayLuong()
         {
             List<Luong> luongs = new List<Luong>();
@@ -157,7 +193,7 @@ namespace CNPM_QLNS.BS_Layer
 
         public float TinhLuong(int luongCoBan, int soNgayCong, int phuCap, int kyLuat)
         {
-            float tongLuong =(float)(luongCoBan * soNgayCong) + phuCap - kyLuat;
+            float tongLuong =(float)(luongCoBan + (-200000)*(26-soNgayCong) + phuCap - kyLuat);
             return tongLuong;
         }
         public bool ThemThongTinLuong(string maNV, string maLuong, string maCV, int thang, int nam, int ngayCong, string phuCap, string kyLuat, string moTa, float tongLuong)

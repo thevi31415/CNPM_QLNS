@@ -248,6 +248,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetQLNS1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetQLNS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DB_Layer\DBMain.cs" />
     <Compile Include="Employees\NhanVien_FormChiTietPhongBan.cs">
       <SubType>Form</SubType>
@@ -261,10 +266,10 @@
     <Compile Include="Employees\NhanVien_FormDoiMatKhau.Designer.cs">
       <DependentUpon>NhanVien_FormDoiMatKhau.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employees\NhanVien_FormLuong.cs">
+    <Compile Include="Employees\NV_Luong\NhanVien_FormLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employees\NhanVien_FormLuong.Designer.cs">
+    <Compile Include="Employees\NV_Luong\NhanVien_FormLuong.Designer.cs">
       <DependentUpon>NhanVien_FormLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="Employees\NhanVien_FormMain.cs">
@@ -296,6 +301,12 @@
     </Compile>
     <Compile Include="Employees\NhanVien_FormTaiKhoan.Designer.cs">
       <DependentUpon>NhanVien_FormTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\NV_Luong\NhanVien_FormTinhLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\NV_Luong\NhanVien_FormTinhLuong.Designer.cs">
+      <DependentUpon>NhanVien_FormTinhLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="Item\Item_Luong.cs">
       <SubType>Form</SubType>
@@ -404,7 +415,7 @@
     <EmbeddedResource Include="Employees\NhanVien_FormDoiMatKhau.resx">
       <DependentUpon>NhanVien_FormDoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employees\NhanVien_FormLuong.resx">
+    <EmbeddedResource Include="Employees\NV_Luong\NhanVien_FormLuong.resx">
       <DependentUpon>NhanVien_FormLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormMain.resx">
@@ -421,6 +432,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormTaiKhoan.resx">
       <DependentUpon>NhanVien_FormTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\NV_Luong\NhanVien_FormTinhLuong.resx">
+      <DependentUpon>NhanVien_FormTinhLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_Luong.resx">
       <DependentUpon>Item_Luong.cs</DependentUpon>
@@ -453,6 +467,7 @@
     <None Include="DataSetQLNS.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetQLNS1.Designer.cs</LastGenOutput>
     </None>
     <None Include="DataSetQLNS.xss">
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>
@@ -607,9 +622,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_thongke.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\staff11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -30,81 +30,72 @@
         {
             this.lblTongluong = new System.Windows.Forms.Label();
             this.lblNgayCong = new System.Windows.Forms.Label();
-            this.lblHoTen = new System.Windows.Forms.Label();
             this.lblMaLuong = new System.Windows.Forms.Label();
             this.lblMaNV = new System.Windows.Forms.Label();
             this.lblThoiGian = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblChucVu = new System.Windows.Forms.Label();
+            this.lblPhuCap = new System.Windows.Forms.Label();
+            this.lblKyLuat = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTongluong
             // 
             this.lblTongluong.AutoSize = true;
-            this.lblTongluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTongluong.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblTongluong.Location = new System.Drawing.Point(976, 48);
+            this.lblTongluong.Location = new System.Drawing.Point(1010, 48);
             this.lblTongluong.Name = "lblTongluong";
-            this.lblTongluong.Size = new System.Drawing.Size(111, 22);
+            this.lblTongluong.Size = new System.Drawing.Size(92, 18);
             this.lblTongluong.TabIndex = 54;
             this.lblTongluong.Text = "TongLuong";
             // 
             // lblNgayCong
             // 
             this.lblNgayCong.AutoSize = true;
-            this.lblNgayCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNgayCong.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblNgayCong.Location = new System.Drawing.Point(589, 48);
+            this.lblNgayCong.Location = new System.Drawing.Point(477, 48);
             this.lblNgayCong.Name = "lblNgayCong";
-            this.lblNgayCong.Size = new System.Drawing.Size(103, 22);
+            this.lblNgayCong.Size = new System.Drawing.Size(86, 18);
             this.lblNgayCong.TabIndex = 53;
             this.lblNgayCong.Text = "NgayCong";
             this.lblNgayCong.Click += new System.EventHandler(this.lblNgayCong_Click);
             // 
-            // lblHoTen
-            // 
-            this.lblHoTen.AutoSize = true;
-            this.lblHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoTen.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblHoTen.Location = new System.Drawing.Point(417, 48);
-            this.lblHoTen.Name = "lblHoTen";
-            this.lblHoTen.Size = new System.Drawing.Size(70, 22);
-            this.lblHoTen.TabIndex = 52;
-            this.lblHoTen.Text = "HoTen";
-            // 
             // lblMaLuong
             // 
             this.lblMaLuong.AutoSize = true;
-            this.lblMaLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaLuong.ForeColor = System.Drawing.Color.DarkGray;
             this.lblMaLuong.Location = new System.Drawing.Point(152, 48);
             this.lblMaLuong.Name = "lblMaLuong";
-            this.lblMaLuong.Size = new System.Drawing.Size(94, 22);
+            this.lblMaLuong.Size = new System.Drawing.Size(77, 18);
             this.lblMaLuong.TabIndex = 49;
-            this.lblMaLuong.Text = "MaLUong";
+            this.lblMaLuong.Text = "MaLuong";
             // 
             // lblMaNV
             // 
             this.lblMaNV.AutoSize = true;
-            this.lblMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaNV.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblMaNV.Location = new System.Drawing.Point(273, 48);
+            this.lblMaNV.Location = new System.Drawing.Point(267, 48);
             this.lblMaNV.Name = "lblMaNV";
-            this.lblMaNV.Size = new System.Drawing.Size(63, 22);
+            this.lblMaNV.Size = new System.Drawing.Size(53, 18);
             this.lblMaNV.TabIndex = 55;
             this.lblMaNV.Text = "MaNV";
             // 
             // lblThoiGian
             // 
             this.lblThoiGian.AutoSize = true;
-            this.lblThoiGian.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThoiGian.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThoiGian.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblThoiGian.Location = new System.Drawing.Point(768, 48);
+            this.lblThoiGian.Location = new System.Drawing.Point(859, 48);
             this.lblThoiGian.Name = "lblThoiGian";
-            this.lblThoiGian.Size = new System.Drawing.Size(103, 22);
+            this.lblThoiGian.Size = new System.Drawing.Size(76, 18);
             this.lblThoiGian.TabIndex = 56;
-            this.lblThoiGian.Text = "NgayCong";
+            this.lblThoiGian.Text = "ThoiGian";
             // 
             // btnXoa
             // 
@@ -130,17 +121,52 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lblChucVu
+            // 
+            this.lblChucVu.AutoSize = true;
+            this.lblChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChucVu.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblChucVu.Location = new System.Drawing.Point(361, 48);
+            this.lblChucVu.Name = "lblChucVu";
+            this.lblChucVu.Size = new System.Drawing.Size(66, 18);
+            this.lblChucVu.TabIndex = 57;
+            this.lblChucVu.Text = "ChucVu";
+            // 
+            // lblPhuCap
+            // 
+            this.lblPhuCap.AutoSize = true;
+            this.lblPhuCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhuCap.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblPhuCap.Location = new System.Drawing.Point(617, 48);
+            this.lblPhuCap.Name = "lblPhuCap";
+            this.lblPhuCap.Size = new System.Drawing.Size(67, 18);
+            this.lblPhuCap.TabIndex = 58;
+            this.lblPhuCap.Text = "PhuCap";
+            // 
+            // lblKyLuat
+            // 
+            this.lblKyLuat.AutoSize = true;
+            this.lblKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKyLuat.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblKyLuat.Location = new System.Drawing.Point(747, 48);
+            this.lblKyLuat.Name = "lblKyLuat";
+            this.lblKyLuat.Size = new System.Drawing.Size(59, 18);
+            this.lblKyLuat.TabIndex = 59;
+            this.lblKyLuat.Text = "KyLuat";
+            // 
             // Item_Luong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1268, 102);
+            this.Controls.Add(this.lblKyLuat);
+            this.Controls.Add(this.lblPhuCap);
+            this.Controls.Add(this.lblChucVu);
             this.Controls.Add(this.lblThoiGian);
             this.Controls.Add(this.lblMaNV);
             this.Controls.Add(this.lblTongluong);
             this.Controls.Add(this.lblNgayCong);
-            this.Controls.Add(this.lblHoTen);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.lblMaLuong);
             this.Controls.Add(this.pictureBox1);
@@ -162,10 +188,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTongluong;
         private System.Windows.Forms.Label lblNgayCong;
-        private System.Windows.Forms.Label lblHoTen;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Label lblMaLuong;
         private System.Windows.Forms.Label lblMaNV;
         private System.Windows.Forms.Label lblThoiGian;
+        private System.Windows.Forms.Label lblChucVu;
+        private System.Windows.Forms.Label lblPhuCap;
+        private System.Windows.Forms.Label lblKyLuat;
     }
 }

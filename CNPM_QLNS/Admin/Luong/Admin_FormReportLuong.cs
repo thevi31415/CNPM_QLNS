@@ -21,10 +21,26 @@ namespace CNPM_QLNS.Admin
         {
             // TODO: This line of code loads data into the 'dataSetQLNS.ReportLuongNV' table. You can move, or remove it, as needed.
             this.reportLuongNVTableAdapter.Fill(this.dataSetQLNS.ReportLuongNV);
-            // TODO: This line of code loads data into the 'dataSetQLNS.ReportLuongNV' table. You can move, or remove it, as needed.
-            this.reportLuongNVTableAdapter.Fill(this.dataSetQLNS.ReportLuongNV);
 
             this.reportViewer.RefreshReport();
+        }
+
+        private void dtpSelectMonth_CloseUp(object sender, EventArgs e)
+        {
+            dtpSelectMonth.Value = new DateTime(dtpSelectMonth.Value.Year, dtpSelectMonth.Value.Month, 1);
+        }
+
+        private void btnLoc_Click(object sender, EventArgs e)
+        {
+            this.reportLuongNVTableAdapter.FillByThangNam(this.dataSetQLNS.ReportLuongNV, this.dtpSelectMonth.Value.Month, this.dtpSelectMonth.Value.Year);
+            this.reportViewer.RefreshReport();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.reportLuongNVTableAdapter.Fill(this.dataSetQLNS.ReportLuongNV);
+            this.reportViewer.RefreshReport();
+
         }
     }
 }

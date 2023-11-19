@@ -29,9 +29,11 @@ namespace CNPM_QLNS.Item
             this.luong = luong;
             this.formmain = formnmain;
             this.nv = blnv.LayNhanVienTheoMa(luong.MaNV);
+            lblChucVu.Text = luong.MaCV;
+            lblPhuCap.Text = luong.PhuCap;
+            lblKyLuat.Text = luong.KyLuat;
             lblMaLuong.Text = luong.MaLuong;
             lblNgayCong.Text = luong.NgayCong.ToString();
-            lblHoTen.Text = blnv.LayNhanVienTheoMa(luong.MaNV).HoTen.ToString();
             lblMaNV.Text    =  luong.MaNV.ToString();
             lblThoiGian.Text = luong.Thang.ToString() +"/" + luong.Nam.ToString();
             lblTongluong.Text = luong.TongLuong.ToString();
