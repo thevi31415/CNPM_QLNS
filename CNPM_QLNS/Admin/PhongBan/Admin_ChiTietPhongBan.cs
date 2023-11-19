@@ -120,5 +120,15 @@ namespace CNPM_QLNS.Admin
             btnLuu.Enabled = false;
             btnChinhSua .Enabled = true;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

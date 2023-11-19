@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbMaTrPhong = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.richTxtMoTa = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,9 +44,8 @@
             this.panellistNhanVienPhongBan = new System.Windows.Forms.FlowLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.btnThem = new System.Windows.Forms.Button();
-            this.cmbMaTrPhong = new System.Windows.Forms.ComboBox();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.btnChinhSua = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1444, 73);
             this.panel1.TabIndex = 20;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label9
             // 
@@ -71,6 +72,7 @@
             this.label9.Size = new System.Drawing.Size(425, 38);
             this.label9.TabIndex = 19;
             this.label9.Text = "THÔNG TIN PHÒNG BAN";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // panel2
             // 
@@ -90,6 +92,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1444, 196);
             this.panel2.TabIndex = 21;
+            // 
+            // cmbMaTrPhong
+            // 
+            this.cmbMaTrPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMaTrPhong.FormattingEnabled = true;
+            this.cmbMaTrPhong.Location = new System.Drawing.Point(205, 76);
+            this.cmbMaTrPhong.Name = "cmbMaTrPhong";
+            this.cmbMaTrPhong.Size = new System.Drawing.Size(248, 33);
+            this.cmbMaTrPhong.TabIndex = 9;
             // 
             // label5
             // 
@@ -214,14 +225,23 @@
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // cmbMaTrPhong
+            // btnChinhSua
             // 
-            this.cmbMaTrPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMaTrPhong.FormattingEnabled = true;
-            this.cmbMaTrPhong.Location = new System.Drawing.Point(205, 76);
-            this.cmbMaTrPhong.Name = "cmbMaTrPhong";
-            this.cmbMaTrPhong.Size = new System.Drawing.Size(248, 33);
-            this.cmbMaTrPhong.TabIndex = 9;
+            this.btnChinhSua.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnChinhSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnChinhSua.FlatAppearance.BorderSize = 0;
+            this.btnChinhSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChinhSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChinhSua.ForeColor = System.Drawing.Color.White;
+            this.btnChinhSua.Image = global::CNPM_QLNS.Properties.Resources.pencil;
+            this.btnChinhSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChinhSua.Location = new System.Drawing.Point(1182, 21);
+            this.btnChinhSua.Name = "btnChinhSua";
+            this.btnChinhSua.Size = new System.Drawing.Size(191, 49);
+            this.btnChinhSua.TabIndex = 75;
+            this.btnChinhSua.Text = "Chỉnh sửa";
+            this.btnChinhSua.UseVisualStyleBackColor = false;
+            this.btnChinhSua.Click += new System.EventHandler(this.btnChinhSua_Click);
             // 
             // btnLuu
             // 
@@ -240,24 +260,6 @@
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // btnChinhSua
-            // 
-            this.btnChinhSua.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnChinhSua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnChinhSua.FlatAppearance.BorderSize = 0;
-            this.btnChinhSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChinhSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChinhSua.ForeColor = System.Drawing.Color.White;
-            this.btnChinhSua.Image = global::CNPM_QLNS.Properties.Resources.pencil;
-            this.btnChinhSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChinhSua.Location = new System.Drawing.Point(1182, 21);
-            this.btnChinhSua.Name = "btnChinhSua";
-            this.btnChinhSua.Size = new System.Drawing.Size(191, 49);
-            this.btnChinhSua.TabIndex = 75;
-            this.btnChinhSua.Text = "Chỉnh sửa";
-            this.btnChinhSua.UseVisualStyleBackColor = false;
-            this.btnChinhSua.Click += new System.EventHandler(this.btnChinhSua_Click);
             // 
             // Admin_ChiTietPhongBan
             // 

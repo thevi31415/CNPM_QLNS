@@ -24,6 +24,7 @@ namespace CNPM_QLNS.Admin
         public Admin_FormDuAn(Admin_FormMain formmain)
         {
             InitializeComponent();
+            this.formmain = formmain;
             tatcaduan = blda.LayDuAn();
             dahoanthanhlist = blda.LayDuAnTheoTrangThai(2);
             dadangthuchienlist = blda.LayDuAnTheoTrangThai(1);
@@ -86,6 +87,22 @@ namespace CNPM_QLNS.Admin
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanelDA_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+           Admin_FormThemDuAn frmdua = new Admin_FormThemDuAn(this.formmain);
+            frmdua.ShowDialog();
+        }
+
+        private void lbl_Click(object sender, EventArgs e)
         {
 
         }

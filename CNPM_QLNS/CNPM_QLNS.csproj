@@ -93,6 +93,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\DuAn\Admin_FormThayDoiTrangThaiDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\DuAn\Admin_FormThayDoiTrangThaiDA.Designer.cs">
+      <DependentUpon>Admin_FormThayDoiTrangThaiDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DuAn\Admin_FormPhanCongDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\DuAn\Admin_FormPhanCongDuAn.Designer.cs">
+      <DependentUpon>Admin_FormPhanCongDuAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DuAn\Admin_FormThemDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\DuAn\Admin_FormThemDuAn.Designer.cs">
+      <DependentUpon>Admin_FormThemDuAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\DuAn\Admin_FormXemChiTietDuAn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +269,7 @@
     <Compile Include="Class\KyLuat.cs" />
     <Compile Include="Class\Luong.cs" />
     <Compile Include="Class\NhanVien.cs" />
+    <Compile Include="Class\PhanCong.cs" />
     <Compile Include="Class\PhongBan.cs" />
     <Compile Include="Class\PhuCap.cs" />
     <Compile Include="Class\TaiKhoan.cs" />
@@ -338,6 +357,12 @@
     <Compile Include="Item\Item_NhanVien.Designer.cs">
       <DependentUpon>Item_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item\Item_NhanVienDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\Item_NhanVienDuAn.Designer.cs">
+      <DependentUpon>Item_NhanVienDuAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item\Item_NhanVienPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -364,6 +389,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\DuAn\Admin_FormThayDoiTrangThaiDA.resx">
+      <DependentUpon>Admin_FormThayDoiTrangThaiDA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DuAn\Admin_FormPhanCongDuAn.resx">
+      <DependentUpon>Admin_FormPhanCongDuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DuAn\Admin_FormThemDuAn.resx">
+      <DependentUpon>Admin_FormThemDuAn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\DuAn\Admin_FormXemChiTietDuAn.resx">
       <DependentUpon>Admin_FormXemChiTietDuAn.cs</DependentUpon>
     </EmbeddedResource>
@@ -468,6 +502,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_NhanVien.resx">
       <DependentUpon>Item_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_NhanVienDuAn.dje.resx">
+      <DependentUpon>Item_NhanVienDuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_NhanVienDuAn.resx">
+      <DependentUpon>Item_NhanVienDuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_NhanVienDuAn.vi-VN.resx">
+      <DependentUpon>Item_NhanVienDuAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_NhanVienPhongBan.resx">
       <DependentUpon>Item_NhanVienPhongBan.cs</DependentUpon>
@@ -664,6 +707,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exchange.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

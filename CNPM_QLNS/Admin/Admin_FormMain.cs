@@ -44,6 +44,11 @@ namespace CNPM_QLNS
             lblLink.Text = "Admin / Lương";
         }
 
+        public void LoadFormDuAn()
+        {
+            loadform(new Admin_FormDuAn(this));
+            lblLink.Text = "Admin / Dự Án";
+        }
 
         public void LoadFormPhongBan()
         {

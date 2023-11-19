@@ -36,15 +36,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblSLDaHoanThanh = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanelDA = new System.Windows.Forms.FlowLayoutPanel();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTrangThai = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.flowLayoutPanelDA = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnLoc = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnLoc = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -78,18 +78,19 @@
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl.ForeColor = System.Drawing.Color.Red;
-            this.lbl.Location = new System.Drawing.Point(692, 69);
+            this.lbl.Location = new System.Drawing.Point(840, 69);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(144, 25);
             this.lbl.TabIndex = 8;
             this.lbl.Text = "Chưa thực hiện";
+            this.lbl.Click += new System.EventHandler(this.lbl_Click);
             // 
             // lblSLChuaHoanThanh
             // 
             this.lblSLChuaHoanThanh.AutoSize = true;
             this.lblSLChuaHoanThanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSLChuaHoanThanh.ForeColor = System.Drawing.Color.Red;
-            this.lblSLChuaHoanThanh.Location = new System.Drawing.Point(688, 11);
+            this.lblSLChuaHoanThanh.Location = new System.Drawing.Point(836, 11);
             this.lblSLChuaHoanThanh.Name = "lblSLChuaHoanThanh";
             this.lblSLChuaHoanThanh.Size = new System.Drawing.Size(50, 54);
             this.lblSLChuaHoanThanh.TabIndex = 7;
@@ -100,7 +101,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(431, 69);
+            this.label1.Location = new System.Drawing.Point(521, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 25);
             this.label1.TabIndex = 5;
@@ -112,7 +113,7 @@
             this.lblSLDangThucHien.AutoSize = true;
             this.lblSLDangThucHien.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSLDangThucHien.ForeColor = System.Drawing.Color.Gold;
-            this.lblSLDangThucHien.Location = new System.Drawing.Point(427, 11);
+            this.lblSLDangThucHien.Location = new System.Drawing.Point(517, 14);
             this.lblSLDangThucHien.Name = "lblSLDangThucHien";
             this.lblSLDangThucHien.Size = new System.Drawing.Size(50, 54);
             this.lblSLDangThucHien.TabIndex = 4;
@@ -152,6 +153,25 @@
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // flowLayoutPanelDA
+            // 
+            this.flowLayoutPanelDA.AutoScroll = true;
+            this.flowLayoutPanelDA.BackColor = System.Drawing.SystemColors.Control;
+            this.flowLayoutPanelDA.Location = new System.Drawing.Point(0, 39);
+            this.flowLayoutPanelDA.Name = "flowLayoutPanelDA";
+            this.flowLayoutPanelDA.Size = new System.Drawing.Size(1327, 574);
+            this.flowLayoutPanelDA.TabIndex = 4;
+            this.flowLayoutPanelDA.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelDA_Paint);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(563, 616);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 16);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "label6";
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
@@ -172,23 +192,22 @@
             this.lblTrangThai.TabIndex = 0;
             this.lblTrangThai.Text = "Tất cả dự án";
             // 
-            // label6
+            // btnLoc
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(563, 616);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 16);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "label6";
-            // 
-            // flowLayoutPanelDA
-            // 
-            this.flowLayoutPanelDA.AutoScroll = true;
-            this.flowLayoutPanelDA.BackColor = System.Drawing.SystemColors.Control;
-            this.flowLayoutPanelDA.Location = new System.Drawing.Point(0, 39);
-            this.flowLayoutPanelDA.Name = "flowLayoutPanelDA";
-            this.flowLayoutPanelDA.Size = new System.Drawing.Size(1327, 574);
-            this.flowLayoutPanelDA.TabIndex = 4;
+            this.btnLoc.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLoc.FlatAppearance.BorderSize = 0;
+            this.btnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoc.ForeColor = System.Drawing.Color.White;
+            this.btnLoc.Image = global::CNPM_QLNS.Properties.Resources.filter_filled_tool_symbol;
+            this.btnLoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoc.Location = new System.Drawing.Point(1099, 63);
+            this.btnLoc.Name = "btnLoc";
+            this.btnLoc.Size = new System.Drawing.Size(188, 37);
+            this.btnLoc.TabIndex = 75;
+            this.btnLoc.Text = "Lọc dự án";
+            this.btnLoc.UseVisualStyleBackColor = false;
             // 
             // btnLuu
             // 
@@ -206,11 +225,12 @@
             this.btnLuu.TabIndex = 74;
             this.btnLuu.Text = "Thêm dự án";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::CNPM_QLNS.Properties.Resources.remove;
-            this.pictureBox3.Location = new System.Drawing.Point(602, 14);
+            this.pictureBox3.Location = new System.Drawing.Point(750, 14);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(80, 80);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -220,7 +240,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::CNPM_QLNS.Properties.Resources.check;
-            this.pictureBox2.Location = new System.Drawing.Point(341, 14);
+            this.pictureBox2.Location = new System.Drawing.Point(431, 17);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(80, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -237,23 +257,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnLoc
-            // 
-            this.btnLoc.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnLoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLoc.FlatAppearance.BorderSize = 0;
-            this.btnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoc.ForeColor = System.Drawing.Color.White;
-            this.btnLoc.Image = global::CNPM_QLNS.Properties.Resources.filter_filled_tool_symbol;
-            this.btnLoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoc.Location = new System.Drawing.Point(1099, 63);
-            this.btnLoc.Name = "btnLoc";
-            this.btnLoc.Size = new System.Drawing.Size(188, 37);
-            this.btnLoc.TabIndex = 75;
-            this.btnLoc.Text = "Lọc dự án";
-            this.btnLoc.UseVisualStyleBackColor = false;
             // 
             // Admin_FormDuAn
             // 
