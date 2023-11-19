@@ -104,7 +104,7 @@ namespace CNPM_QLNS
 
         private void btnProject_Click(object sender, EventArgs e)
         {
-            loadform(new Admin_FormDuAn());
+            loadform(new Admin_FormDuAn(this));
             lblLink.Text = "Admin / Dự án";
         }
 
@@ -118,6 +118,12 @@ namespace CNPM_QLNS
         {
             loadform(new Admin_FormPhuCap());
             lblLink.Text = "Admin / Phụ Cấp";
+        }
+
+        private void btnGioiThieu_Click(object sender, EventArgs e)
+        {
+            loadform(new GioiThieu());
+            lblLink.Text = "Admin / Giới thiệu";
         }
     }
 }

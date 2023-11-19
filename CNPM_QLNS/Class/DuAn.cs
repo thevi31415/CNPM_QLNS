@@ -14,6 +14,6 @@ namespace CNPM_QLNS.Class
 
         public int GiaTri { get; set; }
         public DateTime NgayBatDau { get; set; }
-        public string TrangThai { get; set; }
+        public int TrangThai { get; set; }
     }
 }

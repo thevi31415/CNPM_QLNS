@@ -54,6 +54,7 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.lbl_Date = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnGioiThieu = new System.Windows.Forms.Button();
             this.Panelside.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -66,6 +67,7 @@
             // Panelside
             // 
             this.Panelside.BackColor = System.Drawing.Color.White;
+            this.Panelside.Controls.Add(this.btnGioiThieu);
             this.Panelside.Controls.Add(this.btnPosition);
             this.Panelside.Controls.Add(this.btnAllowance);
             this.Panelside.Controls.Add(this.lblXinChao);
@@ -346,7 +348,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1348, 744);
             this.panelMain.TabIndex = 2;
-         
             // 
             // panel1
             // 
@@ -407,6 +408,27 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnGioiThieu
+            // 
+            this.btnGioiThieu.BackColor = System.Drawing.Color.White;
+            this.btnGioiThieu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnGioiThieu.FlatAppearance.BorderSize = 0;
+            this.btnGioiThieu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnGioiThieu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnGioiThieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGioiThieu.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGioiThieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.btnGioiThieu.Image = global::CNPM_QLNS.Properties.Resources.iconloan;
+            this.btnGioiThieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGioiThieu.Location = new System.Drawing.Point(4, 761);
+            this.btnGioiThieu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGioiThieu.Name = "btnGioiThieu";
+            this.btnGioiThieu.Size = new System.Drawing.Size(247, 72);
+            this.btnGioiThieu.TabIndex = 14;
+            this.btnGioiThieu.Text = "Giới Thiệu";
+            this.btnGioiThieu.UseVisualStyleBackColor = false;
+            this.btnGioiThieu.Click += new System.EventHandler(this.btnGioiThieu_Click);
+            // 
             // Admin_FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -457,6 +479,7 @@
         private System.Windows.Forms.Button btnPosition;
         private System.Windows.Forms.Label lblLink;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnGioiThieu;
     }
 }
 

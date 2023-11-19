@@ -93,6 +93,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\DuAn\Admin_FormXemChiTietDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\DuAn\Admin_FormXemChiTietDuAn.Designer.cs">
+      <DependentUpon>Admin_FormXemChiTietDuAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GioiThieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GioiThieu.Designer.cs">
+      <DependentUpon>GioiThieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\PhongBan\Admin_ChiTietPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +320,12 @@
     <Compile Include="Employees\NV_Luong\NhanVien_FormTinhLuong.Designer.cs">
       <DependentUpon>NhanVien_FormTinhLuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item\Item_DuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\Item_DuAn.Designer.cs">
+      <DependentUpon>Item_DuAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item\Item_Luong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -346,6 +364,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\DuAn\Admin_FormXemChiTietDuAn.resx">
+      <DependentUpon>Admin_FormXemChiTietDuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GioiThieu.resx">
+      <DependentUpon>GioiThieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\PhongBan\Admin_ChiTietPhongBan.resx">
       <DependentUpon>Admin_ChiTietPhongBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -435,6 +459,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NV_Luong\NhanVien_FormTinhLuong.resx">
       <DependentUpon>NhanVien_FormTinhLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_DuAn.resx">
+      <DependentUpon>Item_DuAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_Luong.resx">
       <DependentUpon>Item_Luong.cs</DependentUpon>
@@ -622,6 +649,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_thongke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
