@@ -87,5 +87,15 @@ namespace CNPM_QLNS.Item
                 MessageBox.Show("Hủy xóa phân công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void Item_NhanVienDuAn_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = ColorTranslator.FromHtml("#ABD0F9");
+        }
+
+        private void Item_NhanVienDuAn_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+        }
     }
 }

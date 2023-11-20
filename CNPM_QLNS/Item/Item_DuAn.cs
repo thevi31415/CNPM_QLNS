@@ -90,5 +90,15 @@ namespace CNPM_QLNS.Item
             Admin_FormThayDoiTrangThaiDA td = new Admin_FormThayDoiTrangThaiDA(da, formmain);
             td.ShowDialog();
         }
+
+        private void Item_DuAn_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = ColorTranslator.FromHtml("#ABD0F9");
+        }
+
+        private void Item_DuAn_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+        }
     }
 }

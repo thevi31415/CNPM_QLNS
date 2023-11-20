@@ -7,6 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CNPM_QLNS.BS_Layer
 {
@@ -103,5 +104,76 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachChucVu;
         }
+        public bool CapNhatMaCVThanhNull(string maCV)
+        {
+            DBMain db = new DBMain();
+            string updateQuery = "UPDATE NHANVIEN SET MaCV = NULL WHERE MaCV = @MaCV";
+            string error = "";
+
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@MaCV", SqlDbType.NVarChar, 10);
+            parameters[0].Value = maCV;
+
+            bool check = db.MyExecuteNonQuery(updateQuery, CommandType.Text, ref error, parameters);
+
+         //   MessageBox.Show(error);
+
+            return check;
+
+        }
+        public bool CapNhatMaCVThanhNullLuong(string maCV)
+        {
+            DBMain db = new DBMain();
+            string updateQuery = "UPDATE LUONG SET MaCV = NULL WHERE MaCV = @MaCV";
+            string error = "";
+
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@MaCV", SqlDbType.NVarChar, 10);
+            parameters[0].Value = maCV;
+
+            bool check = db.MyExecuteNonQuery(updateQuery, CommandType.Text, ref error, parameters);
+
+            //   MessageBox.Show(error);
+
+            return check;
+
+        }
+        public bool ThemChucVu(string maCV, string tenCV, int luongCoBan, string moTa)
+        {
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+                new SqlParameter("@MaCV", maCV),
+                new SqlParameter("@TenCV", tenCV),
+                new SqlParameter("@LuongCoBan", luongCoBan),
+                new SqlParameter("@MoTa", moTa)
+            };
+
+            string strSQL = "INSERT INTO CHUCVU (MaCV, TenCV, LuongCoBan, MoTa) " +
+                            "VALUES (@MaCV, @TenCV, @LuongCoBan, @MoTa)";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
+
+        public bool XoaChucVu(string maCV)
+        {
+            DBMain db = new DBMain();
+            string deleteQuery = "DELETE FROM CHUCVU WHERE MaCV = @MaCV";
+            string error = "";
+
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = new SqlParameter("@MaCV", SqlDbType.NVarChar, 10);
+            parameters[0].Value = maCV;
+
+            bool check = db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
+            if (check == false)
+            {
+                MessageBox.Show(error);
+            }
+            return check;
+        }
+
     }
 }

@@ -153,6 +153,8 @@
             this.Text = "Item_DuAn";
             this.Load += new System.EventHandler(this.Item_DuAn_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Item_DuAn_MouseClick);
+            this.MouseEnter += new System.EventHandler(this.Item_DuAn_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.Item_DuAn_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

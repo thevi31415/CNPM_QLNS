@@ -104,6 +104,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Item_NhanVienDuAn";
             this.Load += new System.EventHandler(this.Item_NhanVienDuAn_Load);
+            this.MouseEnter += new System.EventHandler(this.Item_NhanVienDuAn_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.Item_NhanVienDuAn_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

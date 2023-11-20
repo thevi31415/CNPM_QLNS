@@ -113,6 +113,16 @@ namespace CNPM_QLNS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chevron {
+            get {
+                object obj = ResourceManager.GetObject("chevron", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clipboard {
             get {
                 object obj = ResourceManager.GetObject("clipboard", resourceCulture);

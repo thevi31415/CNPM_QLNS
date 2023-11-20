@@ -90,7 +90,7 @@ namespace CNPM_QLNS.Admin
                 //  MessageBox.Show(nhanVienList.Count().ToString());
                 foreach (Luong luong in luongList)
                 {
-                    Item_Luong item_luong = new Item_Luong(luong, formmain); // Pass the reference
+                    Item_Luong item_luong = new Item_Luong(luong, formmain, 1); // Pass the reference
                     item_luong.TopLevel = false;
                     panelListLuong.Controls.Add(item_luong);
                     item_luong.Show();

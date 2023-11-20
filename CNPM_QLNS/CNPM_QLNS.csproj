@@ -93,6 +93,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\ChucVu\Admin_FormThemChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ChucVu\Admin_FormThemChucVu.Designer.cs">
+      <DependentUpon>Admin_FormThemChucVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\DuAn\Admin_FormThayDoiTrangThaiDA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +345,12 @@
     <Compile Include="Employees\NV_Luong\NhanVien_FormTinhLuong.Designer.cs">
       <DependentUpon>NhanVien_FormTinhLuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item\Item_ChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\Item_ChucVu.Designer.cs">
+      <DependentUpon>Item_ChucVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item\Item_DuAn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -389,6 +401,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\ChucVu\Admin_FormThemChucVu.resx">
+      <DependentUpon>Admin_FormThemChucVu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\DuAn\Admin_FormThayDoiTrangThaiDA.resx">
       <DependentUpon>Admin_FormThayDoiTrangThaiDA.cs</DependentUpon>
     </EmbeddedResource>
@@ -493,6 +508,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NV_Luong\NhanVien_FormTinhLuong.resx">
       <DependentUpon>NhanVien_FormTinhLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_ChucVu.resx">
+      <DependentUpon>Item_ChucVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_DuAn.resx">
       <DependentUpon>Item_DuAn.cs</DependentUpon>
@@ -716,6 +734,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\exchange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

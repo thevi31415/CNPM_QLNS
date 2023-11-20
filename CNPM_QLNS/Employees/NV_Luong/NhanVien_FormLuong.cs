@@ -41,7 +41,7 @@ namespace CNPM_QLNS.Employees
                 //  MessageBox.Show(nhanVienList.Count().ToString());
                 foreach (Luong luong in luongList)
                 {
-                    Item_Luong item_luong = new Item_Luong(luong, null); // Pass the reference
+                    Item_Luong item_luong = new Item_Luong(luong, null, 0); // Pass the reference
                     item_luong.TopLevel = false;
                     panelListLuong.Controls.Add(item_luong);
                     item_luong.Show();

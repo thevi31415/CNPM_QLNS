@@ -82,7 +82,12 @@ namespace CNPM_QLNS.Admin
 
 
             motnhanvien = blnv.LayDanhSachNhanVienTheoMaNV(MaNV);
-            int luongcoban = blchucvu.LayDanhSachChucVuTheoMaCV(motnhanvien[0].MaCV)[0].LuongCoBan;
+            int luongcoban = 0;
+            if (blchucvu.LayDanhSachChucVuTheoMaCV(motnhanvien[0].MaCV).Count > 0)
+            {
+                luongcoban = blchucvu.LayDanhSachChucVuTheoMaCV(motnhanvien[0].MaCV)[0].LuongCoBan;
+            }
+          
 
             if(txtSoNgayCong.Text.Trim()=="" || txtMaLuong.Text.Trim() == "")
             {
@@ -91,6 +96,7 @@ namespace CNPM_QLNS.Admin
             else
             {
 
+                
                 int songaycong = Convert.ToInt32(txtSoNgayCong.Text);
                 int kyluat = 0;
                 int phucap = 0;
@@ -102,7 +108,12 @@ namespace CNPM_QLNS.Admin
                 {
                    phucap =  blphucap.LayThongTinPhuCapTheoMaPC(MaPC)[0].GiaTriPC;
                 }
-
+                NhanVien nv = new NhanVien();
+                nv = blnv.LayDanhSachNhanVienTheoMaNV(MaNV)[0];
+                if(nv.MaCV == "")
+                {
+                    MessageBox.Show("Nhân viên chưa có chức vụ nên không thể tính lương !");
+                }
                 float tongluong = blluong.TinhLuong(luongcoban, songaycong, phucap, kyluat);
 
                 if(blluong.ThemThongTinLuong(MaNV, txtMaLuong.Text.Trim(), motnhanvien[0].MaCV, dtpNgayTinhLuong.Value.Month
