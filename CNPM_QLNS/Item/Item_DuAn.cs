@@ -20,11 +20,13 @@ namespace CNPM_QLNS.Item
         public Admin_FormMain formmain;
         BL_PhanCong blpc = new BL_PhanCong();
         BL_DuAn blda = new BL_DuAn();
-        public Item_DuAn(DuAn da, Admin_FormMain formnmain)
+        public int check;
+        public Item_DuAn(DuAn da, Admin_FormMain formnmain, int check)
         {
             InitializeComponent();
             this.da = da;
             this.formmain = formnmain;
+            this.check = check;
             lblMaDA.Text = da.MaDA.Trim();
             lblTenDA.Text = da.TenDA.Trim();
             lblGiaTri.Text= da.GiaTri.ToString();
@@ -46,6 +48,11 @@ namespace CNPM_QLNS.Item
                 btnTrangThai.BackColor = ColorTranslator.FromHtml("#20D374");
                 btnTrangThai.Text = "Đã hoàn thành";
             }
+            if(check == 0)
+            {
+                btnXoa.Visible = false;
+                btnThaiDoiTrangThai.Visible = false;
+            }
           //  lblSLNV.Text = blpc.LayPhanCongTheoMaDA(da.MaDA.Trim()).Count().ToString();
         }
 
@@ -56,8 +63,12 @@ namespace CNPM_QLNS.Item
 
         private void Item_DuAn_MouseClick(object sender, MouseEventArgs e)
         {
-            Admin_FormXemChiTietDuAn ctda = new Admin_FormXemChiTietDuAn(this.da, this.formmain);
-            ctda.ShowDialog();
+            if(check !=0)
+            {
+                Admin_FormXemChiTietDuAn ctda = new Admin_FormXemChiTietDuAn(this.da, this.formmain);
+                ctda.ShowDialog();
+            }
+         
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

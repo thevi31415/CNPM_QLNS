@@ -222,6 +222,7 @@ namespace CNPM_QLNS.BS_Layer
         public bool ThemNhanVien(string maNV, string hoTen, string cmnd, string gioiTinh, DateTime ngaySinh, string queQuan, string tonGiao, string diaChi, string trangThai, string maPB, string maCV, string maTD, string maCM, string hinh)
         {
             string error = "";
+            DBMain db = new DBMain();
 
             SqlParameter[] parameterValues = new SqlParameter[]
             {
@@ -250,6 +251,7 @@ namespace CNPM_QLNS.BS_Layer
         public bool CapNhatNhanVien(string maNV, string hoTenNV, string cmnd, string gioiTinh, DateTime ngaySinh, string queQuan, string tonGiao, string diaChi, string trangThai, string maPB, string maCV, string maTD, string maCM, string hinh)
         {
             string error = "";
+            DBMain db = new DBMain();
 
             SqlParameter[] parameterValues = new SqlParameter[]
             {
@@ -271,7 +273,12 @@ namespace CNPM_QLNS.BS_Layer
 
             string strSQL = "UPDATE NHANVIEN SET HoTen=@HoTenNV, CMND=@CMND, GioiTinh=@GioiTinh, NgaySinh=@NgaySinh, QueQuan=@QueQuan, TonGiao=@TonGiao, DiaChi=@DiaChi, TrangThai=@TrangThai, MaPB=@MaPB, MaCV=@MaCV, MaTD=@MaTD, MaCM=@MaCM, Hinh=@Hinh WHERE MaNV=@MaNV";
 
-            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+           bool check = db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+           if(check == false)
+            {
+                MessageBox.Show(error);
+            }
+            return check;
         }
 
 

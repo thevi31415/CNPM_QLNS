@@ -41,7 +41,8 @@ namespace CNPM_QLNS.Employees
         }
         private void NhanVien_FormMain_Load(object sender, EventArgs e)
         {
-
+            this.Width = 1250;
+            this.Height = 780;
         }
 
         private void btnEmployees_Click(object sender, EventArgs e)
@@ -79,6 +80,18 @@ namespace CNPM_QLNS.Employees
         {
             loadform(new NhanVien_FormPhongBan(nv));
             lblLink.Text = "Nhân viên / Phòng ban";
+        }
+
+        private void btnProject_Click(object sender, EventArgs e)
+        {
+            loadform(new NhanVien_FormDuAn(nv));
+            lblLink.Text = "Nhân viên / Dự án";
+        }
+
+        private void btnPosition_Click(object sender, EventArgs e)
+        {
+            loadform(new NhanVien_FormChucVu(nv));
+            lblLink.Text = "Nhân viên / Chức vụ";
         }
     }
 }

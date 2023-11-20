@@ -48,7 +48,7 @@ namespace CNPM_QLNS.Admin
                 //  MessageBox.Show(nhanVienList.Count().ToString());
                 foreach (DuAn duan in dahoanthanhlist)
                 {
-                    Item_DuAn item_duan = new Item_DuAn(duan, this.formmain); // Pass the reference
+                    Item_DuAn item_duan = new Item_DuAn(duan, this.formmain, 1); // Pass the reference
                     item_duan.TopLevel = false;
                     flowLayoutPanelDA.Controls.Add(item_duan);
                     item_duan.Show();
@@ -56,7 +56,7 @@ namespace CNPM_QLNS.Admin
             }
             else
             {
-                MessageBox.Show("Khong tim thay nhan vien nao =)))");
+                MessageBox.Show("Khong tim thay du an nao =)))");
             }
 
 

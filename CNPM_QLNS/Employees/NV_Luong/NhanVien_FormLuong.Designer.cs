@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblKyLuat = new System.Windows.Forms.Label();
+            this.lblPhuCap = new System.Windows.Forms.Label();
+            this.lblMaLg = new System.Windows.Forms.Label();
             this.lblTongLg = new System.Windows.Forms.Label();
             this.lblNgayCong = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,12 +39,8 @@
             this.lblMaNV = new System.Windows.Forms.Label();
             this.panelListLuong = new System.Windows.Forms.FlowLayoutPanel();
             this.dtpHienThiLuong = new System.Windows.Forms.DateTimePicker();
-            this.btnLoc = new System.Windows.Forms.Button();
-            this.btnTinhLuong = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.lblMaLg = new System.Windows.Forms.Label();
-            this.lblPhuCap = new System.Windows.Forms.Label();
-            this.lblKyLuat = new System.Windows.Forms.Label();
+            this.btnLoc = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +59,36 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1216, 47);
             this.panel3.TabIndex = 82;
+            // 
+            // lblKyLuat
+            // 
+            this.lblKyLuat.AutoSize = true;
+            this.lblKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKyLuat.Location = new System.Drawing.Point(770, 12);
+            this.lblKyLuat.Name = "lblKyLuat";
+            this.lblKyLuat.Size = new System.Drawing.Size(72, 22);
+            this.lblKyLuat.TabIndex = 7;
+            this.lblKyLuat.Text = "Kỷ luật";
+            // 
+            // lblPhuCap
+            // 
+            this.lblPhuCap.AutoSize = true;
+            this.lblPhuCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhuCap.Location = new System.Drawing.Point(628, 12);
+            this.lblPhuCap.Name = "lblPhuCap";
+            this.lblPhuCap.Size = new System.Drawing.Size(83, 22);
+            this.lblPhuCap.TabIndex = 6;
+            this.lblPhuCap.Text = "Phụ cấp";
+            // 
+            // lblMaLg
+            // 
+            this.lblMaLg.AutoSize = true;
+            this.lblMaLg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaLg.Location = new System.Drawing.Point(156, 12);
+            this.lblMaLg.Name = "lblMaLg";
+            this.lblMaLg.Size = new System.Drawing.Size(91, 22);
+            this.lblMaLg.TabIndex = 5;
+            this.lblMaLg.Text = "Mã lương";
             // 
             // lblTongLg
             // 
@@ -134,6 +163,23 @@
             this.dtpHienThiLuong.TabIndex = 84;
             this.dtpHienThiLuong.CloseUp += new System.EventHandler(this.dtpHienThiLuong_CloseUp);
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBack.Location = new System.Drawing.Point(988, 29);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(116, 47);
+            this.btnBack.TabIndex = 88;
+            this.btnBack.Text = "Quay lại";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // btnLoc
             // 
             this.btnLoc.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -152,71 +198,6 @@
             this.btnLoc.UseVisualStyleBackColor = false;
             this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
-            // btnTinhLuong
-            // 
-            this.btnTinhLuong.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnTinhLuong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnTinhLuong.FlatAppearance.BorderSize = 0;
-            this.btnTinhLuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTinhLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTinhLuong.ForeColor = System.Drawing.Color.White;
-            this.btnTinhLuong.Image = global::CNPM_QLNS.Properties.Resources.add;
-            this.btnTinhLuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTinhLuong.Location = new System.Drawing.Point(53, 29);
-            this.btnTinhLuong.Name = "btnTinhLuong";
-            this.btnTinhLuong.Size = new System.Drawing.Size(242, 47);
-            this.btnTinhLuong.TabIndex = 81;
-            this.btnTinhLuong.Text = "Tính lương";
-            this.btnTinhLuong.UseVisualStyleBackColor = false;
-            this.btnTinhLuong.Click += new System.EventHandler(this.btnTinhLuong_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBack.Location = new System.Drawing.Point(988, 29);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(116, 47);
-            this.btnBack.TabIndex = 88;
-            this.btnBack.Text = "Quay lại";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // lblMaLg
-            // 
-            this.lblMaLg.AutoSize = true;
-            this.lblMaLg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaLg.Location = new System.Drawing.Point(156, 12);
-            this.lblMaLg.Name = "lblMaLg";
-            this.lblMaLg.Size = new System.Drawing.Size(91, 22);
-            this.lblMaLg.TabIndex = 5;
-            this.lblMaLg.Text = "Mã lương";
-            // 
-            // lblPhuCap
-            // 
-            this.lblPhuCap.AutoSize = true;
-            this.lblPhuCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhuCap.Location = new System.Drawing.Point(628, 12);
-            this.lblPhuCap.Name = "lblPhuCap";
-            this.lblPhuCap.Size = new System.Drawing.Size(83, 22);
-            this.lblPhuCap.TabIndex = 6;
-            this.lblPhuCap.Text = "Phụ cấp";
-            // 
-            // lblKyLuat
-            // 
-            this.lblKyLuat.AutoSize = true;
-            this.lblKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKyLuat.Location = new System.Drawing.Point(770, 12);
-            this.lblKyLuat.Name = "lblKyLuat";
-            this.lblKyLuat.Size = new System.Drawing.Size(72, 22);
-            this.lblKyLuat.TabIndex = 7;
-            this.lblKyLuat.Text = "Kỷ luật";
-            // 
             // NhanVien_FormLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -228,7 +209,6 @@
             this.Controls.Add(this.dtpHienThiLuong);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelListLuong);
-            this.Controls.Add(this.btnTinhLuong);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NhanVien_FormLuong";
             this.Text = "Admin_FormLuong";
@@ -248,7 +228,6 @@
         private System.Windows.Forms.Label lblChucVu;
         private System.Windows.Forms.Label lblMaNV;
         private System.Windows.Forms.FlowLayoutPanel panelListLuong;
-        private System.Windows.Forms.Button btnTinhLuong;
         private System.Windows.Forms.DateTimePicker dtpHienThiLuong;
         private System.Windows.Forms.Button btnLoc;
         private System.Windows.Forms.Button btnBack;
