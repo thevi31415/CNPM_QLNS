@@ -54,6 +54,11 @@ namespace CNPM_QLNS
             loadform(new Admin_FormChucVu(this));
             lblLink.Text = "Admin / Chức vụ";
         }
+        public void LoadFormPhuCap()
+        {
+            loadform(new Admin_FormPhuCap(this));
+            lblLink.Text = "Admin / Phụ Cấp";
+        }
         public void LoadFormPhongBan()
         {
             loadform(new Admin_FormPhongBan(this));
@@ -125,7 +130,7 @@ namespace CNPM_QLNS
 
         private void btnAllowance_Click(object sender, EventArgs e)
         {
-            loadform(new Admin_FormPhuCap());
+            loadform(new Admin_FormPhuCap(this));
             lblLink.Text = "Admin / Phụ Cấp";
         }
 

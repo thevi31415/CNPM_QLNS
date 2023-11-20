@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CNPM_QLNS.Class
 {
-     class PhuCap
+     public class PhuCapNV
     {
        
             public string MaPC { get; set; }

@@ -177,11 +177,29 @@
     <Compile Include="Admin\PhongBan\Admin_FormPhongBan.Designer.cs">
       <DependentUpon>Admin_FormPhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\PhuCap\Admin_FormChinhSuaPhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\PhuCap\Admin_FormChinhSuaPhuCap.Designer.cs">
+      <DependentUpon>Admin_FormChinhSuaPhuCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\PhuCap\Admin_FormPhuCap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\PhuCap\Admin_FormPhuCap.Designer.cs">
       <DependentUpon>Admin_FormPhuCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PhuCap\Admin_FormThemPhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\PhuCap\Admin_FormThemPhuCap.Designer.cs">
+      <DependentUpon>Admin_FormThemPhuCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PhuCap\Admin_FormThemPhuCapChoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\PhuCap\Admin_FormThemPhuCapChoNhanVien.Designer.cs">
+      <DependentUpon>Admin_FormThemPhuCapChoNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\TaiKhoan\Admin_FormTaiKhoan.cs">
       <SubType>Form</SubType>
@@ -265,6 +283,7 @@
     <Compile Include="BS_Layer\BL_PhanCong.cs" />
     <Compile Include="BS_Layer\BL_PhongBan.cs" />
     <Compile Include="BS_Layer\BL_PhuCap.cs" />
+    <Compile Include="BS_Layer\BL_PhuCapChoNhanVien.cs" />
     <Compile Include="BS_Layer\BL_TaiKhoan.cs" />
     <Compile Include="BS_Layer\BL_TimKiem.cs" />
     <Compile Include="BS_Layer\BL_TrinhDo.cs" />
@@ -273,11 +292,13 @@
     <Compile Include="Class\ChuyenMon.cs" />
     <Compile Include="Class\DuAn.cs" />
     <Compile Include="Class\KyLuat.cs" />
+    <Compile Include="Class\KyLuatNhanVien.cs" />
     <Compile Include="Class\Luong.cs" />
     <Compile Include="Class\NhanVien.cs" />
     <Compile Include="Class\PhanCong.cs" />
     <Compile Include="Class\PhongBan.cs" />
     <Compile Include="Class\PhuCap.cs" />
+    <Compile Include="Class\PhuCapNhanVien.cs" />
     <Compile Include="Class\TaiKhoan.cs" />
     <Compile Include="Class\TrinhDo.cs" />
     <Compile Include="DataSetQLNS.Designer.cs">
@@ -369,6 +390,12 @@
     <Compile Include="Item\Item_DuAn.Designer.cs">
       <DependentUpon>Item_DuAn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item\Item_LoaiPhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\Item_LoaiPhuCap.Designer.cs">
+      <DependentUpon>Item_LoaiPhuCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item\Item_Luong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -404,6 +431,12 @@
     </Compile>
     <Compile Include="Item\Item_PhongBanNhanVien.Designer.cs">
       <DependentUpon>Item_PhongBanNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\Item_PhuCapChoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\Item_PhuCapChoNhanVien.Designer.cs">
+      <DependentUpon>Item_PhuCapChoNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Item\Item_TaiKhoan.cs">
       <SubType>Form</SubType>
@@ -455,8 +488,17 @@
     <EmbeddedResource Include="Admin\PhongBan\Admin_FormPhongBan.resx">
       <DependentUpon>Admin_FormPhongBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\PhuCap\Admin_FormChinhSuaPhuCap.resx">
+      <DependentUpon>Admin_FormChinhSuaPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\PhuCap\Admin_FormPhuCap.resx">
       <DependentUpon>Admin_FormPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\PhuCap\Admin_FormThemPhuCap.resx">
+      <DependentUpon>Admin_FormThemPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\PhuCap\Admin_FormThemPhuCapChoNhanVien.resx">
+      <DependentUpon>Admin_FormThemPhuCapChoNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\TaiKhoan\Admin_FormTaiKhoan.resx">
       <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
@@ -533,6 +575,9 @@
     <EmbeddedResource Include="Item\Item_DuAn.resx">
       <DependentUpon>Item_DuAn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_LoaiPhuCap.resx">
+      <DependentUpon>Item_LoaiPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_Luong.resx">
       <DependentUpon>Item_Luong.cs</DependentUpon>
     </EmbeddedResource>
@@ -556,6 +601,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_PhongBanNhanVien.resx">
       <DependentUpon>Item_PhongBanNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_PhuCapChoNhanVien.resx">
+      <DependentUpon>Item_PhuCapChoNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_TaiKhoan.resx">
       <DependentUpon>Item_TaiKhoan.cs</DependentUpon>
@@ -755,6 +803,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\chevron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment-method.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\present.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dance.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

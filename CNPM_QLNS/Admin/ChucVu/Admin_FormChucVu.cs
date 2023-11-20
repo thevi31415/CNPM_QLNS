@@ -62,5 +62,10 @@ namespace CNPM_QLNS.Admin
             Admin_FormThemChucVu themcv = new Admin_FormThemChucVu(formMain);
             themcv.ShowDialog();
         }
+
+        private void flowLayoutPanelCV_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

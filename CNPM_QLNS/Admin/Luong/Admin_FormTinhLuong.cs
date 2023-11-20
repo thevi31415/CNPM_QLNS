@@ -20,7 +20,7 @@ namespace CNPM_QLNS.Admin
         BL_KyLuat blkyluat = new BL_KyLuat();
         BL_ChucVu blchucvu = new BL_ChucVu();
         BL_Luong blluong = new BL_Luong();
-        List<PhuCap> phuCaplist= new List<PhuCap>();
+        List<PhuCapNV> phuCaplist = new List<PhuCapNV>();
         List<NhanVien> NhanVienList = new List<NhanVien>(); 
         List <KyLuat> KyLuatList = new List<KyLuat>();
         public Admin_FormTinhLuong(Admin_FormMain formain)
@@ -46,7 +46,7 @@ namespace CNPM_QLNS.Admin
             {
                 cmbMaNV.Items.Add(nhanVien.MaNV + " - " + nhanVien.HoTen);
             }
-            foreach (PhuCap phucap in phuCaplist)
+            foreach (PhuCapNV phucap in phuCaplist)
             {
                 cmbPhuCap.Items.Add(phucap.MaPC + " - " + phucap.LoaiPC);
             }
@@ -65,7 +65,7 @@ namespace CNPM_QLNS.Admin
 
 
             List<NhanVien> motnhanvien = new List<NhanVien>();
-            List<PhuCap> motphucap = new List<PhuCap>();
+            List<PhuCapNV> motphucap = new List<PhuCapNV>();
             List<KyLuat> motkyluat = new List<KyLuat>(); 
             string[] parts = cmbMaNV.Text.Split('-'); // Tách chuỗi dựa trên dấu gạch
             string  MaNV = parts[0].Trim();

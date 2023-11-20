@@ -31,8 +31,8 @@ namespace CNPM_QLNS.Item
             this.nv = blnv.LayNhanVienTheoMa(luong.MaNV);
             this.check = check;
             lblChucVu.Text = luong.MaCV;
-            lblPhuCap.Text = luong.PhuCap;
-            lblKyLuat.Text = luong.KyLuat;
+            lblPhuCap.Text = luong.PhuCap.ToString();
+            lblKyLuat.Text = luong.KyLuat.ToString();
             lblMaLuong.Text = luong.MaLuong;
             lblNgayCong.Text = luong.NgayCong.ToString();
             lblMaNV.Text    =  luong.MaNV.ToString();

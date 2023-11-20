@@ -42,8 +42,8 @@ namespace CNPM_QLNS.Employees.NV_Luong
             {
                 this.txtMaLuong.Text = this.luongListTheoThangNam[0].MaLuong;
                 this.txtSoNgayCong.Text = this.luongListTheoThangNam[0].NgayCong.ToString();
-                this.txtPhuCap.Text = this.luongListTheoThangNam[0].PhuCap;
-                this.txtKyLuat.Text = this.luongListTheoThangNam[0].KyLuat;
+                this.txtPhuCap.Text = this.luongListTheoThangNam[0].PhuCap.ToString();
+                this.txtKyLuat.Text = this.luongListTheoThangNam[0].KyLuat.ToString();
             }
             else
             {
@@ -53,7 +53,7 @@ namespace CNPM_QLNS.Employees.NV_Luong
 
         private void btnTinhLuong_Click(object sender, EventArgs e)
         {
-            int luongcoban = 0;
+           /* int luongcoban = 0;
             int songaycong = 0;
             int phucap = 0;
             int kyluat = 0;
@@ -83,7 +83,7 @@ namespace CNPM_QLNS.Employees.NV_Luong
             else
             {
                 MessageBox.Show("Không thể tính !");
-            }
+            }*/
         }
     }
 }

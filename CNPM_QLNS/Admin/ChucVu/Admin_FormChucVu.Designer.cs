@@ -36,10 +36,11 @@
             // 
             this.flowLayoutPanelCV.AutoScroll = true;
             this.flowLayoutPanelCV.BackColor = System.Drawing.SystemColors.Control;
-            this.flowLayoutPanelCV.Location = new System.Drawing.Point(12, 145);
+            this.flowLayoutPanelCV.Location = new System.Drawing.Point(9, 155);
             this.flowLayoutPanelCV.Name = "flowLayoutPanelCV";
             this.flowLayoutPanelCV.Size = new System.Drawing.Size(1320, 620);
             this.flowLayoutPanelCV.TabIndex = 75;
+            this.flowLayoutPanelCV.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelCV_Paint);
             // 
             // btnLuu
             // 
@@ -51,7 +52,7 @@
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.Image = global::CNPM_QLNS.Properties.Resources.plus1;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(1088, 63);
+            this.btnLuu.Location = new System.Drawing.Point(1085, 73);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(188, 37);
             this.btnLuu.TabIndex = 76;
