@@ -32,7 +32,10 @@ namespace CNPM_QLNS.Item
             lblTenPC.Text = pc.LoaiPC;
             lblSoTien.Text = pc.GiaTriPC.ToString();
             lblSoQD.Text = pcnv.SoQD;
-             
+            if (formain == null)
+            {
+                btnXoa.Visible = false;
+            }
             
         }
 

@@ -93,5 +93,11 @@ namespace CNPM_QLNS.Employees
             loadform(new NhanVien_FormChucVu(nv));
             lblLink.Text = "Nhân viên / Chức vụ";
         }
+
+        private void btnAllowance_Click(object sender, EventArgs e)
+        {
+            loadform(new NhanVien_FormPhuCap(nv));
+            lblLink.Text = "Nhân viên / Phụ cấp";
+        }
     }
 }

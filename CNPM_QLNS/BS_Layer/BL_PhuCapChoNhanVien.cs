@@ -44,6 +44,39 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachPhuCapNhanVien;
         }
+        public List<PhuCapNhanVien> LayDanhSachPhuCapNhanVienTheoMaNV(string maNV)
+        {
+            DBMain db = new DBMain();
+            List<PhuCapNhanVien> danhSachPhuCapNhanVien = new List<PhuCapNhanVien>();
+
+            string query = "SELECT * FROM PhuCapNhanVien WHERE MaNV = @MaNV";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+        new SqlParameter("@MaNV", maNV)
+            };
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    PhuCapNhanVien phuCapNhanVien = new PhuCapNhanVien
+                    {
+                        ID = row["ID"].ToString(),
+                        MaPC = row["MaPC"].ToString(),
+                        MaNV = row["MaNV"].ToString(),
+                        TenPC = row["TenPC"].ToString().Trim(),
+                        SoQD = row["SoQD"].ToString()
+                    };
+
+                    danhSachPhuCapNhanVien.Add(phuCapNhanVien);
+                }
+            }
+
+            return danhSachPhuCapNhanVien;
+        }
+
         public bool ThemPhuCapNhanVien(string id, string maPC, string maNV, string tenPC, string soQD)
         {
             string error = "";

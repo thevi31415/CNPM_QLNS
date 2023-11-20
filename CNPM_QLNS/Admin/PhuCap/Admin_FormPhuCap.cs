@@ -98,5 +98,10 @@ namespace CNPM_QLNS.Admin
             Admin_FormThemPhuCapChoNhanVien fr = new Admin_FormThemPhuCapChoNhanVien(formMain); 
             fr.ShowDialog();
         }
+
+        private void panelPhuCapNhanVien_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
