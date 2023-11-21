@@ -129,11 +129,29 @@
     <Compile Include="Admin\GioiThieu.Designer.cs">
       <DependentUpon>GioiThieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\TMKyLuat\Admin_FormChinhSuaKyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\TMKyLuat\Admin_FormChinhSuaKyLuat.Designer.cs">
+      <DependentUpon>Admin_FormChinhSuaKyLuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\TMKyLuat\Admin_FormKyLuat.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\TMKyLuat\Admin_FormKyLuat.Designer.cs">
       <DependentUpon>Admin_FormKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TMKyLuat\Admin_FormThemKyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\TMKyLuat\Admin_FormThemKyLuat.Designer.cs">
+      <DependentUpon>Admin_FormThemKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TMKyLuat\Admin_FormThemKyLuatMotNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\TMKyLuat\Admin_FormThemKyLuatMotNhanVien.Designer.cs">
+      <DependentUpon>Admin_FormThemKyLuatMotNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\TMPhongBan\Admin_ChiTietPhongBan.cs">
       <SubType>Form</SubType>
@@ -284,6 +302,7 @@
     <Compile Include="BS_Layer\BL_DangNhap.cs" />
     <Compile Include="BS_Layer\BL_DuAn.cs" />
     <Compile Include="BS_Layer\BL_KyLuat.cs" />
+    <Compile Include="BS_Layer\BL_KyLuatMotNhanVien.cs" />
     <Compile Include="BS_Layer\BL_Luong.cs" />
     <Compile Include="BS_Layer\BL_NhanVien.cs" />
     <Compile Include="BS_Layer\BL_PhanCong.cs" />
@@ -402,6 +421,12 @@
     <Compile Include="Item\Item_DuAn.Designer.cs">
       <DependentUpon>Item_DuAn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item\Item_KyLuatMotNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\Item_KyLuatMotNhanVien.Designer.cs">
+      <DependentUpon>Item_KyLuatMotNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item\Item_LoaiKyLuat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -482,8 +507,17 @@
     <EmbeddedResource Include="Admin\GioiThieu.resx">
       <DependentUpon>GioiThieu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\TMKyLuat\Admin_FormChinhSuaKyLuat.resx">
+      <DependentUpon>Admin_FormChinhSuaKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\TMKyLuat\Admin_FormKyLuat.resx">
       <DependentUpon>Admin_FormKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\TMKyLuat\Admin_FormThemKyLuat.resx">
+      <DependentUpon>Admin_FormThemKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\TMKyLuat\Admin_FormThemKyLuatMotNhanVien.resx">
+      <DependentUpon>Admin_FormThemKyLuatMotNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\TMPhongBan\Admin_ChiTietPhongBan.resx">
       <DependentUpon>Admin_ChiTietPhongBan.cs</DependentUpon>
@@ -598,6 +632,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_DuAn.resx">
       <DependentUpon>Item_DuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_KyLuatMotNhanVien.resx">
+      <DependentUpon>Item_KyLuatMotNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_LoaiKyLuat.resx">
       <DependentUpon>Item_LoaiKyLuat.cs</DependentUpon>
@@ -842,6 +879,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\yellow-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fired.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

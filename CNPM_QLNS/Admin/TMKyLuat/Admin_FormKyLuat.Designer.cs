@@ -35,14 +35,14 @@
             this.lblNgayCong = new System.Windows.Forms.Label();
             this.lblChucVu = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnThemKyLuat = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelKyLuatChoNhanVien = new System.Windows.Forms.FlowLayoutPanel();
             this.panelLoaKyLuat = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnThemKyLuat = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -66,7 +66,7 @@
             // 
             this.lblKyLuat.AutoSize = true;
             this.lblKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKyLuat.Location = new System.Drawing.Point(993, 12);
+            this.lblKyLuat.Location = new System.Drawing.Point(1107, 12);
             this.lblKyLuat.Name = "lblKyLuat";
             this.lblKyLuat.Size = new System.Drawing.Size(133, 22);
             this.lblKyLuat.TabIndex = 7;
@@ -76,7 +76,7 @@
             // 
             this.lblPhuCap.AutoSize = true;
             this.lblPhuCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhuCap.Location = new System.Drawing.Point(806, 12);
+            this.lblPhuCap.Location = new System.Drawing.Point(937, 12);
             this.lblPhuCap.Name = "lblPhuCap";
             this.lblPhuCap.Size = new System.Drawing.Size(73, 22);
             this.lblPhuCap.TabIndex = 6;
@@ -86,7 +86,7 @@
             // 
             this.lblMaLg.AutoSize = true;
             this.lblMaLg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaLg.Location = new System.Drawing.Point(126, 12);
+            this.lblMaLg.Location = new System.Drawing.Point(130, 12);
             this.lblMaLg.Name = "lblMaLg";
             this.lblMaLg.Size = new System.Drawing.Size(29, 22);
             this.lblMaLg.TabIndex = 5;
@@ -96,17 +96,17 @@
             // 
             this.lblNgayCong.AutoSize = true;
             this.lblNgayCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayCong.Location = new System.Drawing.Point(629, 12);
+            this.lblNgayCong.Location = new System.Drawing.Point(682, 12);
             this.lblNgayCong.Name = "lblNgayCong";
-            this.lblNgayCong.Size = new System.Drawing.Size(78, 22);
+            this.lblNgayCong.Size = new System.Drawing.Size(75, 22);
             this.lblNgayCong.TabIndex = 3;
-            this.lblNgayCong.Text = "Tên PC";
+            this.lblNgayCong.Text = "Tên KL";
             // 
             // lblChucVu
             // 
             this.lblChucVu.AutoSize = true;
             this.lblChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChucVu.Location = new System.Drawing.Point(468, 12);
+            this.lblChucVu.Location = new System.Drawing.Point(443, 12);
             this.lblChucVu.Name = "lblChucVu";
             this.lblChucVu.Size = new System.Drawing.Size(69, 22);
             this.lblChucVu.TabIndex = 1;
@@ -116,45 +116,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(222, 12);
+            this.label5.Location = new System.Drawing.Point(218, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 22);
             this.label5.TabIndex = 0;
             this.label5.Text = "Mã nhân viên";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::CNPM_QLNS.Properties.Resources.present;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1059, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(278, 37);
-            this.button1.TabIndex = 90;
-            this.button1.Text = "Phụ cấp nhân viên";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnThemKyLuat
-            // 
-            this.btnThemKyLuat.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnThemKyLuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnThemKyLuat.FlatAppearance.BorderSize = 0;
-            this.btnThemKyLuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemKyLuat.ForeColor = System.Drawing.Color.White;
-            this.btnThemKyLuat.Image = global::CNPM_QLNS.Properties.Resources.plus1;
-            this.btnThemKyLuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemKyLuat.Location = new System.Drawing.Point(792, 9);
-            this.btnThemKyLuat.Name = "btnThemKyLuat";
-            this.btnThemKyLuat.Size = new System.Drawing.Size(218, 37);
-            this.btnThemKyLuat.TabIndex = 89;
-            this.btnThemKyLuat.Text = "Thêm kỷ luật";
-            this.btnThemKyLuat.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -213,6 +179,42 @@
             this.panelLoaKyLuat.Name = "panelLoaKyLuat";
             this.panelLoaKyLuat.Size = new System.Drawing.Size(1325, 278);
             this.panelLoaKyLuat.TabIndex = 85;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::CNPM_QLNS.Properties.Resources.fired;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(1059, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(278, 37);
+            this.button1.TabIndex = 90;
+            this.button1.Text = "Kỷ luật nhân viên";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnThemKyLuat
+            // 
+            this.btnThemKyLuat.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnThemKyLuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnThemKyLuat.FlatAppearance.BorderSize = 0;
+            this.btnThemKyLuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemKyLuat.ForeColor = System.Drawing.Color.White;
+            this.btnThemKyLuat.Image = global::CNPM_QLNS.Properties.Resources.plus1;
+            this.btnThemKyLuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemKyLuat.Location = new System.Drawing.Point(792, 9);
+            this.btnThemKyLuat.Name = "btnThemKyLuat";
+            this.btnThemKyLuat.Size = new System.Drawing.Size(218, 37);
+            this.btnThemKyLuat.TabIndex = 89;
+            this.btnThemKyLuat.Text = "Thêm kỷ luật";
+            this.btnThemKyLuat.UseVisualStyleBackColor = false;
+            this.btnThemKyLuat.Click += new System.EventHandler(this.btnThemKyLuat_Click);
             // 
             // Admin_FormKyLuat
             // 

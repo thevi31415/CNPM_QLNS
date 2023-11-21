@@ -82,6 +82,7 @@
             this.btnXoa.Size = new System.Drawing.Size(38, 38);
             this.btnXoa.TabIndex = 18;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnChinhSua
             // 
@@ -97,6 +98,7 @@
             this.btnChinhSua.TabIndex = 17;
             this.btnChinhSua.Tag = "Chỉnh sưa";
             this.btnChinhSua.UseVisualStyleBackColor = false;
+            this.btnChinhSua.Click += new System.EventHandler(this.btnChinhSua_Click);
             // 
             // picChanDung
             // 
@@ -124,6 +126,8 @@
             this.Name = "Item_LoaiKyLuat";
             this.Text = "Item_LoaiKyLuat";
             this.Load += new System.EventHandler(this.Item_LoaiKyLuat_Load);
+            this.MouseEnter += new System.EventHandler(this.Item_LoaiKyLuat_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.Item_LoaiKyLuat_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.picChanDung)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

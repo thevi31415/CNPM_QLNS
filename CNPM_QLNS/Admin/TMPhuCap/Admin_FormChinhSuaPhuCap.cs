@@ -50,5 +50,10 @@ namespace CNPM_QLNS.Admin.PhuCap
                 MessageBox.Show("Không thể cập nhật 1");
             }
         }
+
+        private void Admin_FormChinhSuaPhuCap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

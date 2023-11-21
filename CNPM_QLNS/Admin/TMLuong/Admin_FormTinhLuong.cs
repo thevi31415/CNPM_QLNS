@@ -32,8 +32,7 @@ namespace CNPM_QLNS.Admin
             dtpNgayTinhLuong.Enabled = false;
             this.formMain = formain;
             cmbMaNV.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbKyLuat.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbPhuCap.DropDownStyle = ComboBoxStyle.DropDownList;
+           
 
         }
 
@@ -45,14 +44,6 @@ namespace CNPM_QLNS.Admin
             foreach (NhanVien nhanVien in NhanVienList)
             {
                 cmbMaNV.Items.Add(nhanVien.MaNV + " - " + nhanVien.HoTen);
-            }
-            foreach (PhuCapNV phucap in phuCaplist)
-            {
-                cmbPhuCap.Items.Add(phucap.MaPC + " - " + phucap.LoaiPC);
-            }
-            foreach (KyLuatNV kyluat in KyLuatList)
-            {
-                cmbKyLuat.Items.Add(kyluat.MaKL + " - " + kyluat.LoaiKL);
             }
         }
 
@@ -70,14 +61,15 @@ namespace CNPM_QLNS.Admin
             string[] parts = cmbMaNV.Text.Split('-'); // Tách chuỗi dựa trên dấu gạch
             string  MaNV = parts[0].Trim();
 
-            string[] pc =cmbPhuCap.Text.Split('-');
-
-            string MaPC = pc[0].Trim();
+          
 
 
-            string[] kl = cmbKyLuat.Text.Split('-');
 
-            string MaKL = kl[0].Trim();
+
+
+
+
+
 
 
 
@@ -100,23 +92,21 @@ namespace CNPM_QLNS.Admin
                 int songaycong = Convert.ToInt32(txtSoNgayCong.Text);
                 int kyluat = 0;
                 int phucap = 0;
-                if (blkyluat.LayDanhSachKyLuatTheoMaKL(MaKL).Count() > 0)
-                {
-                    kyluat = blkyluat.LayDanhSachKyLuatTheoMaKL(MaKL)[0].TienPhat; 
-                }
-                if (blphucap.LayThongTinPhuCapTheoMaPC(MaPC).Count() > 0)
-                {
-                   phucap =  blphucap.LayThongTinPhuCapTheoMaPC(MaPC)[0].GiaTriPC;
-                }
+              
                 NhanVien nv = new NhanVien();
                 nv = blnv.LayDanhSachNhanVienTheoMaNV(MaNV)[0];
                 if(nv.MaCV == "")
                 {
                     MessageBox.Show("Nhân viên chưa có chức vụ nên không thể tính lương !");
                 }
-                float tongluong = blluong.TinhLuong(luongcoban, songaycong, phucap, kyluat);
 
-                if(blluong.ThemThongTinLuong(MaNV, txtMaLuong.Text.Trim(), motnhanvien[0].MaCV, dtpNgayTinhLuong.Value.Month
+
+
+
+
+                int tongluong = blluong.TinhLuong(luongcoban, songaycong, phucap, kyluat);
+
+                /*if(blluong.ThemThongTinLuong(MaNV, txtMaLuong.Text.Trim(), motnhanvien[0].MaCV, dtpNgayTinhLuong.Value.Month
                     , dtpNgayTinhLuong.Value.Year,songaycong, MaPC, MaKL, txtMoTa.Text, tongluong))
                 {
                     MessageBox.Show("Tính lương thành công !");
@@ -126,7 +116,7 @@ namespace CNPM_QLNS.Admin
                 {
                     MessageBox.Show("Không thể tính !");
                 }
-             //   MessageBox.Show(tongluong.ToString());
+             //   MessageBox.Show(tongluong.ToString());*/
 
             }
             

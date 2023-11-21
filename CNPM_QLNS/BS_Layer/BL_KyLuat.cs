@@ -42,6 +42,54 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachKyLuat;
         }
+        public bool CapNhatKyLuat(string maKL, string loaiKL, int tienPhat)
+        {
+            DBMain db = new DBMain();
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaKL", maKL),
+        new SqlParameter("@LoaiKL", loaiKL),
+        new SqlParameter("@TienPhat", tienPhat)
+            };
+
+            string strSQL = "UPDATE KYLUAT SET LoaiKL=@LoaiKL, TienPhat=@TienPhat WHERE MaKL=@MaKL";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+        public bool ThemMoiKyLuat(string maKL, string loaiKL, int tienPhat)
+        {
+            DBMain db = new DBMain();
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaKL", maKL),
+        new SqlParameter("@LoaiKL", loaiKL),
+        new SqlParameter("@TienPhat", tienPhat)
+            };
+
+            string strSQL = "INSERT INTO KYLUAT (MaKL, LoaiKL, TienPhat) VALUES (@MaKL, @LoaiKL, @TienPhat)";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
+        public bool XoaKyLuat(string maKL)
+        {
+            DBMain db = new DBMain();
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaKL", maKL)
+            };
+
+            string strSQL = "DELETE FROM KYLUAT WHERE MaKL=@MaKL";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
         public List<KyLuatNV> LayDanhSachKyLuatTheoMaKL(string maKL)
         {
             List<KyLuatNV> danhSachKyLuat = new List<KyLuatNV>();

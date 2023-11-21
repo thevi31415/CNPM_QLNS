@@ -38,14 +38,14 @@
             this.txtSoNgayCong = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbPhuCap = new System.Windows.Forms.ComboBox();
             this.dtpNgayTinhLuong = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMoTa = new System.Windows.Forms.RichTextBox();
             this.btnTinhLuong = new System.Windows.Forms.Button();
-            this.cmbKyLuat = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtPhuCap = new System.Windows.Forms.TextBox();
+            this.txtKyLuat = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -149,15 +149,6 @@
             this.label3.TabIndex = 100;
             this.label3.Text = "Phụ cấp";
             // 
-            // cmbPhuCap
-            // 
-            this.cmbPhuCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPhuCap.FormattingEnabled = true;
-            this.cmbPhuCap.Location = new System.Drawing.Point(72, 342);
-            this.cmbPhuCap.Name = "cmbPhuCap";
-            this.cmbPhuCap.Size = new System.Drawing.Size(615, 33);
-            this.cmbPhuCap.TabIndex = 101;
-            // 
             // dtpNgayTinhLuong
             // 
             this.dtpNgayTinhLuong.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -215,15 +206,6 @@
             this.btnTinhLuong.UseVisualStyleBackColor = false;
             this.btnTinhLuong.Click += new System.EventHandler(this.btnTinhLuong_Click);
             // 
-            // cmbKyLuat
-            // 
-            this.cmbKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbKyLuat.FormattingEnabled = true;
-            this.cmbKyLuat.Location = new System.Drawing.Point(72, 426);
-            this.cmbKyLuat.Name = "cmbKyLuat";
-            this.cmbKyLuat.Size = new System.Drawing.Size(615, 33);
-            this.cmbKyLuat.TabIndex = 107;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -234,19 +216,35 @@
             this.label7.TabIndex = 108;
             this.label7.Text = "Kỷ luật";
             // 
+            // txtPhuCap
+            // 
+            this.txtPhuCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhuCap.Location = new System.Drawing.Point(72, 352);
+            this.txtPhuCap.Name = "txtPhuCap";
+            this.txtPhuCap.Size = new System.Drawing.Size(615, 34);
+            this.txtPhuCap.TabIndex = 109;
+            // 
+            // txtKyLuat
+            // 
+            this.txtKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKyLuat.Location = new System.Drawing.Point(72, 437);
+            this.txtKyLuat.Name = "txtKyLuat";
+            this.txtKyLuat.Size = new System.Drawing.Size(615, 34);
+            this.txtKyLuat.TabIndex = 110;
+            // 
             // Admin_FormTinhLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1332, 703);
+            this.Controls.Add(this.txtKyLuat);
+            this.Controls.Add(this.txtPhuCap);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.cmbKyLuat);
             this.Controls.Add(this.btnTinhLuong);
             this.Controls.Add(this.txtMoTa);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpNgayTinhLuong);
-            this.Controls.Add(this.cmbPhuCap);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtSoNgayCong);
             this.Controls.Add(this.label2);
@@ -279,13 +277,13 @@
         private System.Windows.Forms.TextBox txtSoNgayCong;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cmbPhuCap;
         private System.Windows.Forms.DateTimePicker dtpNgayTinhLuong;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox txtMoTa;
         private System.Windows.Forms.Button btnTinhLuong;
-        private System.Windows.Forms.ComboBox cmbKyLuat;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtPhuCap;
+        private System.Windows.Forms.TextBox txtKyLuat;
     }
 }

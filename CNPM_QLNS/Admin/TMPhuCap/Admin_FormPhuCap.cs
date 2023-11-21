@@ -53,7 +53,7 @@ namespace CNPM_QLNS.Admin
             }
             else
             {
-                MessageBox.Show("Khong tim thay du an nao =)))");
+              //  MessageBox.Show("Khong tim thay du an nao =)))");
             }
 
 
@@ -81,7 +81,7 @@ namespace CNPM_QLNS.Admin
             }
             else
             {
-                MessageBox.Show("Khong tim thay du an nao =)))");
+               // MessageBox.Show("Khong tim thay du an nao =)))");
             }
 
 

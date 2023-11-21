@@ -12,34 +12,36 @@ using System.Windows.Forms;
 
 namespace CNPM_QLNS.Item
 {
-    public partial class Item_PhuCapChoNhanVien : Form
+    public partial class Item_KyLuatMotNhanVien : Form
     {
         public Admin_FormMain formain;
+        public KyLuatChoNhanVien klmotnv;
         BL_NhanVien blnv = new BL_NhanVien();
-        BL_PhuCap blpc = new BL_PhuCap();   
-        PhuCapNV pc = new PhuCapNV();
-        BL_PhuCapChoNhanVien blpcchonv = new BL_PhuCapChoNhanVien();
-        PhuCapNhanVien pcnv;
-        public Item_PhuCapChoNhanVien(Admin_FormMain formMain, PhuCapNhanVien pcnv)
+        BL_KyLuat blkl = new BL_KyLuat();
+        KyLuatNV kl = new KyLuatNV();
+        BL_KyLuatMotNhanVien blklmotnv = new BL_KyLuatMotNhanVien();
+       
+        public Item_KyLuatMotNhanVien(Admin_FormMain formMain, KyLuatChoNhanVien klmotnv)
         {
             InitializeComponent();
             this.formain = formMain;
-            this.pcnv = pcnv;
-            pc = blpc.LayThongTinPhuCapTheoMaPC(pcnv.MaPC)[0];
-            lblID.Text = pcnv.ID;
-            lblMaNV.Text = pcnv.MaNV;
-            lblHoTen.Text = blnv.LayDanhSachNhanVienTheoMaNV(pcnv.MaNV)[0].HoTen;
-            lblTenPC.Text = pc.LoaiPC;
-            lblSoTien.Text = pc.GiaTriPC.ToString();
-            lblSoQD.Text = pcnv.SoQD;
+            this.klmotnv = klmotnv;
+            kl = blkl.LayDanhSachKyLuatTheoMaKL(klmotnv.MaKL)[0];
+            lblID.Text = klmotnv.ID;
+            lblMaNV.Text = klmotnv.MaNV;
+            lblHoTen.Text = blnv.LayDanhSachNhanVienTheoMaNV(klmotnv.MaNV)[0].HoTen;
+            lblTenKL.Text = kl.LoaiKL;
+            lblSoTien.Text = kl.TienPhat.ToString();
+            lblSoQD.Text = klmotnv.SoQD;
             if (formain == null)
             {
                 btnXoa.Visible = false;
             }
-            
+
+
         }
 
-        private void Item_PhuCapChoNhanVien_Load(object sender, EventArgs e)
+        private void Item_KyLuatMotNhanVien_Load(object sender, EventArgs e)
         {
 
         }
@@ -53,9 +55,9 @@ namespace CNPM_QLNS.Item
             {
 
 
-                if (blpcchonv.XoaPhuCapNhanVien(pcnv.ID))
+                if (blklmotnv.XoaKyLuatNhanVien(klmotnv.ID))
                 {
-                    formain.LoadFormPhuCap();
+                    formain.LoadFormKyLuat();
                     this.Close();
                     MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -69,12 +71,12 @@ namespace CNPM_QLNS.Item
             }
         }
 
-        private void Item_PhuCapChoNhanVien_MouseEnter(object sender, EventArgs e)
+        private void Item_KyLuatMotNhanVien_MouseEnter(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#ABD0F9");
         }
 
-        private void Item_PhuCapChoNhanVien_MouseLeave(object sender, EventArgs e)
+        private void Item_KyLuatMotNhanVien_MouseLeave(object sender, EventArgs e)
         {
             this.BackColor = Color.White;
         }
