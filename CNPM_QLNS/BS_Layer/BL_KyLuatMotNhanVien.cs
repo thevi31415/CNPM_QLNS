@@ -79,6 +79,37 @@ namespace CNPM_QLNS.BS_Layer
 
             return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
         }
+        public List<KyLuatChoNhanVien> LayKyLuatTheoMaNV(string maNV)
+        {
+            List<KyLuatChoNhanVien> danhSachKyLuatNhanVien = new List<KyLuatChoNhanVien>();
+
+            string query = "SELECT * FROM KyLuatNhanVien WHERE MaNV = @MaNV";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+        new SqlParameter("@MaNV", maNV)
+            };
+
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    KyLuatChoNhanVien kyLuatNhanVien = new KyLuatChoNhanVien
+                    {
+                        ID = row["ID"].ToString(),
+                        MaKL = row["MaKL"].ToString(),
+                        MaNV = row["MaNV"].ToString(),
+                        TenKL = row["TenKL"].ToString().Trim(),
+                        SoQD = row["SoQD"].ToString()
+                    };
+
+                    danhSachKyLuatNhanVien.Add(kyLuatNhanVien);
+                }
+            }
+
+            return danhSachKyLuatNhanVien;
+        }
 
     }
 }

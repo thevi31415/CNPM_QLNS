@@ -92,6 +92,7 @@
             this.cmbMaNV.Name = "cmbMaNV";
             this.cmbMaNV.Size = new System.Drawing.Size(615, 33);
             this.cmbMaNV.TabIndex = 97;
+            this.cmbMaNV.SelectedIndexChanged += new System.EventHandler(this.cmbMaNV_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -219,6 +220,7 @@
             // txtPhuCap
             // 
             this.txtPhuCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhuCap.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.txtPhuCap.Location = new System.Drawing.Point(72, 352);
             this.txtPhuCap.Name = "txtPhuCap";
             this.txtPhuCap.Size = new System.Drawing.Size(615, 34);
@@ -227,6 +229,7 @@
             // txtKyLuat
             // 
             this.txtKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKyLuat.ForeColor = System.Drawing.Color.Red;
             this.txtKyLuat.Location = new System.Drawing.Point(72, 437);
             this.txtKyLuat.Name = "txtKyLuat";
             this.txtKyLuat.Size = new System.Drawing.Size(615, 34);
