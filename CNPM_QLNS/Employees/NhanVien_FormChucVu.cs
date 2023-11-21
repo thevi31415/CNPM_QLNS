@@ -21,7 +21,7 @@ namespace CNPM_QLNS.Employees
         {
             InitializeComponent();
             this.nv = nv;
-            List<ChucVu> cv = new List<ChucVu>();
+            List<ChucVuNV> cv = new List<ChucVuNV>();
             cv = blcv.LayDanhSachChucVuTheoMaCV(nv.MaCV);
             if(cv.Count > 0 )
             {

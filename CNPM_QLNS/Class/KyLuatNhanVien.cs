@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CNPM_QLNS.Class
 {
-    public class KyLuatNhanVien
+    public class KyLuatChoNhanVien
     {
         public string ID { get; set; }
         public string MaKL { get; set; }

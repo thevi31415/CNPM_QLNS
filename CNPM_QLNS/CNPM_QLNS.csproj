@@ -93,34 +93,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\ChucVu\Admin_FormThemChucVu.cs">
+    <Compile Include="Admin\TMChucVu\Admin_FormThemChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\ChucVu\Admin_FormThemChucVu.Designer.cs">
+    <Compile Include="Admin\TMChucVu\Admin_FormThemChucVu.Designer.cs">
       <DependentUpon>Admin_FormThemChucVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuAn\Admin_FormThayDoiTrangThaiDA.cs">
+    <Compile Include="Admin\TMDuAn\Admin_FormThayDoiTrangThaiDA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\DuAn\Admin_FormThayDoiTrangThaiDA.Designer.cs">
+    <Compile Include="Admin\TMDuAn\Admin_FormThayDoiTrangThaiDA.Designer.cs">
       <DependentUpon>Admin_FormThayDoiTrangThaiDA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuAn\Admin_FormPhanCongDuAn.cs">
+    <Compile Include="Admin\TMDuAn\Admin_FormPhanCongDuAn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\DuAn\Admin_FormPhanCongDuAn.Designer.cs">
+    <Compile Include="Admin\TMDuAn\Admin_FormPhanCongDuAn.Designer.cs">
       <DependentUpon>Admin_FormPhanCongDuAn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuAn\Admin_FormThemDuAn.cs">
+    <Compile Include="Admin\TMDuAn\Admin_FormThemDuAn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\DuAn\Admin_FormThemDuAn.Designer.cs">
+    <Compile Include="Admin\TMDuAn\Admin_FormThemDuAn.Designer.cs">
       <DependentUpon>Admin_FormThemDuAn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuAn\Admin_FormXemChiTietDuAn.cs">
+    <Compile Include="Admin\TMDuAn\Admin_FormXemChiTietDuAn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\DuAn\Admin_FormXemChiTietDuAn.Designer.cs">
+    <Compile Include="Admin\TMDuAn\Admin_FormXemChiTietDuAn.Designer.cs">
       <DependentUpon>Admin_FormXemChiTietDuAn.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\GioiThieu.cs">
@@ -129,34 +129,40 @@
     <Compile Include="Admin\GioiThieu.Designer.cs">
       <DependentUpon>GioiThieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\PhongBan\Admin_ChiTietPhongBan.cs">
+    <Compile Include="Admin\TMKyLuat\Admin_FormKyLuat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\PhongBan\Admin_ChiTietPhongBan.Designer.cs">
+    <Compile Include="Admin\TMKyLuat\Admin_FormKyLuat.Designer.cs">
+      <DependentUpon>Admin_FormKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TMPhongBan\Admin_ChiTietPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\TMPhongBan\Admin_ChiTietPhongBan.Designer.cs">
       <DependentUpon>Admin_ChiTietPhongBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\NhanVien\Admin_FormChinhSuaNhanVien.cs">
+    <Compile Include="Admin\TMNhanVien\Admin_FormChinhSuaNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\NhanVien\Admin_FormChinhSuaNhanVien.Designer.cs">
+    <Compile Include="Admin\TMNhanVien\Admin_FormChinhSuaNhanVien.Designer.cs">
       <DependentUpon>Admin_FormChinhSuaNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\ChucVu\Admin_FormChucVu.cs">
+    <Compile Include="Admin\TMChucVu\Admin_FormChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\ChucVu\Admin_FormChucVu.Designer.cs">
+    <Compile Include="Admin\TMChucVu\Admin_FormChucVu.Designer.cs">
       <DependentUpon>Admin_FormChucVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\DuAn\Admin_FormDuAn.cs">
+    <Compile Include="Admin\TMDuAn\Admin_FormDuAn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\DuAn\Admin_FormDuAn.Designer.cs">
+    <Compile Include="Admin\TMDuAn\Admin_FormDuAn.Designer.cs">
       <DependentUpon>Admin_FormDuAn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Luong\Admin_FormLuong.cs">
+    <Compile Include="Admin\TMLuong\Admin_FormLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Luong\Admin_FormLuong.Designer.cs">
+    <Compile Include="Admin\TMLuong\Admin_FormLuong.Designer.cs">
       <DependentUpon>Admin_FormLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Admin_FormMain.cs">
@@ -165,64 +171,64 @@
     <Compile Include="Admin\Admin_FormMain.Designer.cs">
       <DependentUpon>Admin_FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\NhanVien\Admin_FormNhanVien.cs">
+    <Compile Include="Admin\TMNhanVien\Admin_FormNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\NhanVien\Admin_FormNhanVien.Designer.cs">
+    <Compile Include="Admin\TMNhanVien\Admin_FormNhanVien.Designer.cs">
       <DependentUpon>Admin_FormNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\PhongBan\Admin_FormPhongBan.cs">
+    <Compile Include="Admin\TMPhongBan\Admin_FormPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\PhongBan\Admin_FormPhongBan.Designer.cs">
+    <Compile Include="Admin\TMPhongBan\Admin_FormPhongBan.Designer.cs">
       <DependentUpon>Admin_FormPhongBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\PhuCap\Admin_FormChinhSuaPhuCap.cs">
+    <Compile Include="Admin\TMPhuCap\Admin_FormChinhSuaPhuCap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\PhuCap\Admin_FormChinhSuaPhuCap.Designer.cs">
+    <Compile Include="Admin\TMPhuCap\Admin_FormChinhSuaPhuCap.Designer.cs">
       <DependentUpon>Admin_FormChinhSuaPhuCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\PhuCap\Admin_FormPhuCap.cs">
+    <Compile Include="Admin\TMPhuCap\Admin_FormPhuCap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\PhuCap\Admin_FormPhuCap.Designer.cs">
+    <Compile Include="Admin\TMPhuCap\Admin_FormPhuCap.Designer.cs">
       <DependentUpon>Admin_FormPhuCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\PhuCap\Admin_FormThemPhuCap.cs">
+    <Compile Include="Admin\TMPhuCap\Admin_FormThemPhuCap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\PhuCap\Admin_FormThemPhuCap.Designer.cs">
+    <Compile Include="Admin\TMPhuCap\Admin_FormThemPhuCap.Designer.cs">
       <DependentUpon>Admin_FormThemPhuCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\PhuCap\Admin_FormThemPhuCapChoNhanVien.cs">
+    <Compile Include="Admin\TMPhuCap\Admin_FormThemPhuCapChoNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\PhuCap\Admin_FormThemPhuCapChoNhanVien.Designer.cs">
+    <Compile Include="Admin\TMPhuCap\Admin_FormThemPhuCapChoNhanVien.Designer.cs">
       <DependentUpon>Admin_FormThemPhuCapChoNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\TaiKhoan\Admin_FormTaiKhoan.cs">
+    <Compile Include="Admin\TMTaiKhoan\Admin_FormTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\TaiKhoan\Admin_FormTaiKhoan.Designer.cs">
+    <Compile Include="Admin\TMTaiKhoan\Admin_FormTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\NhanVien\Admin_FormThemNhanVien.cs">
+    <Compile Include="Admin\TMNhanVien\Admin_FormThemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\NhanVien\Admin_FormThemNhanVien.Designer.cs">
+    <Compile Include="Admin\TMNhanVien\Admin_FormThemNhanVien.Designer.cs">
       <DependentUpon>Admin_FormThemNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\TaiKhoan\Admin_FormThemTaiKhoan.cs">
+    <Compile Include="Admin\TMTaiKhoan\Admin_FormThemTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\TaiKhoan\Admin_FormThemTaiKhoan.Designer.cs">
+    <Compile Include="Admin\TMTaiKhoan\Admin_FormThemTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormThemTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Luong\Admin_FormTinhLuong.cs">
+    <Compile Include="Admin\TMLuong\Admin_FormTinhLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Luong\Admin_FormTinhLuong.Designer.cs">
+    <Compile Include="Admin\TMLuong\Admin_FormTinhLuong.Designer.cs">
       <DependentUpon>Admin_FormTinhLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Admin_FormTongQuan.cs">
@@ -231,28 +237,28 @@
     <Compile Include="Admin\Admin_FormTongQuan.Designer.cs">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\TaiKhoan\Admin_FormXemChinhSuaTaiKhoan.cs">
+    <Compile Include="Admin\TMTaiKhoan\Admin_FormXemChinhSuaTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\TaiKhoan\Admin_FormXemChinhSuaTaiKhoan.Designer.cs">
+    <Compile Include="Admin\TMTaiKhoan\Admin_FormXemChinhSuaTaiKhoan.Designer.cs">
       <DependentUpon>Admin_FormXemChinhSuaTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Luong\Admin_FormXemLuong.cs">
+    <Compile Include="Admin\TMLuong\Admin_FormXemLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Luong\Admin_FormXemLuong.Designer.cs">
+    <Compile Include="Admin\TMLuong\Admin_FormXemLuong.Designer.cs">
       <DependentUpon>Admin_FormXemLuong.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\NhanVien\Admin_FormXemNhanVien.cs">
+    <Compile Include="Admin\TMNhanVien\Admin_FormXemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\NhanVien\Admin_FormXemNhanVien.Designer.cs">
+    <Compile Include="Admin\TMNhanVien\Admin_FormXemNhanVien.Designer.cs">
       <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\PhongBan\Admin_ThemPhongBan.cs">
+    <Compile Include="Admin\TMPhongBan\Admin_ThemPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\PhongBan\Admin_ThemPhongBan.Designer.cs">
+    <Compile Include="Admin\TMPhongBan\Admin_ThemPhongBan.Designer.cs">
       <DependentUpon>Admin_ThemPhongBan.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\FormDangNhap.cs">
@@ -261,16 +267,16 @@
     <Compile Include="Admin\FormDangNhap.Designer.cs">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\NhanVien\Admin_ThemNhanVienVaoPhongBan.cs">
+    <Compile Include="Admin\TMNhanVien\Admin_ThemNhanVienVaoPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\NhanVien\Admin_ThemNhanVienVaoPhongBan.Designer.cs">
+    <Compile Include="Admin\TMNhanVien\Admin_ThemNhanVienVaoPhongBan.Designer.cs">
       <DependentUpon>Admin_ThemNhanVienVaoPhongBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Luong\Admin_FormReportLuong.cs">
+    <Compile Include="Admin\TMLuong\Admin_FormReportLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Luong\Admin_FormReportLuong.Designer.cs">
+    <Compile Include="Admin\TMLuong\Admin_FormReportLuong.Designer.cs">
       <DependentUpon>Admin_FormReportLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="BS_Layer\BL_ChucVu.cs" />
@@ -396,6 +402,12 @@
     <Compile Include="Item\Item_DuAn.Designer.cs">
       <DependentUpon>Item_DuAn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item\Item_LoaiKyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\Item_LoaiKyLuat.Designer.cs">
+      <DependentUpon>Item_LoaiKyLuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item\Item_LoaiPhuCap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -452,94 +464,97 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Admin\ChucVu\Admin_FormThemChucVu.resx">
+    <EmbeddedResource Include="Admin\TMChucVu\Admin_FormThemChucVu.resx">
       <DependentUpon>Admin_FormThemChucVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuAn\Admin_FormThayDoiTrangThaiDA.resx">
+    <EmbeddedResource Include="Admin\TMDuAn\Admin_FormThayDoiTrangThaiDA.resx">
       <DependentUpon>Admin_FormThayDoiTrangThaiDA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuAn\Admin_FormPhanCongDuAn.resx">
+    <EmbeddedResource Include="Admin\TMDuAn\Admin_FormPhanCongDuAn.resx">
       <DependentUpon>Admin_FormPhanCongDuAn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuAn\Admin_FormThemDuAn.resx">
+    <EmbeddedResource Include="Admin\TMDuAn\Admin_FormThemDuAn.resx">
       <DependentUpon>Admin_FormThemDuAn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuAn\Admin_FormXemChiTietDuAn.resx">
+    <EmbeddedResource Include="Admin\TMDuAn\Admin_FormXemChiTietDuAn.resx">
       <DependentUpon>Admin_FormXemChiTietDuAn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\GioiThieu.resx">
       <DependentUpon>GioiThieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\PhongBan\Admin_ChiTietPhongBan.resx">
+    <EmbeddedResource Include="Admin\TMKyLuat\Admin_FormKyLuat.resx">
+      <DependentUpon>Admin_FormKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\TMPhongBan\Admin_ChiTietPhongBan.resx">
       <DependentUpon>Admin_ChiTietPhongBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\NhanVien\Admin_FormChinhSuaNhanVien.resx">
+    <EmbeddedResource Include="Admin\TMNhanVien\Admin_FormChinhSuaNhanVien.resx">
       <DependentUpon>Admin_FormChinhSuaNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\ChucVu\Admin_FormChucVu.resx">
+    <EmbeddedResource Include="Admin\TMChucVu\Admin_FormChucVu.resx">
       <DependentUpon>Admin_FormChucVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\DuAn\Admin_FormDuAn.resx">
+    <EmbeddedResource Include="Admin\TMDuAn\Admin_FormDuAn.resx">
       <DependentUpon>Admin_FormDuAn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Luong\Admin_FormLuong.resx">
+    <EmbeddedResource Include="Admin\TMLuong\Admin_FormLuong.resx">
       <DependentUpon>Admin_FormLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormMain.resx">
       <DependentUpon>Admin_FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\NhanVien\Admin_FormNhanVien.resx">
+    <EmbeddedResource Include="Admin\TMNhanVien\Admin_FormNhanVien.resx">
       <DependentUpon>Admin_FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\PhongBan\Admin_FormPhongBan.resx">
+    <EmbeddedResource Include="Admin\TMPhongBan\Admin_FormPhongBan.resx">
       <DependentUpon>Admin_FormPhongBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\PhuCap\Admin_FormChinhSuaPhuCap.resx">
+    <EmbeddedResource Include="Admin\TMPhuCap\Admin_FormChinhSuaPhuCap.resx">
       <DependentUpon>Admin_FormChinhSuaPhuCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\PhuCap\Admin_FormPhuCap.resx">
+    <EmbeddedResource Include="Admin\TMPhuCap\Admin_FormPhuCap.resx">
       <DependentUpon>Admin_FormPhuCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\PhuCap\Admin_FormThemPhuCap.resx">
+    <EmbeddedResource Include="Admin\TMPhuCap\Admin_FormThemPhuCap.resx">
       <DependentUpon>Admin_FormThemPhuCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\PhuCap\Admin_FormThemPhuCapChoNhanVien.resx">
+    <EmbeddedResource Include="Admin\TMPhuCap\Admin_FormThemPhuCapChoNhanVien.resx">
       <DependentUpon>Admin_FormThemPhuCapChoNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\TaiKhoan\Admin_FormTaiKhoan.resx">
+    <EmbeddedResource Include="Admin\TMTaiKhoan\Admin_FormTaiKhoan.resx">
       <DependentUpon>Admin_FormTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\NhanVien\Admin_FormThemNhanVien.resx">
+    <EmbeddedResource Include="Admin\TMNhanVien\Admin_FormThemNhanVien.resx">
       <DependentUpon>Admin_FormThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\TaiKhoan\Admin_FormThemTaiKhoan.resx">
+    <EmbeddedResource Include="Admin\TMTaiKhoan\Admin_FormThemTaiKhoan.resx">
       <DependentUpon>Admin_FormThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Luong\Admin_FormTinhLuong.resx">
+    <EmbeddedResource Include="Admin\TMLuong\Admin_FormTinhLuong.resx">
       <DependentUpon>Admin_FormTinhLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_FormTongQuan.resx">
       <DependentUpon>Admin_FormTongQuan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\TaiKhoan\Admin_FormXemChinhSuaTaiKhoan.resx">
+    <EmbeddedResource Include="Admin\TMTaiKhoan\Admin_FormXemChinhSuaTaiKhoan.resx">
       <DependentUpon>Admin_FormXemChinhSuaTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Luong\Admin_FormXemLuong.resx">
+    <EmbeddedResource Include="Admin\TMLuong\Admin_FormXemLuong.resx">
       <DependentUpon>Admin_FormXemLuong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\NhanVien\Admin_FormXemNhanVien.resx">
+    <EmbeddedResource Include="Admin\TMNhanVien\Admin_FormXemNhanVien.resx">
       <DependentUpon>Admin_FormXemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\PhongBan\Admin_ThemPhongBan.resx">
+    <EmbeddedResource Include="Admin\TMPhongBan\Admin_ThemPhongBan.resx">
       <DependentUpon>Admin_ThemPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\NhanVien\Admin_ThemNhanVienVaoPhongBan.resx">
+    <EmbeddedResource Include="Admin\TMNhanVien\Admin_ThemNhanVienVaoPhongBan.resx">
       <DependentUpon>Admin_ThemNhanVienVaoPhongBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Luong\Admin_FormReportLuong.resx">
+    <EmbeddedResource Include="Admin\TMLuong\Admin_FormReportLuong.resx">
       <DependentUpon>Admin_FormReportLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormChiTietPhongBan.resx">
@@ -583,6 +598,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_DuAn.resx">
       <DependentUpon>Item_DuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item_LoaiKyLuat.resx">
+      <DependentUpon>Item_LoaiKyLuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\Item_LoaiPhuCap.resx">
       <DependentUpon>Item_LoaiPhuCap.cs</DependentUpon>
@@ -821,6 +839,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-card.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,42 +31,44 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_FormMain));
             this.Panelside = new System.Windows.Forms.Panel();
-            this.btnPosition = new System.Windows.Forms.Button();
-            this.btnAllowance = new System.Windows.Forms.Button();
             this.lblXinChao = new System.Windows.Forms.Label();
-            this.btnProject = new System.Windows.Forms.Button();
-            this.btnSalary = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblTen = new System.Windows.Forms.Label();
             this.lblPhanQuyen = new System.Windows.Forms.Label();
-            this.picAvatar = new System.Windows.Forms.PictureBox();
-            this.btnDepartments = new System.Windows.Forms.Button();
-            this.btnEmployees = new System.Windows.Forms.Button();
-            this.btnAccount = new System.Windows.Forms.Button();
-            this.btnOverview = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblLink = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblTime = new System.Windows.Forms.Label();
             this.lbl_Date = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnKyLuat = new System.Windows.Forms.Button();
             this.btnGioiThieu = new System.Windows.Forms.Button();
+            this.btnPosition = new System.Windows.Forms.Button();
+            this.btnAllowance = new System.Windows.Forms.Button();
+            this.btnProject = new System.Windows.Forms.Button();
+            this.btnSalary = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picAvatar = new System.Windows.Forms.PictureBox();
+            this.btnDepartments = new System.Windows.Forms.Button();
+            this.btnEmployees = new System.Windows.Forms.Button();
+            this.btnAccount = new System.Windows.Forms.Button();
+            this.btnOverview = new System.Windows.Forms.Button();
             this.Panelside.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // Panelside
             // 
             this.Panelside.BackColor = System.Drawing.Color.White;
+            this.Panelside.Controls.Add(this.btnKyLuat);
             this.Panelside.Controls.Add(this.btnGioiThieu);
             this.Panelside.Controls.Add(this.btnPosition);
             this.Panelside.Controls.Add(this.btnAllowance);
@@ -87,48 +89,6 @@
             this.Panelside.Size = new System.Drawing.Size(251, 892);
             this.Panelside.TabIndex = 0;
             // 
-            // btnPosition
-            // 
-            this.btnPosition.BackColor = System.Drawing.Color.White;
-            this.btnPosition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPosition.FlatAppearance.BorderSize = 0;
-            this.btnPosition.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnPosition.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPosition.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.btnPosition.Image = global::CNPM_QLNS.Properties.Resources.iconposition;
-            this.btnPosition.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPosition.Location = new System.Drawing.Point(2, 451);
-            this.btnPosition.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPosition.Name = "btnPosition";
-            this.btnPosition.Size = new System.Drawing.Size(249, 72);
-            this.btnPosition.TabIndex = 13;
-            this.btnPosition.Text = "Chức vụ";
-            this.btnPosition.UseVisualStyleBackColor = false;
-            this.btnPosition.Click += new System.EventHandler(this.btnPosition_Click);
-            // 
-            // btnAllowance
-            // 
-            this.btnAllowance.BackColor = System.Drawing.Color.White;
-            this.btnAllowance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAllowance.FlatAppearance.BorderSize = 0;
-            this.btnAllowance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnAllowance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnAllowance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAllowance.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAllowance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.btnAllowance.Image = global::CNPM_QLNS.Properties.Resources.iconloan;
-            this.btnAllowance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAllowance.Location = new System.Drawing.Point(4, 691);
-            this.btnAllowance.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAllowance.Name = "btnAllowance";
-            this.btnAllowance.Size = new System.Drawing.Size(247, 72);
-            this.btnAllowance.TabIndex = 12;
-            this.btnAllowance.Text = "Phụ cấp";
-            this.btnAllowance.UseVisualStyleBackColor = false;
-            this.btnAllowance.Click += new System.EventHandler(this.btnAllowance_Click);
-            // 
             // lblXinChao
             // 
             this.lblXinChao.AutoSize = true;
@@ -138,58 +98,6 @@
             this.lblXinChao.Size = new System.Drawing.Size(123, 27);
             this.lblXinChao.TabIndex = 11;
             this.lblXinChao.Text = "Xin chào !";
-            // 
-            // btnProject
-            // 
-            this.btnProject.BackColor = System.Drawing.Color.White;
-            this.btnProject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnProject.FlatAppearance.BorderSize = 0;
-            this.btnProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProject.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.btnProject.Image = global::CNPM_QLNS.Properties.Resources.iconproject;
-            this.btnProject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProject.Location = new System.Drawing.Point(4, 531);
-            this.btnProject.Margin = new System.Windows.Forms.Padding(4);
-            this.btnProject.Name = "btnProject";
-            this.btnProject.Size = new System.Drawing.Size(247, 72);
-            this.btnProject.TabIndex = 10;
-            this.btnProject.Text = "Dự án";
-            this.btnProject.UseVisualStyleBackColor = false;
-            this.btnProject.Click += new System.EventHandler(this.btnProject_Click);
-            // 
-            // btnSalary
-            // 
-            this.btnSalary.BackColor = System.Drawing.Color.White;
-            this.btnSalary.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSalary.FlatAppearance.BorderSize = 0;
-            this.btnSalary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnSalary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnSalary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalary.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.btnSalary.Image = global::CNPM_QLNS.Properties.Resources.iconcoin;
-            this.btnSalary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalary.Location = new System.Drawing.Point(4, 611);
-            this.btnSalary.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSalary.Name = "btnSalary";
-            this.btnSalary.Size = new System.Drawing.Size(247, 72);
-            this.btnSalary.TabIndex = 9;
-            this.btnSalary.Text = "Lương";
-            this.btnSalary.UseVisualStyleBackColor = false;
-            this.btnSalary.Click += new System.EventHandler(this.btnSalary_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(113, 82);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
             // 
             // lblTen
             // 
@@ -210,100 +118,6 @@
             this.lblPhanQuyen.Size = new System.Drawing.Size(69, 24);
             this.lblPhanQuyen.TabIndex = 6;
             this.lblPhanQuyen.Text = "Admin";
-            // 
-            // picAvatar
-            // 
-            this.picAvatar.Image = ((System.Drawing.Image)(resources.GetObject("picAvatar.Image")));
-            this.picAvatar.Location = new System.Drawing.Point(12, 12);
-            this.picAvatar.Name = "picAvatar";
-            this.picAvatar.Size = new System.Drawing.Size(90, 90);
-            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAvatar.TabIndex = 5;
-            this.picAvatar.TabStop = false;
-            // 
-            // btnDepartments
-            // 
-            this.btnDepartments.BackColor = System.Drawing.Color.White;
-            this.btnDepartments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnDepartments.FlatAppearance.BorderSize = 0;
-            this.btnDepartments.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnDepartments.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnDepartments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDepartments.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDepartments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.btnDepartments.Image = global::CNPM_QLNS.Properties.Resources.icondepartment_;
-            this.btnDepartments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDepartments.Location = new System.Drawing.Point(0, 371);
-            this.btnDepartments.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDepartments.Name = "btnDepartments";
-            this.btnDepartments.Size = new System.Drawing.Size(251, 72);
-            this.btnDepartments.TabIndex = 4;
-            this.btnDepartments.Text = "Phòng ban";
-            this.btnDepartments.UseVisualStyleBackColor = false;
-            this.btnDepartments.Click += new System.EventHandler(this.btnDepartments_Click);
-            // 
-            // btnEmployees
-            // 
-            this.btnEmployees.BackColor = System.Drawing.Color.White;
-            this.btnEmployees.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEmployees.FlatAppearance.BorderSize = 0;
-            this.btnEmployees.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnEmployees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmployees.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.btnEmployees.Image = global::CNPM_QLNS.Properties.Resources.iconemployees;
-            this.btnEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployees.Location = new System.Drawing.Point(0, 291);
-            this.btnEmployees.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEmployees.Name = "btnEmployees";
-            this.btnEmployees.Size = new System.Drawing.Size(251, 72);
-            this.btnEmployees.TabIndex = 2;
-            this.btnEmployees.Text = "Nhân Viên";
-            this.btnEmployees.UseVisualStyleBackColor = false;
-            this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
-            // 
-            // btnAccount
-            // 
-            this.btnAccount.BackColor = System.Drawing.Color.White;
-            this.btnAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAccount.FlatAppearance.BorderSize = 0;
-            this.btnAccount.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccount.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.btnAccount.Image = global::CNPM_QLNS.Properties.Resources.iconaccount;
-            this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.Location = new System.Drawing.Point(0, 131);
-            this.btnAccount.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Size = new System.Drawing.Size(251, 72);
-            this.btnAccount.TabIndex = 3;
-            this.btnAccount.Text = "Tài khoản";
-            this.btnAccount.UseVisualStyleBackColor = false;
-            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
-            // 
-            // btnOverview
-            // 
-            this.btnOverview.BackColor = System.Drawing.Color.White;
-            this.btnOverview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnOverview.FlatAppearance.BorderSize = 0;
-            this.btnOverview.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnOverview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
-            this.btnOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOverview.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOverview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.btnOverview.Image = global::CNPM_QLNS.Properties.Resources.iconoverview;
-            this.btnOverview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOverview.Location = new System.Drawing.Point(-4, 211);
-            this.btnOverview.Margin = new System.Windows.Forms.Padding(4);
-            this.btnOverview.Name = "btnOverview";
-            this.btnOverview.Size = new System.Drawing.Size(255, 72);
-            this.btnOverview.TabIndex = 1;
-            this.btnOverview.Text = "Tổng quan";
-            this.btnOverview.UseVisualStyleBackColor = false;
-            this.btnOverview.Click += new System.EventHandler(this.btnOverview_Click);
             // 
             // panel2
             // 
@@ -361,26 +175,6 @@
             this.panel1.Size = new System.Drawing.Size(1348, 90);
             this.panel1.TabIndex = 1;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CNPM_QLNS.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 87);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1021, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
             // lblTime
             // 
             this.lblTime.AutoSize = true;
@@ -408,6 +202,47 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CNPM_QLNS.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(107, 87);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1021, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnKyLuat
+            // 
+            this.btnKyLuat.BackColor = System.Drawing.Color.White;
+            this.btnKyLuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnKyLuat.FlatAppearance.BorderSize = 0;
+            this.btnKyLuat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnKyLuat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnKyLuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKyLuat.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKyLuat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.btnKyLuat.Image = global::CNPM_QLNS.Properties.Resources.iconloan;
+            this.btnKyLuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKyLuat.Location = new System.Drawing.Point(4, 750);
+            this.btnKyLuat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKyLuat.Name = "btnKyLuat";
+            this.btnKyLuat.Size = new System.Drawing.Size(247, 72);
+            this.btnKyLuat.TabIndex = 15;
+            this.btnKyLuat.Text = "Kỷ luật";
+            this.btnKyLuat.UseVisualStyleBackColor = false;
+            this.btnKyLuat.Click += new System.EventHandler(this.btnKyLuat_Click);
+            // 
             // btnGioiThieu
             // 
             this.btnGioiThieu.BackColor = System.Drawing.Color.White;
@@ -420,7 +255,7 @@
             this.btnGioiThieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
             this.btnGioiThieu.Image = global::CNPM_QLNS.Properties.Resources.iconloan;
             this.btnGioiThieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGioiThieu.Location = new System.Drawing.Point(4, 761);
+            this.btnGioiThieu.Location = new System.Drawing.Point(4, 816);
             this.btnGioiThieu.Margin = new System.Windows.Forms.Padding(4);
             this.btnGioiThieu.Name = "btnGioiThieu";
             this.btnGioiThieu.Size = new System.Drawing.Size(247, 72);
@@ -428,6 +263,194 @@
             this.btnGioiThieu.Text = "Giới Thiệu";
             this.btnGioiThieu.UseVisualStyleBackColor = false;
             this.btnGioiThieu.Click += new System.EventHandler(this.btnGioiThieu_Click);
+            // 
+            // btnPosition
+            // 
+            this.btnPosition.BackColor = System.Drawing.Color.White;
+            this.btnPosition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPosition.FlatAppearance.BorderSize = 0;
+            this.btnPosition.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnPosition.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPosition.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.btnPosition.Image = global::CNPM_QLNS.Properties.Resources.iconposition;
+            this.btnPosition.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPosition.Location = new System.Drawing.Point(4, 430);
+            this.btnPosition.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPosition.Name = "btnPosition";
+            this.btnPosition.Size = new System.Drawing.Size(249, 72);
+            this.btnPosition.TabIndex = 13;
+            this.btnPosition.Text = "Chức vụ";
+            this.btnPosition.UseVisualStyleBackColor = false;
+            this.btnPosition.Click += new System.EventHandler(this.btnPosition_Click);
+            // 
+            // btnAllowance
+            // 
+            this.btnAllowance.BackColor = System.Drawing.Color.White;
+            this.btnAllowance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAllowance.FlatAppearance.BorderSize = 0;
+            this.btnAllowance.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnAllowance.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnAllowance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAllowance.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAllowance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.btnAllowance.Image = global::CNPM_QLNS.Properties.Resources.iconloan;
+            this.btnAllowance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAllowance.Location = new System.Drawing.Point(4, 670);
+            this.btnAllowance.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAllowance.Name = "btnAllowance";
+            this.btnAllowance.Size = new System.Drawing.Size(247, 72);
+            this.btnAllowance.TabIndex = 12;
+            this.btnAllowance.Text = "Phụ cấp";
+            this.btnAllowance.UseVisualStyleBackColor = false;
+            this.btnAllowance.Click += new System.EventHandler(this.btnAllowance_Click);
+            // 
+            // btnProject
+            // 
+            this.btnProject.BackColor = System.Drawing.Color.White;
+            this.btnProject.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProject.FlatAppearance.BorderSize = 0;
+            this.btnProject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnProject.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnProject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProject.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.btnProject.Image = global::CNPM_QLNS.Properties.Resources.iconproject;
+            this.btnProject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProject.Location = new System.Drawing.Point(3, 510);
+            this.btnProject.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProject.Name = "btnProject";
+            this.btnProject.Size = new System.Drawing.Size(247, 72);
+            this.btnProject.TabIndex = 10;
+            this.btnProject.Text = "Dự án";
+            this.btnProject.UseVisualStyleBackColor = false;
+            this.btnProject.Click += new System.EventHandler(this.btnProject_Click);
+            // 
+            // btnSalary
+            // 
+            this.btnSalary.BackColor = System.Drawing.Color.White;
+            this.btnSalary.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSalary.FlatAppearance.BorderSize = 0;
+            this.btnSalary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnSalary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnSalary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalary.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.btnSalary.Image = global::CNPM_QLNS.Properties.Resources.iconcoin;
+            this.btnSalary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalary.Location = new System.Drawing.Point(4, 590);
+            this.btnSalary.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalary.Name = "btnSalary";
+            this.btnSalary.Size = new System.Drawing.Size(247, 72);
+            this.btnSalary.TabIndex = 9;
+            this.btnSalary.Text = "Lương";
+            this.btnSalary.UseVisualStyleBackColor = false;
+            this.btnSalary.Click += new System.EventHandler(this.btnSalary_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(113, 82);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // picAvatar
+            // 
+            this.picAvatar.Image = ((System.Drawing.Image)(resources.GetObject("picAvatar.Image")));
+            this.picAvatar.Location = new System.Drawing.Point(12, 12);
+            this.picAvatar.Name = "picAvatar";
+            this.picAvatar.Size = new System.Drawing.Size(90, 90);
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAvatar.TabIndex = 5;
+            this.picAvatar.TabStop = false;
+            // 
+            // btnDepartments
+            // 
+            this.btnDepartments.BackColor = System.Drawing.Color.White;
+            this.btnDepartments.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDepartments.FlatAppearance.BorderSize = 0;
+            this.btnDepartments.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnDepartments.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnDepartments.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDepartments.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDepartments.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.btnDepartments.Image = global::CNPM_QLNS.Properties.Resources.icondepartment_;
+            this.btnDepartments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDepartments.Location = new System.Drawing.Point(4, 350);
+            this.btnDepartments.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDepartments.Name = "btnDepartments";
+            this.btnDepartments.Size = new System.Drawing.Size(251, 72);
+            this.btnDepartments.TabIndex = 4;
+            this.btnDepartments.Text = "Phòng ban";
+            this.btnDepartments.UseVisualStyleBackColor = false;
+            this.btnDepartments.Click += new System.EventHandler(this.btnDepartments_Click);
+            // 
+            // btnEmployees
+            // 
+            this.btnEmployees.BackColor = System.Drawing.Color.White;
+            this.btnEmployees.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEmployees.FlatAppearance.BorderSize = 0;
+            this.btnEmployees.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnEmployees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmployees.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployees.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.btnEmployees.Image = global::CNPM_QLNS.Properties.Resources.iconemployees;
+            this.btnEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEmployees.Location = new System.Drawing.Point(2, 270);
+            this.btnEmployees.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEmployees.Name = "btnEmployees";
+            this.btnEmployees.Size = new System.Drawing.Size(251, 72);
+            this.btnEmployees.TabIndex = 2;
+            this.btnEmployees.Text = "Nhân Viên";
+            this.btnEmployees.UseVisualStyleBackColor = false;
+            this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
+            // 
+            // btnAccount
+            // 
+            this.btnAccount.BackColor = System.Drawing.Color.White;
+            this.btnAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAccount.FlatAppearance.BorderSize = 0;
+            this.btnAccount.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccount.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.btnAccount.Image = global::CNPM_QLNS.Properties.Resources.iconaccount;
+            this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAccount.Location = new System.Drawing.Point(-1, 110);
+            this.btnAccount.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Size = new System.Drawing.Size(251, 72);
+            this.btnAccount.TabIndex = 3;
+            this.btnAccount.Text = "Tài khoản";
+            this.btnAccount.UseVisualStyleBackColor = false;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
+            // 
+            // btnOverview
+            // 
+            this.btnOverview.BackColor = System.Drawing.Color.White;
+            this.btnOverview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnOverview.FlatAppearance.BorderSize = 0;
+            this.btnOverview.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnOverview.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(246)))), ((int)(((byte)(255)))));
+            this.btnOverview.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOverview.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOverview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.btnOverview.Image = global::CNPM_QLNS.Properties.Resources.iconoverview;
+            this.btnOverview.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOverview.Location = new System.Drawing.Point(0, 190);
+            this.btnOverview.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOverview.Name = "btnOverview";
+            this.btnOverview.Size = new System.Drawing.Size(255, 72);
+            this.btnOverview.TabIndex = 1;
+            this.btnOverview.Text = "Tổng quan";
+            this.btnOverview.UseVisualStyleBackColor = false;
+            this.btnOverview.Click += new System.EventHandler(this.btnOverview_Click);
             // 
             // Admin_FormMain
             // 
@@ -441,14 +464,14 @@
             this.Load += new System.EventHandler(this.Admin_FormMain_Load);
             this.Panelside.ResumeLayout(false);
             this.Panelside.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -480,6 +503,7 @@
         private System.Windows.Forms.Label lblLink;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnGioiThieu;
+        private System.Windows.Forms.Button btnKyLuat;
     }
 }
 

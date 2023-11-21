@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CNPM_QLNS.Class
 {
-    public class ChucVu
+    public class ChucVuNV
     {
         public string MaCV { get; set; }
         public string TenCV { get; set; }

@@ -1,4 +1,5 @@
 ﻿using CNPM_QLNS.Admin;
+using CNPM_QLNS.Admin.KyLuat;
 using CNPM_QLNS.BS_Layer;
 using System;
 using System.Collections.Generic;
@@ -138,6 +139,12 @@ namespace CNPM_QLNS
         {
             loadform(new GioiThieu());
             lblLink.Text = "Admin / Giới thiệu";
+        }
+
+        private void btnKyLuat_Click(object sender, EventArgs e)
+        {
+            loadform(new Admin_FormKyLuat(this));
+            lblLink.Text = "Admin / Kỷ luật";
         }
     }
 }

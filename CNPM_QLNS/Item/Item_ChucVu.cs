@@ -14,10 +14,10 @@ namespace CNPM_QLNS.Item
 {
     public partial class Item_ChucVu : Form
     {
-        public ChucVu cv;
+        public ChucVuNV cv;
         public Admin_FormMain FormMain;
         BL_ChucVu blcv = new BL_ChucVu();
-        public Item_ChucVu(ChucVu cv, Admin_FormMain formMain)
+        public Item_ChucVu(ChucVuNV cv, Admin_FormMain formMain)
         {
             InitializeComponent();
             this.cv = cv;
@@ -61,6 +61,11 @@ namespace CNPM_QLNS.Item
             {
                 MessageBox.Show("Hủy xóa phân công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btnChinhSua_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

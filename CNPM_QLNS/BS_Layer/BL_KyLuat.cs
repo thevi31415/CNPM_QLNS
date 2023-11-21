@@ -17,9 +17,9 @@ namespace CNPM_QLNS.BS_Layer
         {
             db = new DBMain();
         }
-        public List<KyLuat> LayDanhSachTatCaKyLuat()
+        public List<KyLuatNV> LayDanhSachTatCaKyLuat()
         {
-            List<KyLuat> danhSachKyLuat = new List<KyLuat>();
+            List<KyLuatNV> danhSachKyLuat = new List<KyLuatNV>();
 
             string query = "SELECT * FROM KyLuat"; // Đảm bảo bảng trong cơ sở dữ liệu có tên là KyLuat
 
@@ -29,7 +29,7 @@ namespace CNPM_QLNS.BS_Layer
             {
                 foreach (DataRow row in result.Tables[0].Rows)
                 {
-                    KyLuat kyLuat = new KyLuat
+                    KyLuatNV kyLuat = new KyLuatNV
                     {
                         MaKL = row["MaKL"].ToString(),
                         LoaiKL = row["LoaiKL"].ToString().Trim(),
@@ -42,9 +42,9 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachKyLuat;
         }
-        public List<KyLuat> LayDanhSachKyLuatTheoMaKL(string maKL)
+        public List<KyLuatNV> LayDanhSachKyLuatTheoMaKL(string maKL)
         {
-            List<KyLuat> danhSachKyLuat = new List<KyLuat>();
+            List<KyLuatNV> danhSachKyLuat = new List<KyLuatNV>();
 
             string query = "SELECT * FROM KyLuat WHERE MaKL = @MaKL";
             SqlParameter[] parameters = new SqlParameter[]
@@ -58,7 +58,7 @@ namespace CNPM_QLNS.BS_Layer
             {
                 foreach (DataRow row in result.Tables[0].Rows)
                 {
-                    KyLuat kyLuat = new KyLuat
+                    KyLuatNV kyLuat = new KyLuatNV
                     {
                         MaKL = row["MaKL"].ToString(),
                         LoaiKL = row["LoaiKL"].ToString(),

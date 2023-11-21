@@ -18,7 +18,7 @@ namespace CNPM_QLNS.Admin
 
         BL_ChucVu blcv = new BL_ChucVu();
 
-        public List<ChucVu> chucVuList = new List<ChucVu>();
+        public List<ChucVuNV> chucVuList = new List<ChucVuNV>();
         public Admin_FormMain formMain;
         public Admin_FormChucVu(Admin_FormMain formMain)
         {
@@ -26,7 +26,7 @@ namespace CNPM_QLNS.Admin
             this.formMain = formMain;
             LoadData(chucVuList);
         }
-        public void LoadData(List<ChucVu> chucvuList)
+        public void LoadData(List<ChucVuNV> chucvuList)
         {
 
             flowLayoutPanelCV.Controls.Clear();
@@ -36,7 +36,7 @@ namespace CNPM_QLNS.Admin
             if (chucVuList.Count > 0)
             {
                 //  MessageBox.Show(nhanVienList.Count().ToString());
-                foreach (ChucVu cv in chucVuList)
+                foreach (ChucVuNV cv in chucVuList)
                 {
                     Item_ChucVu item_cv= new Item_ChucVu(cv, formMain); // Pass the reference
                     item_cv.TopLevel = false;

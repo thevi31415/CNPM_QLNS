@@ -18,9 +18,9 @@ namespace CNPM_QLNS.BS_Layer
         {
             db = new DBMain();
         }
-        public List<ChucVu> LayDanhSachChucVuTheoMaCV(string maCV)
+        public List<ChucVuNV> LayDanhSachChucVuTheoMaCV(string maCV)
         {
-            List<ChucVu> danhSachChucVu = new List<ChucVu>();
+            List<ChucVuNV> danhSachChucVu = new List<ChucVuNV>();
 
             string query = "SELECT * FROM CHUCVU WHERE MaCV = @MaCV";
             SqlParameter[] parameters = new SqlParameter[]
@@ -34,7 +34,7 @@ namespace CNPM_QLNS.BS_Layer
             {
                 foreach (DataRow row in result.Tables[0].Rows)
                 {
-                    ChucVu chucVu = new ChucVu
+                    ChucVuNV chucVu = new ChucVuNV
                     {
                         MaCV = row["MaCV"].ToString(),
                         TenCV = row["TenCV"].ToString(),
@@ -48,9 +48,9 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachChucVu;
         }
-        public List<ChucVu> LayDanhSachChucVuTheoTenCV(string tenCV)
+        public List<ChucVuNV> LayDanhSachChucVuTheoTenCV(string tenCV)
         {
-            List<ChucVu> danhSachChucVu = new List<ChucVu>();
+            List<ChucVuNV> danhSachChucVu = new List<ChucVuNV>();
 
             string query = "SELECT * FROM CHUCVU WHERE TenCV = @TenCV";
             SqlParameter[] parameters = new SqlParameter[]
@@ -64,7 +64,7 @@ namespace CNPM_QLNS.BS_Layer
             {
                 foreach (DataRow row in result.Tables[0].Rows)
                 {
-                    ChucVu chucVu = new ChucVu
+                    ChucVuNV chucVu = new ChucVuNV
                     {
                         MaCV = row["MaCV"].ToString(),
                         TenCV = row["TenCV"].ToString(),
@@ -78,9 +78,9 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachChucVu;
         }
-        public List<ChucVu> LayDanhSachTatCaChucVu()
+        public List<ChucVuNV> LayDanhSachTatCaChucVu()
         {
-            List<ChucVu> danhSachChucVu = new List<ChucVu>();
+            List<ChucVuNV> danhSachChucVu = new List<ChucVuNV>();
 
             string query = "SELECT * FROM CHUCVU";
 
@@ -90,7 +90,7 @@ namespace CNPM_QLNS.BS_Layer
             {
                 foreach (DataRow row in result.Tables[0].Rows)
                 {
-                    ChucVu chucVu = new ChucVu
+                    ChucVuNV chucVu = new ChucVuNV
                     {
                         MaCV = row["MaCV"].ToString(),
                         TenCV = row["TenCV"].ToString().Trim(),

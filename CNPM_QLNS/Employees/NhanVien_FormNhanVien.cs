@@ -20,7 +20,7 @@ namespace CNPM_QLNS.Employees
         BL_TrinhDo bltrinhdo = new BL_TrinhDo();
         BL_ChuyenMon blchuyenmon = new BL_ChuyenMon();
         List<PhongBan> listphongban = new List<PhongBan>();
-        List<ChucVu> listchucvu = new List<ChucVu>();
+        List<ChucVuNV> listchucvu = new List<ChucVuNV>();
         List<TrinhDo> listtrinhdo = new List<TrinhDo>();
         List<ChuyenMon> listchuyenmon = new List<ChuyenMon>();
         public NhanVien_FormNhanVien(NhanVien nv)
