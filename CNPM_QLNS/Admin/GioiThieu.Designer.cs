@@ -71,11 +71,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(353, 217);
+            this.label2.Location = new System.Drawing.Point(170, 216);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(330, 36);
+            this.label2.Size = new System.Drawing.Size(503, 36);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Nguyễn Dương Thế Vĩ";
+            this.label2.Text = "21110728 - Nguyễn Dương Thế Vĩ";
             // 
             // label3
             // 
@@ -101,11 +101,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(358, 371);
+            this.label9.Location = new System.Drawing.Point(175, 371);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(191, 36);
+            this.label9.Size = new System.Drawing.Size(364, 36);
             this.label9.TabIndex = 10;
-            this.label9.Text = "Thái Bảo An";
+            this.label9.Text = "21110365 - Thái Bảo An";
             // 
             // label5
             // 

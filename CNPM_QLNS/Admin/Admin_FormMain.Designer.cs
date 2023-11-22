@@ -31,41 +31,41 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_FormMain));
             this.Panelside = new System.Windows.Forms.Panel();
-            this.lblXinChao = new System.Windows.Forms.Label();
-            this.lblTen = new System.Windows.Forms.Label();
-            this.lblPhanQuyen = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblLink = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelMain = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.lbl_Date = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btbDangXuat = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnKyLuat = new System.Windows.Forms.Button();
             this.btnGioiThieu = new System.Windows.Forms.Button();
             this.btnPosition = new System.Windows.Forms.Button();
             this.btnAllowance = new System.Windows.Forms.Button();
+            this.lblXinChao = new System.Windows.Forms.Label();
             this.btnProject = new System.Windows.Forms.Button();
             this.btnSalary = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblTen = new System.Windows.Forms.Label();
+            this.lblPhanQuyen = new System.Windows.Forms.Label();
             this.picAvatar = new System.Windows.Forms.PictureBox();
             this.btnDepartments = new System.Windows.Forms.Button();
             this.btnEmployees = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
             this.btnOverview = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblLink = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btbDangXuat = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.lbl_Date = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.Panelside.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btbDangXuat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // Panelside
@@ -92,151 +92,6 @@
             this.Panelside.Size = new System.Drawing.Size(251, 892);
             this.Panelside.TabIndex = 0;
             // 
-            // lblXinChao
-            // 
-            this.lblXinChao.AutoSize = true;
-            this.lblXinChao.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblXinChao.Location = new System.Drawing.Point(108, 12);
-            this.lblXinChao.Name = "lblXinChao";
-            this.lblXinChao.Size = new System.Drawing.Size(123, 27);
-            this.lblXinChao.TabIndex = 11;
-            this.lblXinChao.Text = "Xin chào !";
-            // 
-            // lblTen
-            // 
-            this.lblTen.AutoSize = true;
-            this.lblTen.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTen.Location = new System.Drawing.Point(108, 48);
-            this.lblTen.Name = "lblTen";
-            this.lblTen.Size = new System.Drawing.Size(83, 27);
-            this.lblTen.TabIndex = 7;
-            this.lblTen.Text = "The Vi";
-            // 
-            // lblPhanQuyen
-            // 
-            this.lblPhanQuyen.AutoSize = true;
-            this.lblPhanQuyen.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhanQuyen.Location = new System.Drawing.Point(139, 82);
-            this.lblPhanQuyen.Name = "lblPhanQuyen";
-            this.lblPhanQuyen.Size = new System.Drawing.Size(69, 24);
-            this.lblPhanQuyen.TabIndex = 6;
-            this.lblPhanQuyen.Text = "Admin";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
-            this.panel2.Controls.Add(this.lblLink);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.panelMain);
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.Panelside);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1576, 892);
-            this.panel2.TabIndex = 1;
-            // 
-            // lblLink
-            // 
-            this.lblLink.AutoSize = true;
-            this.lblLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.lblLink.Location = new System.Drawing.Point(257, 93);
-            this.lblLink.Name = "lblLink";
-            this.lblLink.Size = new System.Drawing.Size(125, 32);
-            this.lblLink.TabIndex = 4;
-            this.lblLink.Text = "Admin / ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.label1.Location = new System.Drawing.Point(756, 875);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 24);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Copyright © 2023 | Nhóm 11";
-            // 
-            // panelMain
-            // 
-            this.panelMain.BackColor = System.Drawing.Color.DimGray;
-            this.panelMain.Location = new System.Drawing.Point(258, 128);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1348, 744);
-            this.panelMain.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.btbDangXuat);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.lblTime);
-            this.panel1.Controls.Add(this.lbl_Date);
-            this.panel1.Location = new System.Drawing.Point(258, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1348, 90);
-            this.panel1.TabIndex = 1;
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.lblTime.Location = new System.Drawing.Point(1009, 12);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(100, 35);
-            this.lblTime.TabIndex = 0;
-            this.lblTime.Text = "label4";
-            // 
-            // lbl_Date
-            // 
-            this.lbl_Date.AutoSize = true;
-            this.lbl_Date.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.lbl_Date.Location = new System.Drawing.Point(1010, 47);
-            this.lbl_Date.Name = "lbl_Date";
-            this.lbl_Date.Size = new System.Drawing.Size(79, 27);
-            this.lbl_Date.TabIndex = 1;
-            this.lbl_Date.Text = "label4";
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btbDangXuat
-            // 
-            this.btbDangXuat.Image = global::CNPM_QLNS.Properties.Resources.exit__1_;
-            this.btbDangXuat.Location = new System.Drawing.Point(1209, 3);
-            this.btbDangXuat.Name = "btbDangXuat";
-            this.btbDangXuat.Size = new System.Drawing.Size(76, 75);
-            this.btbDangXuat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btbDangXuat.TabIndex = 4;
-            this.btbDangXuat.TabStop = false;
-            this.btbDangXuat.Click += new System.EventHandler(this.btbDangXuat_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CNPM_QLNS.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 87);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(943, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 60);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
             // btnKyLuat
             // 
             this.btnKyLuat.BackColor = System.Drawing.Color.White;
@@ -247,7 +102,7 @@
             this.btnKyLuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKyLuat.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKyLuat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.btnKyLuat.Image = global::CNPM_QLNS.Properties.Resources.iconloan;
+            this.btnKyLuat.Image = global::CNPM_QLNS.Properties.Resources.time;
             this.btnKyLuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKyLuat.Location = new System.Drawing.Point(4, 750);
             this.btnKyLuat.Margin = new System.Windows.Forms.Padding(4);
@@ -321,6 +176,16 @@
             this.btnAllowance.UseVisualStyleBackColor = false;
             this.btnAllowance.Click += new System.EventHandler(this.btnAllowance_Click);
             // 
+            // lblXinChao
+            // 
+            this.lblXinChao.AutoSize = true;
+            this.lblXinChao.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblXinChao.Location = new System.Drawing.Point(108, 12);
+            this.lblXinChao.Name = "lblXinChao";
+            this.lblXinChao.Size = new System.Drawing.Size(123, 27);
+            this.lblXinChao.TabIndex = 11;
+            this.lblXinChao.Text = "Xin chào !";
+            // 
             // btnProject
             // 
             this.btnProject.BackColor = System.Drawing.Color.White;
@@ -372,6 +237,26 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
+            // 
+            // lblTen
+            // 
+            this.lblTen.AutoSize = true;
+            this.lblTen.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTen.Location = new System.Drawing.Point(108, 48);
+            this.lblTen.Name = "lblTen";
+            this.lblTen.Size = new System.Drawing.Size(83, 27);
+            this.lblTen.TabIndex = 7;
+            this.lblTen.Text = "The Vi";
+            // 
+            // lblPhanQuyen
+            // 
+            this.lblPhanQuyen.AutoSize = true;
+            this.lblPhanQuyen.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhanQuyen.Location = new System.Drawing.Point(139, 82);
+            this.lblPhanQuyen.Name = "lblPhanQuyen";
+            this.lblPhanQuyen.Size = new System.Drawing.Size(69, 24);
+            this.lblPhanQuyen.TabIndex = 6;
+            this.lblPhanQuyen.Text = "Admin";
             // 
             // picAvatar
             // 
@@ -467,6 +352,121 @@
             this.btnOverview.UseVisualStyleBackColor = false;
             this.btnOverview.Click += new System.EventHandler(this.btnOverview_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(251)))));
+            this.panel2.Controls.Add(this.lblLink);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.panelMain);
+            this.panel2.Controls.Add(this.panel1);
+            this.panel2.Controls.Add(this.Panelside);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1576, 892);
+            this.panel2.TabIndex = 1;
+            // 
+            // lblLink
+            // 
+            this.lblLink.AutoSize = true;
+            this.lblLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.lblLink.Location = new System.Drawing.Point(257, 93);
+            this.lblLink.Name = "lblLink";
+            this.lblLink.Size = new System.Drawing.Size(125, 32);
+            this.lblLink.TabIndex = 4;
+            this.lblLink.Text = "Admin / ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.label1.Location = new System.Drawing.Point(756, 875);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(274, 24);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Copyright © 2023 | Nhóm 11";
+            // 
+            // panelMain
+            // 
+            this.panelMain.BackColor = System.Drawing.Color.DimGray;
+            this.panelMain.Location = new System.Drawing.Point(258, 128);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1348, 744);
+            this.panelMain.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btbDangXuat);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.lblTime);
+            this.panel1.Controls.Add(this.lbl_Date);
+            this.panel1.Location = new System.Drawing.Point(258, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1348, 90);
+            this.panel1.TabIndex = 1;
+            // 
+            // btbDangXuat
+            // 
+            this.btbDangXuat.Image = global::CNPM_QLNS.Properties.Resources.exit__1_;
+            this.btbDangXuat.Location = new System.Drawing.Point(1209, 3);
+            this.btbDangXuat.Name = "btbDangXuat";
+            this.btbDangXuat.Size = new System.Drawing.Size(76, 75);
+            this.btbDangXuat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btbDangXuat.TabIndex = 4;
+            this.btbDangXuat.TabStop = false;
+            this.btbDangXuat.Click += new System.EventHandler(this.btbDangXuat_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CNPM_QLNS.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(107, 87);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(943, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(60, 60);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.lblTime.Location = new System.Drawing.Point(1009, 12);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(100, 35);
+            this.lblTime.TabIndex = 0;
+            this.lblTime.Text = "label4";
+            // 
+            // lbl_Date
+            // 
+            this.lbl_Date.AutoSize = true;
+            this.lbl_Date.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
+            this.lbl_Date.Location = new System.Drawing.Point(1010, 47);
+            this.lbl_Date.Name = "lbl_Date";
+            this.lbl_Date.Size = new System.Drawing.Size(79, 27);
+            this.lbl_Date.TabIndex = 1;
+            this.lbl_Date.Text = "label4";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Admin_FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -479,6 +479,8 @@
             this.Load += new System.EventHandler(this.Admin_FormMain_Load);
             this.Panelside.ResumeLayout(false);
             this.Panelside.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -486,8 +488,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btbDangXuat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
