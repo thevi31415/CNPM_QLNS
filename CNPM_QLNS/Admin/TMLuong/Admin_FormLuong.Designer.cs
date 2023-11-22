@@ -34,14 +34,14 @@
             this.btnLoc = new System.Windows.Forms.Button();
             this.btnTinhLuong = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblChucVu = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblNgayCong = new System.Windows.Forms.Label();
-            this.lblTongLg = new System.Windows.Forms.Label();
-            this.lblMaLg = new System.Windows.Forms.Label();
-            this.lblPhuCap = new System.Windows.Forms.Label();
             this.lblKyLuat = new System.Windows.Forms.Label();
+            this.lblPhuCap = new System.Windows.Forms.Label();
+            this.lblMaLg = new System.Windows.Forms.Label();
+            this.lblTongLg = new System.Windows.Forms.Label();
+            this.lblNgayCong = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblChucVu = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +78,7 @@
             this.btnReportLuong.ForeColor = System.Drawing.Color.White;
             this.btnReportLuong.Image = global::CNPM_QLNS.Properties.Resources.iconoverview;
             this.btnReportLuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportLuong.Location = new System.Drawing.Point(319, 29);
+            this.btnReportLuong.Location = new System.Drawing.Point(331, 29);
             this.btnReportLuong.Name = "btnReportLuong";
             this.btnReportLuong.Size = new System.Drawing.Size(213, 47);
             this.btnReportLuong.TabIndex = 86;
@@ -96,7 +96,7 @@
             this.btnLoc.ForeColor = System.Drawing.Color.White;
             this.btnLoc.Image = global::CNPM_QLNS.Properties.Resources.filter_filled_tool_symbol;
             this.btnLoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoc.Location = new System.Drawing.Point(988, 29);
+            this.btnLoc.Location = new System.Drawing.Point(1007, 29);
             this.btnLoc.Name = "btnLoc";
             this.btnLoc.Size = new System.Drawing.Size(116, 47);
             this.btnLoc.TabIndex = 85;
@@ -138,65 +138,15 @@
             this.panel1.Size = new System.Drawing.Size(1216, 47);
             this.panel1.TabIndex = 83;
             // 
-            // label5
+            // lblKyLuat
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(267, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 22);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Nhân viên";
-            // 
-            // lblChucVu
-            // 
-            this.lblChucVu.AutoSize = true;
-            this.lblChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChucVu.Location = new System.Drawing.Point(373, 12);
-            this.lblChucVu.Name = "lblChucVu";
-            this.lblChucVu.Size = new System.Drawing.Size(83, 22);
-            this.lblChucVu.TabIndex = 1;
-            this.lblChucVu.Text = "Chức vụ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(879, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 22);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Thời gian";
-            // 
-            // lblNgayCong
-            // 
-            this.lblNgayCong.AutoSize = true;
-            this.lblNgayCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayCong.Location = new System.Drawing.Point(471, 12);
-            this.lblNgayCong.Name = "lblNgayCong";
-            this.lblNgayCong.Size = new System.Drawing.Size(105, 22);
-            this.lblNgayCong.TabIndex = 3;
-            this.lblNgayCong.Text = "Ngày công";
-            // 
-            // lblTongLg
-            // 
-            this.lblTongLg.AutoSize = true;
-            this.lblTongLg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTongLg.Location = new System.Drawing.Point(994, 12);
-            this.lblTongLg.Name = "lblTongLg";
-            this.lblTongLg.Size = new System.Drawing.Size(111, 22);
-            this.lblTongLg.TabIndex = 4;
-            this.lblTongLg.Text = "Tổng lương";
-            // 
-            // lblMaLg
-            // 
-            this.lblMaLg.AutoSize = true;
-            this.lblMaLg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaLg.Location = new System.Drawing.Point(156, 12);
-            this.lblMaLg.Name = "lblMaLg";
-            this.lblMaLg.Size = new System.Drawing.Size(91, 22);
-            this.lblMaLg.TabIndex = 5;
-            this.lblMaLg.Text = "Mã lương";
+            this.lblKyLuat.AutoSize = true;
+            this.lblKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKyLuat.Location = new System.Drawing.Point(770, 12);
+            this.lblKyLuat.Name = "lblKyLuat";
+            this.lblKyLuat.Size = new System.Drawing.Size(72, 22);
+            this.lblKyLuat.TabIndex = 7;
+            this.lblKyLuat.Text = "Kỷ luật";
             // 
             // lblPhuCap
             // 
@@ -208,15 +158,65 @@
             this.lblPhuCap.TabIndex = 6;
             this.lblPhuCap.Text = "Phụ cấp";
             // 
-            // lblKyLuat
+            // lblMaLg
             // 
-            this.lblKyLuat.AutoSize = true;
-            this.lblKyLuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKyLuat.Location = new System.Drawing.Point(770, 12);
-            this.lblKyLuat.Name = "lblKyLuat";
-            this.lblKyLuat.Size = new System.Drawing.Size(72, 22);
-            this.lblKyLuat.TabIndex = 7;
-            this.lblKyLuat.Text = "Kỷ luật";
+            this.lblMaLg.AutoSize = true;
+            this.lblMaLg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaLg.Location = new System.Drawing.Point(156, 12);
+            this.lblMaLg.Name = "lblMaLg";
+            this.lblMaLg.Size = new System.Drawing.Size(91, 22);
+            this.lblMaLg.TabIndex = 5;
+            this.lblMaLg.Text = "Mã lương";
+            // 
+            // lblTongLg
+            // 
+            this.lblTongLg.AutoSize = true;
+            this.lblTongLg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongLg.Location = new System.Drawing.Point(994, 12);
+            this.lblTongLg.Name = "lblTongLg";
+            this.lblTongLg.Size = new System.Drawing.Size(111, 22);
+            this.lblTongLg.TabIndex = 4;
+            this.lblTongLg.Text = "Tổng lương";
+            // 
+            // lblNgayCong
+            // 
+            this.lblNgayCong.AutoSize = true;
+            this.lblNgayCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayCong.Location = new System.Drawing.Point(471, 12);
+            this.lblNgayCong.Name = "lblNgayCong";
+            this.lblNgayCong.Size = new System.Drawing.Size(105, 22);
+            this.lblNgayCong.TabIndex = 3;
+            this.lblNgayCong.Text = "Ngày công";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(879, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(94, 22);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Thời gian";
+            // 
+            // lblChucVu
+            // 
+            this.lblChucVu.AutoSize = true;
+            this.lblChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChucVu.Location = new System.Drawing.Point(373, 12);
+            this.lblChucVu.Name = "lblChucVu";
+            this.lblChucVu.Size = new System.Drawing.Size(83, 22);
+            this.lblChucVu.TabIndex = 1;
+            this.lblChucVu.Text = "Chức vụ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(267, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(100, 22);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Nhân viên";
             // 
             // Admin_FormLuong
             // 
