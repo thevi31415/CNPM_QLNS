@@ -53,11 +53,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(353, 159);
+            this.label4.Location = new System.Drawing.Point(175, 166);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(263, 36);
+            this.label4.Size = new System.Drawing.Size(436, 36);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Nguyễn Đại Phúc";
+            this.label4.Text = "21110603 - Nguyễn Đại Phúc";
             // 
             // label6
             // 
