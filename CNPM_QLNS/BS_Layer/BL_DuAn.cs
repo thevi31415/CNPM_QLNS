@@ -19,17 +19,54 @@ namespace CNPM_QLNS.BS_Layer
         {
             db = new DBMain();
         }
-        public List<DuAn> LayDuAnTheoNhanVien(string maNV)
+        /* public List<DuAn> LayDuAnTheoNhanVien(string maNV)
+         {
+             List<DuAn> danhSachDuAn = new List<DuAn>();
+
+             string query = @"SELECT D.* 
+                      FROM DUAN D
+                           JOIN PHANCONG P ON D.MaDA = P.MaDA
+                      WHERE P.MaNV = @MaNV";
+
+             SqlParameter[] parameters = {
+         new SqlParameter("@MaNV", SqlDbType.NVarChar) { Value = maNV }
+     };
+
+             DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+             if (result != null && result.Tables.Count > 0)
+             {
+                 foreach (DataRow row in result.Tables[0].Rows)
+                 {
+                     DuAn duAn = new DuAn
+                     {
+                         MaDA = row["MaDA"].ToString(),
+                         TenDA = row["TenDA"].ToString().Trim(),
+                         GiaTri = Convert.ToInt32(row["GiaTri"]),
+                         NgayBatDau = Convert.ToDateTime(row["NgayBatDau"]),
+                         NgayKetThuc = Convert.ToDateTime(row["NgayKetThuc"]),
+                         MoTa = row["MoTa"].ToString(),
+                         TrangThai = Convert.ToInt32(row["TrangThai"])
+                     };
+
+                     danhSachDuAn.Add(duAn);
+                 }
+             }
+
+             return danhSachDuAn;
+         }
+ */
+        public List<DuAn> LayDuAnTheoNhanVien(string MaNV)
         {
             List<DuAn> danhSachDuAn = new List<DuAn>();
 
-            string query = @"SELECT D.* 
-                     FROM DUAN D
-                          JOIN PHANCONG P ON D.MaDA = P.MaDA
-                     WHERE P.MaNV = @MaNV";
+            string query = "SELECT DA.MaDA, DA.TenDA, DA.GiaTri, DA.NgayBatDau, DA.NgayKetThuc, DA.MoTa, DA.TrangThai " +
+                           "FROM DUAN DA " +
+                           "INNER JOIN PHANCONG PC ON DA.MaDA = PC.MaDA " +
+                           "WHERE PC.MaNV = @MaNV";
 
             SqlParameter[] parameters = {
-        new SqlParameter("@MaNV", SqlDbType.NVarChar) { Value = maNV }
+        new SqlParameter("@MaNV", SqlDbType.NVarChar, 10) { Value = MaNV }
     };
 
             DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
@@ -55,7 +92,6 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachDuAn;
         }
-
         public List<DuAn> LayDuAn()
         {
             List<DuAn> danhSachDuAn = new List<DuAn>();

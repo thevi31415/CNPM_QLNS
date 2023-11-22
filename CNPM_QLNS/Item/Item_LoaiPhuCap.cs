@@ -37,7 +37,7 @@ namespace CNPM_QLNS.Item
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa nhân viên này ra khỏi dự án  không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa phụ cấp này ra khỏi hệ thống không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             // Nếu người dùng chọn "Yes", thực hiện xóa
             if (result == DialogResult.Yes)

@@ -139,6 +139,8 @@
             this.Name = "Item_ChucVu";
             this.Text = "Item_ChucVu";
             this.Load += new System.EventHandler(this.Item_ChucVu_Load);
+            this.MouseEnter += new System.EventHandler(this.Item_ChucVu_MouseEnter);
+            this.MouseLeave += new System.EventHandler(this.Item_ChucVu_MouseLeave);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -13,13 +13,12 @@ using System.Windows.Forms;
 
 namespace CNPM_QLNS.Employees
 {
-    public partial class NhanVien_FormPhuCap : Form
+    public partial class NhanVien_FormKyLuat : Form
     {
+        BL_KyLuatMotNhanVien blktmotnv = new BL_KyLuatMotNhanVien();
+        List<KyLuatChoNhanVien> listkylyluat = new List<KyLuatChoNhanVien>();
         public NhanVien nv;
-        List<PhuCapNhanVien> phucapchonv = new List<PhuCapNhanVien>();
-        BL_PhuCapChoNhanVien blpcchonv = new BL_PhuCapChoNhanVien();
-
-        public NhanVien_FormPhuCap(NhanVien nv)
+        public NhanVien_FormKyLuat(NhanVien nv)
         {
             InitializeComponent();
             this.nv = nv;
@@ -28,32 +27,32 @@ namespace CNPM_QLNS.Employees
         public void LoadDataHoanThanh2()
         {
 
-            panelPhuCapNhanVien.Controls.Clear();
+            panelKyLuatNhanVien.Controls.Clear();
 
-            phucapchonv = blpcchonv.LayDanhSachPhuCapNhanVienTheoMaNV(nv.MaNV);
+            listkylyluat = blktmotnv.LayKyLuatTheoMaNV(nv.MaNV);
 
             //  nvList = nv.LayNhanVien();
-            panelPhuCapNhanVien.Padding = new Padding(10, 0, 10, 0); ;
-            if (phucapchonv.Count > 0)
+           panelKyLuatNhanVien.Padding = new Padding(10, 0, 10, 0); ;
+            if (listkylyluat.Count > 0)
             {
                 //  MessageBox.Show(nhanVienList.Count().ToString());
-                foreach (PhuCapNhanVien phucapnv in phucapchonv)
+                foreach (KyLuatChoNhanVien kyluat in listkylyluat)
                 {
-                    Item_PhuCapChoNhanVien item_duan = new Item_PhuCapChoNhanVien(null, phucapnv); // Pass the reference
+                   Item_KyLuatMotNhanVien item_duan = new Item_KyLuatMotNhanVien(null, kyluat); // Pass the reference
                     item_duan.TopLevel = false;
-                    panelPhuCapNhanVien.Controls.Add(item_duan);
+                    panelKyLuatNhanVien.Controls.Add(item_duan);
                     item_duan.Show();
                 }
                 //  MessageBox.Show("XYX" + phucapchonv.Count().ToString());
             }
             else
             {
-               // MessageBox.Show("Khong tim thay phu cap nao =)))");
+                // MessageBox.Show("Khong tim thay phu cap nao =)))");
             }
 
 
         }
-        private void NhanVien_FormPhuCap_Load(object sender, EventArgs e)
+        private void NhanVien_FormKyLuat_Load(object sender, EventArgs e)
         {
 
         }

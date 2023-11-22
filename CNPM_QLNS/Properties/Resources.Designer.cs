@@ -63,6 +63,16 @@ namespace CNPM_QLNS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _13404949_5240315 {
+            get {
+                object obj = ResourceManager.GetObject("13404949_5240315", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
@@ -196,6 +206,26 @@ namespace CNPM_QLNS.Properties {
         internal static System.Drawing.Bitmap exchange {
             get {
                 object obj = ResourceManager.GetObject("exchange", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit__1_ {
+            get {
+                object obj = ResourceManager.GetObject("exit (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +376,16 @@ namespace CNPM_QLNS.Properties {
         internal static System.Drawing.Bitmap iconproject {
             get {
                 object obj = ResourceManager.GetObject("iconproject", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info_button {
+            get {
+                object obj = ResourceManager.GetObject("info-button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -636,6 +676,16 @@ namespace CNPM_QLNS.Properties {
         internal static System.Drawing.Bitmap view {
             get {
                 object obj = ResourceManager.GetObject("view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap welcome {
+            get {
+                object obj = ResourceManager.GetObject("welcome", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

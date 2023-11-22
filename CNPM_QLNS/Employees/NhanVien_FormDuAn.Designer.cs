@@ -40,10 +40,17 @@
             this.flowLayoutPanelDA = new System.Windows.Forms.FlowLayoutPanel();
             this.lbl = new System.Windows.Forms.Label();
             this.lblSLChuaHoanThanh = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblPhuCap = new System.Windows.Forms.Label();
+            this.lblMaLg = new System.Windows.Forms.Label();
+            this.lblNgayCong = new System.Windows.Forms.Label();
+            this.lblChucVu = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox3
@@ -70,7 +77,7 @@
             this.lblTrangThai.AutoSize = true;
             this.lblTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTrangThai.ForeColor = System.Drawing.Color.White;
-            this.lblTrangThai.Location = new System.Drawing.Point(524, 8);
+            this.lblTrangThai.Location = new System.Drawing.Point(505, 8);
             this.lblTrangThai.Name = "lblTrangThai";
             this.lblTrangThai.Size = new System.Drawing.Size(261, 32);
             this.lblTrangThai.TabIndex = 0;
@@ -144,9 +151,9 @@
             // 
             this.flowLayoutPanelDA.AutoScroll = true;
             this.flowLayoutPanelDA.BackColor = System.Drawing.SystemColors.Control;
-            this.flowLayoutPanelDA.Location = new System.Drawing.Point(0, 163);
+            this.flowLayoutPanelDA.Location = new System.Drawing.Point(0, 205);
             this.flowLayoutPanelDA.Name = "flowLayoutPanelDA";
-            this.flowLayoutPanelDA.Size = new System.Drawing.Size(1431, 644);
+            this.flowLayoutPanelDA.Size = new System.Drawing.Size(1431, 602);
             this.flowLayoutPanelDA.TabIndex = 15;
             // 
             // lbl
@@ -171,12 +178,76 @@
             this.lblSLChuaHoanThanh.TabIndex = 18;
             this.lblSLChuaHoanThanh.Text = "0";
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lblPhuCap);
+            this.panel4.Controls.Add(this.lblMaLg);
+            this.panel4.Controls.Add(this.lblNgayCong);
+            this.panel4.Controls.Add(this.lblChucVu);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Location = new System.Drawing.Point(40, 163);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1324, 39);
+            this.panel4.TabIndex = 89;
+            // 
+            // lblPhuCap
+            // 
+            this.lblPhuCap.AutoSize = true;
+            this.lblPhuCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhuCap.Location = new System.Drawing.Point(903, 12);
+            this.lblPhuCap.Name = "lblPhuCap";
+            this.lblPhuCap.Size = new System.Drawing.Size(102, 22);
+            this.lblPhuCap.TabIndex = 6;
+            this.lblPhuCap.Text = "Trạng thái";
+            // 
+            // lblMaLg
+            // 
+            this.lblMaLg.AutoSize = true;
+            this.lblMaLg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaLg.Location = new System.Drawing.Point(93, 12);
+            this.lblMaLg.Name = "lblMaLg";
+            this.lblMaLg.Size = new System.Drawing.Size(63, 22);
+            this.lblMaLg.TabIndex = 5;
+            this.lblMaLg.Text = "MaDA";
+            // 
+            // lblNgayCong
+            // 
+            this.lblNgayCong.AutoSize = true;
+            this.lblNgayCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayCong.Location = new System.Drawing.Point(467, 12);
+            this.lblNgayCong.Name = "lblNgayCong";
+            this.lblNgayCong.Size = new System.Drawing.Size(144, 22);
+            this.lblNgayCong.TabIndex = 3;
+            this.lblNgayCong.Text = "Người tham gia";
+            // 
+            // lblChucVu
+            // 
+            this.lblChucVu.AutoSize = true;
+            this.lblChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChucVu.Location = new System.Drawing.Point(684, 12);
+            this.lblChucVu.Name = "lblChucVu";
+            this.lblChucVu.Size = new System.Drawing.Size(65, 22);
+            this.lblChucVu.TabIndex = 1;
+            this.lblChucVu.Text = "Giá trị";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(253, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 22);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Tên dự án";
+            // 
             // NhanVien_FormDuAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1429, 804);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
@@ -197,6 +268,8 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,5 +289,11 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelDA;
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label lblSLChuaHoanThanh;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lblPhuCap;
+        private System.Windows.Forms.Label lblMaLg;
+        private System.Windows.Forms.Label lblNgayCong;
+        private System.Windows.Forms.Label lblChucVu;
+        private System.Windows.Forms.Label label5;
     }
 }

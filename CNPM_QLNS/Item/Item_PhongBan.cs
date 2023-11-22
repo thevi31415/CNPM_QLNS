@@ -56,9 +56,9 @@ namespace CNPM_QLNS.Item
         private void btnXoa_Click(object sender, EventArgs e)
             
         {
-            MessageBox.Show(pb.MaPB);
+           // MessageBox.Show(pb.MaPB);
             
-            if (MessageBox.Show("Bạn có chắc chắn muốn xóa nhân viên này? \n Chú ý: Khi xóa sẽ xóa tất cả thông tin của nhân viên đó (Lương, Dự Án, Phòng Ban, ...) ra khỏi hệ thống.", "Xác nhận xóa", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa phòng ban này ?", "Xác nhận xóa", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
 
 

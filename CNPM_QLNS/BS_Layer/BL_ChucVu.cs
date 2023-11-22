@@ -155,7 +155,24 @@ namespace CNPM_QLNS.BS_Layer
 
             return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
         }
+        public bool CapNhatChucVu(string maCV, string tenCV, int luongCoBan, string moTa)
+        {
+            string error = "";
 
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaCV", maCV),
+        new SqlParameter("@TenCV", tenCV),
+        new SqlParameter("@LuongCoBan", luongCoBan),
+        new SqlParameter("@MoTa", moTa)
+            };
+
+            string strSQL = "UPDATE CHUCVU " +
+                            "SET TenCV = @TenCV, LuongCoBan = @LuongCoBan, MoTa = @MoTa " +
+                            "WHERE MaCV = @MaCV";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
 
         public bool XoaChucVu(string maCV)
         {

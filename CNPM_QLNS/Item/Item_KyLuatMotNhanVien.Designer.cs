@@ -44,7 +44,7 @@
             this.lblSoQD.AutoSize = true;
             this.lblSoQD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoQD.ForeColor = System.Drawing.Color.Red;
-            this.lblSoQD.Location = new System.Drawing.Point(1109, 41);
+            this.lblSoQD.Location = new System.Drawing.Point(1066, 41);
             this.lblSoQD.Name = "lblSoQD";
             this.lblSoQD.Size = new System.Drawing.Size(63, 22);
             this.lblSoQD.TabIndex = 31;
@@ -55,7 +55,7 @@
             this.lblSoTien.AutoSize = true;
             this.lblSoTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoTien.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblSoTien.Location = new System.Drawing.Point(955, 41);
+            this.lblSoTien.Location = new System.Drawing.Point(909, 41);
             this.lblSoTien.Name = "lblSoTien";
             this.lblSoTien.Size = new System.Drawing.Size(74, 22);
             this.lblSoTien.TabIndex = 30;
@@ -66,7 +66,7 @@
             this.lblTenKL.AutoSize = true;
             this.lblTenKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenKL.ForeColor = System.Drawing.Color.Black;
-            this.lblTenKL.Location = new System.Drawing.Point(673, 41);
+            this.lblTenKL.Location = new System.Drawing.Point(582, 41);
             this.lblTenKL.Name = "lblTenKL";
             this.lblTenKL.Size = new System.Drawing.Size(69, 22);
             this.lblTenKL.TabIndex = 29;

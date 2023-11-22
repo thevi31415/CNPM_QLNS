@@ -27,6 +27,8 @@ namespace CNPM_QLNS.Employees
             this.MaNV = MaNV.Trim();
             lblTen.Text = MaNV;
             nv = blnhanvien.LayNhanVienTheoMa(MaNV.Trim());
+            loadform(new NhanVien_FormTongQuan());
+            lblLink.Text = "Nhân viên / Tổng quan";
         }
         public void loadform(object Form)
         {
@@ -43,6 +45,7 @@ namespace CNPM_QLNS.Employees
         {
             this.Width = 1250;
             this.Height = 780;
+            timer1.Start();
         }
 
         private void btnEmployees_Click(object sender, EventArgs e)
@@ -98,6 +101,30 @@ namespace CNPM_QLNS.Employees
         {
             loadform(new NhanVien_FormPhuCap(nv));
             lblLink.Text = "Nhân viên / Phụ cấp";
+        }
+
+        private void btnKyLuat_Click(object sender, EventArgs e)
+        {
+            loadform(new NhanVien_FormKyLuat(nv));
+            lblLink.Text = "Nhân viên / Kỷ luật";
+        }
+
+        private void btbDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnOverview_Click(object sender, EventArgs e)
+        {
+            loadform(new NhanVien_FormTongQuan());
+            lblLink.Text = "Nhân viên / Tổng quan";
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
+
+            lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
     }
 }

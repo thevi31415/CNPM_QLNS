@@ -35,7 +35,9 @@ namespace CNPM_QLNS.Item
             lblSoQD.Text = klmotnv.SoQD;
             if (formain == null)
             {
+                btnXoa.Enabled = false;
                 btnXoa.Visible = false;
+                
             }
 
 

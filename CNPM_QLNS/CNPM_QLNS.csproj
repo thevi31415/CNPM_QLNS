@@ -93,6 +93,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\TMChucVu\Admin_FormChinhSuaChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\TMChucVu\Admin_FormChinhSuaChucVu.Designer.cs">
+      <DependentUpon>Admin_FormChinhSuaChucVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\TMChucVu\Admin_FormThemChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -361,11 +367,23 @@
     <Compile Include="Employees\NhanVien_FormDuAn.Designer.cs">
       <DependentUpon>NhanVien_FormDuAn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employees\NhanVien_FormKyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\NhanVien_FormKyLuat.Designer.cs">
+      <DependentUpon>NhanVien_FormKyLuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employees\NhanVien_FormPhuCap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Employees\NhanVien_FormPhuCap.Designer.cs">
       <DependentUpon>NhanVien_FormPhuCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\NhanVien_FormTongQuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\NhanVien_FormTongQuan.Designer.cs">
+      <DependentUpon>NhanVien_FormTongQuan.cs</DependentUpon>
     </Compile>
     <Compile Include="Employees\NV_Luong\NhanVien_FormLuong.cs">
       <SubType>Form</SubType>
@@ -489,6 +507,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\TMChucVu\Admin_FormChinhSuaChucVu.resx">
+      <DependentUpon>Admin_FormChinhSuaChucVu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\TMChucVu\Admin_FormThemChucVu.resx">
       <DependentUpon>Admin_FormThemChucVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -603,8 +624,14 @@
     <EmbeddedResource Include="Employees\NhanVien_FormDuAn.resx">
       <DependentUpon>NhanVien_FormDuAn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employees\NhanVien_FormKyLuat.resx">
+      <DependentUpon>NhanVien_FormKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employees\NhanVien_FormPhuCap.resx">
       <DependentUpon>NhanVien_FormPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\NhanVien_FormTongQuan.resx">
+      <DependentUpon>NhanVien_FormTongQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\NV_Luong\NhanVien_FormLuong.resx">
       <DependentUpon>NhanVien_FormLuong.cs</DependentUpon>
@@ -885,6 +912,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fired.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13404949_5240315.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

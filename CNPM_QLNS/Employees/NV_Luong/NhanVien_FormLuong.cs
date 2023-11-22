@@ -49,7 +49,7 @@ namespace CNPM_QLNS.Employees
             }
             else
             {
-                MessageBox.Show("Khong tim thay nhan vien nao");
+              //  MessageBox.Show("Khong tim thay nhan vien nao");
             }
 
 

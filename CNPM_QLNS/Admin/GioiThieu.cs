@@ -16,5 +16,10 @@ namespace CNPM_QLNS.Admin
         {
             InitializeComponent();
         }
+
+        private void GioiThieu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

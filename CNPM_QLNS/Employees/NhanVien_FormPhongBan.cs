@@ -61,7 +61,7 @@ namespace CNPM_QLNS.Employees
             }
             else
             {
-                MessageBox.Show("Không tìm thấy phòng ban nào =)))");
+                //MessageBox.Show("Không tìm thấy phòng ban nào =)))");
             }
         }
 

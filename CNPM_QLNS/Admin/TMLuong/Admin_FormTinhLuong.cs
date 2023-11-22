@@ -124,6 +124,7 @@ namespace CNPM_QLNS.Admin
                     {
                         MessageBox.Show("Tính lương thành công !");
                         formMain.LoadFormLuong();
+                        this.Close();
                     }
                     else
                     {

@@ -150,5 +150,10 @@ namespace CNPM_QLNS
             loadform(new Admin_FormKyLuat(this));
             lblLink.Text = "Admin / Kỷ luật";
         }
+
+        private void btbDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

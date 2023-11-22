@@ -50,7 +50,7 @@ namespace CNPM_QLNS.Employees
         {
 
             flowLayoutPanelDA.Controls.Clear();
-            lisdathamgia = blda.LayDuAn();
+            lisdathamgia = blda.LayDuAnTheoNhanVien(nv.MaNV);
             //  nvList = nv.LayNhanVien();
             flowLayoutPanelDA.Padding = new Padding(10, 0, 10, 0); ;
             if (lisdathamgia.Count > 0)
@@ -66,7 +66,7 @@ namespace CNPM_QLNS.Employees
             }
             else
             {
-                MessageBox.Show("Khong tim thay du an nao =)))");
+               // MessageBox.Show("Khong tim thay du an nao =)))");
             }
 
 

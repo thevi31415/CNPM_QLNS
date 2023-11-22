@@ -25,13 +25,18 @@ namespace CNPM_QLNS.Item
             InitializeComponent();
             this.formain = formMain;
             this.pcnv = pcnv;
-            pc = blpc.LayThongTinPhuCapTheoMaPC(pcnv.MaPC)[0];
-            lblID.Text = pcnv.ID;
-            lblMaNV.Text = pcnv.MaNV;
-            lblHoTen.Text = blnv.LayDanhSachNhanVienTheoMaNV(pcnv.MaNV)[0].HoTen;
-            lblTenPC.Text = pc.LoaiPC;
-            lblSoTien.Text = pc.GiaTriPC.ToString();
-            lblSoQD.Text = pcnv.SoQD;
+          
+            if(blpc.LayThongTinPhuCapTheoMaPC(pcnv.MaPC).Count > 0)
+            {
+                pc = blpc.LayThongTinPhuCapTheoMaPC(pcnv.MaPC)[0];
+                lblID.Text = pcnv.ID;
+                lblMaNV.Text = pcnv.MaNV;
+                lblHoTen.Text = blnv.LayDanhSachNhanVienTheoMaNV(pcnv.MaNV)[0].HoTen;
+                lblTenPC.Text = pc.LoaiPC;
+                lblSoTien.Text = pc.GiaTriPC.ToString();
+                lblSoQD.Text = pcnv.SoQD;
+            }
+           
             if (formain == null)
             {
                 btnXoa.Visible = false;

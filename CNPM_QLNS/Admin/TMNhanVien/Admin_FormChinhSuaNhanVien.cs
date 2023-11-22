@@ -164,7 +164,7 @@ namespace CNPM_QLNS.Admin
 
                     formnmain.LoadFormNhanVien();
                  
-                    MessageBox.Show("Them thanh cong !");
+                    MessageBox.Show("Cập nhật thành công !");
 
                 }
                 else

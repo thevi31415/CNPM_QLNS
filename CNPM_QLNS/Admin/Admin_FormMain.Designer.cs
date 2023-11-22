@@ -42,6 +42,7 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.lbl_Date = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btbDangXuat = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnKyLuat = new System.Windows.Forms.Button();
@@ -56,9 +57,11 @@
             this.btnEmployees = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
             this.btnOverview = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.Panelside.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btbDangXuat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -166,6 +169,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btbDangXuat);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.lblTime);
@@ -180,7 +184,7 @@
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.lblTime.Location = new System.Drawing.Point(1087, 12);
+            this.lblTime.Location = new System.Drawing.Point(1009, 12);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(100, 35);
             this.lblTime.TabIndex = 0;
@@ -191,7 +195,7 @@
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.lbl_Date.Location = new System.Drawing.Point(1088, 47);
+            this.lbl_Date.Location = new System.Drawing.Point(1010, 47);
             this.lbl_Date.Name = "lbl_Date";
             this.lbl_Date.Size = new System.Drawing.Size(79, 27);
             this.lbl_Date.TabIndex = 1;
@@ -201,6 +205,17 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btbDangXuat
+            // 
+            this.btbDangXuat.Image = global::CNPM_QLNS.Properties.Resources.exit__1_;
+            this.btbDangXuat.Location = new System.Drawing.Point(1209, 3);
+            this.btbDangXuat.Name = "btbDangXuat";
+            this.btbDangXuat.Size = new System.Drawing.Size(76, 75);
+            this.btbDangXuat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btbDangXuat.TabIndex = 4;
+            this.btbDangXuat.TabStop = false;
+            this.btbDangXuat.Click += new System.EventHandler(this.btbDangXuat_Click);
             // 
             // pictureBox1
             // 
@@ -215,7 +230,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1021, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(943, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(60, 60);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -253,7 +268,7 @@
             this.btnGioiThieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGioiThieu.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGioiThieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(140)))), ((int)(((byte)(254)))));
-            this.btnGioiThieu.Image = global::CNPM_QLNS.Properties.Resources.iconloan;
+            this.btnGioiThieu.Image = global::CNPM_QLNS.Properties.Resources.info_button;
             this.btnGioiThieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGioiThieu.Location = new System.Drawing.Point(4, 816);
             this.btnGioiThieu.Margin = new System.Windows.Forms.Padding(4);
@@ -468,6 +483,7 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btbDangXuat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -504,6 +520,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnGioiThieu;
         private System.Windows.Forms.Button btnKyLuat;
+        private System.Windows.Forms.PictureBox btbDangXuat;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 

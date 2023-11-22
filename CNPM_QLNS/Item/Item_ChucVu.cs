@@ -1,4 +1,5 @@
-﻿using CNPM_QLNS.BS_Layer;
+﻿using CNPM_QLNS.Admin.TMChucVu;
+using CNPM_QLNS.BS_Layer;
 using CNPM_QLNS.Class;
 using System;
 using System.Collections.Generic;
@@ -65,7 +66,18 @@ namespace CNPM_QLNS.Item
 
         private void btnChinhSua_Click(object sender, EventArgs e)
         {
+            Admin_FormChinhSuaChucVu cscv = new Admin_FormChinhSuaChucVu(this.FormMain, cv);
+            cscv.ShowDialog();
+        }
 
+        private void Item_ChucVu_MouseEnter(object sender, EventArgs e)
+        {
+            this.BackColor = ColorTranslator.FromHtml("#ABD0F9");
+        }
+
+        private void Item_ChucVu_MouseLeave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
         }
     }
 }
