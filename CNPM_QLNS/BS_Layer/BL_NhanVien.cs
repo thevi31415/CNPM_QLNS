@@ -177,11 +177,52 @@ namespace CNPM_QLNS.BS_Layer
               return nhanViens;
             
 
-          
+      
         }
+        public List<NhanVien> LayNhanVienKhongThamGiaDuAn(string maDuAn)
+        {
+            List<NhanVien> nhanViens = new List<NhanVien>();
+
+            // Sửa truy vấn để lấy những nhân viên không tham gia dự án
+            string query = "SELECT * FROM NHANVIEN WHERE MaNV NOT IN (SELECT MaNV FROM PHANCONG WHERE MaDA = @MaDA)";
+            SqlParameter[] parameters = {
+        new SqlParameter("@MaDA", maDuAn)
+    };
+            DataSet result = db.ExecuteQueryDataSet(query, CommandType.Text, parameters);
+
+            if (result != null && result.Tables.Count > 0)
+            {
+                foreach (DataRow row in result.Tables[0].Rows)
+                {
+                    NhanVien nv = new NhanVien
+                    {
+                        MaNV = row["MaNV"].ToString(),
+                        HoTen = row["HoTen"].ToString(),
+                        CMND = row["CMND"].ToString(),
+                        GioiTinh = row["GioiTinh"].ToString(),
+                        NgaySinh = Convert.ToDateTime(row["NgaySinh"]),
+                        QueQuan = row["QueQuan"].ToString(),
+                        TonGiao = row["TonGiao"].ToString(),
+                        DiaChi = row["DiaChi"].ToString(),
+                        TrangThai = row["TrangThai"].ToString().Trim(),
+                        MaPB = row["MaPB"].ToString(),
+                        MaCV = row["MaCV"].ToString(),
+                        MaTD = row["MaTD"].ToString(),
+                        MaCM = row["MaCM"].ToString(),
+                        Hinh = row["Hinh"].ToString()
+                    };
+
+                    nhanViens.Add(nv);
+                }
+            }
+            nhanViens.Reverse();
+            return nhanViens;
+        }
+
         public bool ThemNhanVien(string maNV, string hoTen, string cmnd, string gioiTinh, DateTime ngaySinh, string queQuan, string tonGiao, string diaChi, string trangThai, string maPB, string maCV, string maTD, string maCM, string hinh)
         {
             string error = "";
+            DBMain db = new DBMain();
 
             SqlParameter[] parameterValues = new SqlParameter[]
             {
@@ -210,6 +251,7 @@ namespace CNPM_QLNS.BS_Layer
         public bool CapNhatNhanVien(string maNV, string hoTenNV, string cmnd, string gioiTinh, DateTime ngaySinh, string queQuan, string tonGiao, string diaChi, string trangThai, string maPB, string maCV, string maTD, string maCM, string hinh)
         {
             string error = "";
+            DBMain db = new DBMain();
 
             SqlParameter[] parameterValues = new SqlParameter[]
             {
@@ -231,7 +273,12 @@ namespace CNPM_QLNS.BS_Layer
 
             string strSQL = "UPDATE NHANVIEN SET HoTen=@HoTenNV, CMND=@CMND, GioiTinh=@GioiTinh, NgaySinh=@NgaySinh, QueQuan=@QueQuan, TonGiao=@TonGiao, DiaChi=@DiaChi, TrangThai=@TrangThai, MaPB=@MaPB, MaCV=@MaCV, MaTD=@MaTD, MaCM=@MaCM, Hinh=@Hinh WHERE MaNV=@MaNV";
 
-            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+           bool check = db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+           if(check == false)
+            {
+                MessageBox.Show(error);
+            }
+            return check;
         }
 
 

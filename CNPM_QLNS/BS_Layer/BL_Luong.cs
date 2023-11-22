@@ -43,9 +43,9 @@ namespace CNPM_QLNS.BS_Layer
                         Thang = Convert.ToInt32(row["Thang"]),
                         Nam = Convert.ToInt32(row["Nam"]),
                         NgayCong = Convert.ToInt32(row["NgayCong"]),
-                        PhuCap = row["PhuCap"].ToString(),
-                        KyLuat = row["KyLuat"].ToString(),
-                        TongLuong = Convert.ToDouble(row["TongLuong"])
+                        PhuCap = Convert.ToInt32(row["PhuCap"]),
+                        KyLuat = Convert.ToInt32(row["KyLuat"]),
+                        TongLuong = Convert.ToInt32(row["TongLuong"])
                     };
 
                     luongs.Add(luong);
@@ -80,9 +80,9 @@ namespace CNPM_QLNS.BS_Layer
                         Thang = Convert.ToInt32(row["Thang"]),
                         Nam = Convert.ToInt32(row["Nam"]),
                         NgayCong = Convert.ToInt32(row["NgayCong"]),
-                        PhuCap = row["PhuCap"].ToString(),
-                        KyLuat = row["KyLuat"].ToString(),
-                        TongLuong = Convert.ToDouble(row["TongLuong"])
+                        PhuCap = Convert.ToInt32(row["PhuCap"]),
+                        KyLuat = Convert.ToInt32(row["KyLuat"]),
+                        TongLuong = Convert.ToInt32(row["TongLuong"])
                     };
 
                     luongs.Add(luong);
@@ -111,9 +111,9 @@ namespace CNPM_QLNS.BS_Layer
                         Thang = Convert.ToInt32(row["Thang"]),
                         Nam = Convert.ToInt32(row["Nam"]),
                         NgayCong = Convert.ToInt32(row["NgayCong"]),
-                        PhuCap = row["PhuCap"].ToString(),
-                        KyLuat = row["KyLuat"].ToString(),
-                        TongLuong = Convert.ToDouble(row["TongLuong"])
+                        PhuCap = Convert.ToInt32(row["PhuCap"]),
+                        KyLuat = Convert.ToInt32(row["KyLuat"]),
+                        TongLuong = Convert.ToInt32(row["TongLuong"])
                 
                     };
 
@@ -147,9 +147,9 @@ namespace CNPM_QLNS.BS_Layer
                         Thang = Convert.ToInt32(row["Thang"]),
                         Nam = Convert.ToInt32(row["Nam"]),
                         NgayCong = Convert.ToInt32(row["NgayCong"]),
-                        PhuCap = row["PhuCap"].ToString(),
-                        KyLuat = row["KyLuat"].ToString(),
-                        TongLuong = Convert.ToDouble(row["TongLuong"])
+                        PhuCap = Convert.ToInt32(row["PhuCap"]),
+                        KyLuat = Convert.ToInt32(row["KyLuat"]),
+                        TongLuong = Convert.ToInt32(row["TongLuong"])
                     };
 
                     luongs.Add(luong);
@@ -191,12 +191,12 @@ namespace CNPM_QLNS.BS_Layer
             return db.MyExecuteNonQuery(deleteQuery, CommandType.Text, ref error, parameters);
         }
 
-        public float TinhLuong(int luongCoBan, int soNgayCong, int phuCap, int kyLuat)
+        public int TinhLuong(int luongCoBan, int soNgayCong, int phuCap, int kyLuat)
         {
-            float tongLuong =(float)(luongCoBan + (-200000)*(26-soNgayCong) + phuCap - kyLuat);
+            int tongLuong =(int)(luongCoBan + (-200000)*(26-soNgayCong) + phuCap - kyLuat);
             return tongLuong;
         }
-        public bool ThemThongTinLuong(string maNV, string maLuong, string maCV, int thang, int nam, int ngayCong, string phuCap, string kyLuat, string moTa, float tongLuong)
+        public bool ThemThongTinLuong(string maNV, string maLuong, string maCV, int thang, int nam, int ngayCong, int phuCap, int kyLuat, string moTa, int tongLuong)
         {
             DBMain db = new DBMain();
             string error = "";

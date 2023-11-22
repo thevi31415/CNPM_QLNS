@@ -48,7 +48,8 @@ namespace CNPM_QLNS.Admin
                     frmformnhanvien.ShowDialog();
                     this.Show();
                 }
-
+                txtEmail.Clear();
+                txtMatKhau.Clear();
             }
             else
             {
@@ -59,6 +60,31 @@ namespace CNPM_QLNS.Admin
         }
 
         private void FormDangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -22,23 +22,35 @@ namespace CNPM_QLNS.Item
         public Admin_FormMain formmain;
         public NhanVien nv;
         DBMain db = new DBMain();
-      
-        public Item_Luong(Luong luong, Admin_FormMain formnmain)
+        public int check;
+        public Item_Luong(Luong luong, Admin_FormMain formnmain, int check)
         {
             InitializeComponent();
             this.luong = luong;
             this.formmain = formnmain;
             this.nv = blnv.LayNhanVienTheoMa(luong.MaNV);
+            this.check = check;
             lblChucVu.Text = luong.MaCV;
-            lblPhuCap.Text = luong.PhuCap;
-            lblKyLuat.Text = luong.KyLuat;
+            lblPhuCap.Text = luong.PhuCap.ToString();
+            lblKyLuat.Text = luong.KyLuat.ToString();
             lblMaLuong.Text = luong.MaLuong;
             lblNgayCong.Text = luong.NgayCong.ToString();
             lblMaNV.Text    =  luong.MaNV.ToString();
             lblThoiGian.Text = luong.Thang.ToString() +"/" + luong.Nam.ToString();
             lblTongluong.Text = luong.TongLuong.ToString();
+            if(check == 0)
+            {
+                btnXoa.Visible= false;
+                this.MouseClick -= new MouseEventHandler(TenPhuongThucXuLySauMouseClick);
+
+            }
+        }
+        private void TenPhuongThucXuLySauMouseClick(object sender, MouseEventArgs e)
+        {
+          
         }
 
+   
         private void Item_Luong_Load(object sender, EventArgs e)
         {
 
@@ -61,8 +73,12 @@ namespace CNPM_QLNS.Item
 
         private void Item_Luong_MouseClick(object sender, MouseEventArgs e)
         {
-            Admin_FormXemLuong xemluong = new Admin_FormXemLuong(nv);
-            xemluong.ShowDialog();
+            if(check != 0)
+            {
+                Admin_FormXemLuong xemluong = new Admin_FormXemLuong(nv);
+                xemluong.ShowDialog();
+            }
+         
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

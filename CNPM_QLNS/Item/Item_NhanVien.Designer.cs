@@ -96,7 +96,7 @@
             // 
             this.lblMaNV.AutoSize = true;
             this.lblMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaNV.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblMaNV.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.lblMaNV.Location = new System.Drawing.Point(142, 37);
             this.lblMaNV.Name = "lblMaNV";
             this.lblMaNV.Size = new System.Drawing.Size(69, 22);
@@ -108,7 +108,7 @@
             // 
             this.lblGioiTinh.AutoSize = true;
             this.lblGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGioiTinh.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblGioiTinh.ForeColor = System.Drawing.Color.Black;
             this.lblGioiTinh.Location = new System.Drawing.Point(845, 35);
             this.lblGioiTinh.Name = "lblGioiTinh";
             this.lblGioiTinh.Size = new System.Drawing.Size(86, 22);
@@ -120,7 +120,7 @@
             // 
             this.lblNgaySinh.AutoSize = true;
             this.lblNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgaySinh.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblNgaySinh.ForeColor = System.Drawing.Color.Black;
             this.lblNgaySinh.Location = new System.Drawing.Point(532, 35);
             this.lblNgaySinh.Name = "lblNgaySinh";
             this.lblNgaySinh.Size = new System.Drawing.Size(96, 22);
@@ -132,7 +132,7 @@
             // 
             this.lblHoTen.AutoSize = true;
             this.lblHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoTen.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblHoTen.ForeColor = System.Drawing.Color.Black;
             this.lblHoTen.Location = new System.Drawing.Point(309, 37);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.Size = new System.Drawing.Size(70, 22);

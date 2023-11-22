@@ -58,7 +58,7 @@
             // 
             this.lblTruyCap.AutoSize = true;
             this.lblTruyCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTruyCap.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblTruyCap.ForeColor = System.Drawing.Color.Black;
             this.lblTruyCap.Location = new System.Drawing.Point(579, 44);
             this.lblTruyCap.Name = "lblTruyCap";
             this.lblTruyCap.Size = new System.Drawing.Size(87, 22);
@@ -69,7 +69,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblEmail.ForeColor = System.Drawing.Color.Black;
             this.lblEmail.Location = new System.Drawing.Point(330, 40);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(59, 22);
@@ -80,7 +80,7 @@
             // 
             this.lblMaNV.AutoSize = true;
             this.lblMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaNV.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblMaNV.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.lblMaNV.Location = new System.Drawing.Point(132, 40);
             this.lblMaNV.Name = "lblMaNV";
             this.lblMaNV.Size = new System.Drawing.Size(69, 22);

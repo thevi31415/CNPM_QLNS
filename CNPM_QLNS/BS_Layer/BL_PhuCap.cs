@@ -17,9 +17,43 @@ namespace CNPM_QLNS.BS_Layer
         {
             db = new DBMain();
         }
-        public List<PhuCap> LayDanhSachTatCaPhuCap()
+        public bool CapNhatPhuCap(string maPC, string loaiPC, int giaTriPC)
         {
-            List<PhuCap> danhSachPhuCap = new List<PhuCap>();
+            DBMain db = new DBMain();
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaPC", maPC),
+        new SqlParameter("@LoaiPC", loaiPC),
+        new SqlParameter("@GiaTriPC", giaTriPC)
+            };
+
+            string strSQL = "UPDATE PHUCAP SET LoaiPC=@LoaiPC, GiaTriPC=@GiaTriPC WHERE MaPC=@MaPC";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
+        public bool ThemPhuCap(string maPC, string loaiPC, int giaTriPC)
+        {
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaPC", maPC),
+        new SqlParameter("@LoaiPC", loaiPC),
+        new SqlParameter("@GiaTriPC", giaTriPC)
+            };
+
+            string strSQL = "INSERT INTO PHUCAP (MaPC, LoaiPC, GiaTriPC) " +
+                            "VALUES (@MaPC, @LoaiPC, @GiaTriPC)";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
+        public List<PhuCapNV> LayDanhSachTatCaPhuCap()
+        {
+            List<PhuCapNV> danhSachPhuCap = new List<PhuCapNV>();
 
             string query = "SELECT * FROM PHUCAP";
 
@@ -29,7 +63,7 @@ namespace CNPM_QLNS.BS_Layer
             {
                 foreach (DataRow row in result.Tables[0].Rows)
                 {
-                    PhuCap phuCap = new PhuCap
+                    PhuCapNV phuCap = new PhuCapNV
                     {
                         MaPC = row["MaPC"].ToString(),
                         LoaiPC = row["LoaiPC"].ToString().Trim(),
@@ -42,9 +76,9 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachPhuCap;
         }
-        public List<PhuCap> LayThongTinPhuCapTheoMaPC(string maPC)
+        public List<PhuCapNV> LayThongTinPhuCapTheoMaPC(string maPC)
         {
-            List<PhuCap> danhSachPhuCap = new List<PhuCap>();
+            List<PhuCapNV> danhSachPhuCap = new List<PhuCapNV>();
 
             string query = "SELECT * FROM PHUCAP WHERE MaPC = @MaPC";
             SqlParameter[] parameters = new SqlParameter[]
@@ -58,7 +92,7 @@ namespace CNPM_QLNS.BS_Layer
             {
                 foreach (DataRow row in result.Tables[0].Rows)
                 {
-                    PhuCap phuCap = new PhuCap
+                    PhuCapNV phuCap = new PhuCapNV
                     {
                         MaPC = row["MaPC"].ToString(),
                         LoaiPC = row["LoaiPC"].ToString(),
@@ -71,5 +105,19 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachPhuCap;
         }
+        public bool XoaPhuCap(string maPC)
+        {
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaPC", maPC)
+            };
+
+            string strSQL = "DELETE FROM PHUCAP WHERE MaPC = @MaPC";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
     }
 }

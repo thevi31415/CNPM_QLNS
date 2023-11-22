@@ -16,9 +16,9 @@ namespace CNPM_QLNS.Class
         public int Thang { get; set; }
         public int Nam { get; set; }
         public int NgayCong { get; set; }
-        public string PhuCap { get; set; }
-        public string KyLuat { get; set; }
-        public double TongLuong { get; set; }
+        public int PhuCap { get; set; }
+        public int KyLuat { get; set; }
+        public int TongLuong { get; set; }
 
         public Luong()
         {

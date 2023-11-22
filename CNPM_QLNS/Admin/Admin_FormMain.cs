@@ -1,4 +1,5 @@
 ﻿using CNPM_QLNS.Admin;
+using CNPM_QLNS.Admin.KyLuat;
 using CNPM_QLNS.BS_Layer;
 using System;
 using System.Collections.Generic;
@@ -43,8 +44,26 @@ namespace CNPM_QLNS
             loadform(new Admin_FormLuong(this));
             lblLink.Text = "Admin / Lương";
         }
-
-
+        public void LoadFormKyLuat()
+        {
+            loadform(new Admin_FormKyLuat(this));
+            lblLink.Text = "Admin / Kỷ luật";
+        }
+        public void LoadFormDuAn()
+        {
+            loadform(new Admin_FormDuAn(this));
+            lblLink.Text = "Admin / Dự Án";
+        }
+        public void LoadFormChucVu()
+        {
+            loadform(new Admin_FormChucVu(this));
+            lblLink.Text = "Admin / Chức vụ";
+        }
+        public void LoadFormPhuCap()
+        {
+            loadform(new Admin_FormPhuCap(this));
+            lblLink.Text = "Admin / Phụ Cấp";
+        }
         public void LoadFormPhongBan()
         {
             loadform(new Admin_FormPhongBan(this));
@@ -98,13 +117,13 @@ namespace CNPM_QLNS
 
         private void btnPosition_Click(object sender, EventArgs e)
         {
-            loadform(new Admin_FormChucVu());
+            loadform(new Admin_FormChucVu(this));
             lblLink.Text = "Admin / Chức vụ";
         }
 
         private void btnProject_Click(object sender, EventArgs e)
         {
-            loadform(new Admin_FormDuAn());
+            loadform(new Admin_FormDuAn(this));
             lblLink.Text = "Admin / Dự án";
         }
 
@@ -116,8 +135,25 @@ namespace CNPM_QLNS
 
         private void btnAllowance_Click(object sender, EventArgs e)
         {
-            loadform(new Admin_FormPhuCap());
+            loadform(new Admin_FormPhuCap(this));
             lblLink.Text = "Admin / Phụ Cấp";
+        }
+
+        private void btnGioiThieu_Click(object sender, EventArgs e)
+        {
+            loadform(new GioiThieu());
+            lblLink.Text = "Admin / Giới thiệu";
+        }
+
+        private void btnKyLuat_Click(object sender, EventArgs e)
+        {
+            loadform(new Admin_FormKyLuat(this));
+            lblLink.Text = "Admin / Kỷ luật";
+        }
+
+        private void btbDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

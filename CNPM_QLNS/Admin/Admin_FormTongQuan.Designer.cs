@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin_FormTongQuan));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSLNhanVien = new System.Windows.Forms.Label();
@@ -41,20 +38,21 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.lblSLDuAn = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnXuatPhongBan = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnXuatDuAn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnXuatNhanVien = new System.Windows.Forms.Button();
-            this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,7 +62,7 @@
             this.panel1.Controls.Add(this.lblSLNhanVien);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnXuatNhanVien);
-            this.panel1.Location = new System.Drawing.Point(81, 43);
+            this.panel1.Location = new System.Drawing.Point(60, 129);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(359, 197);
             this.panel1.TabIndex = 0;
@@ -98,7 +96,7 @@
             this.panel2.Controls.Add(this.lblSLPhongBan);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.btnXuatPhongBan);
-            this.panel2.Location = new System.Drawing.Point(490, 43);
+            this.panel2.Location = new System.Drawing.Point(486, 129);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(359, 197);
             this.panel2.TabIndex = 83;
@@ -132,7 +130,7 @@
             this.panel3.Controls.Add(this.lblSLDuAn);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.btnXuatDuAn);
-            this.panel3.Location = new System.Drawing.Point(921, 43);
+            this.panel3.Location = new System.Drawing.Point(922, 129);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(359, 197);
             this.panel3.TabIndex = 83;
@@ -158,6 +156,16 @@
             this.lblSLDuAn.Size = new System.Drawing.Size(64, 69);
             this.lblSLDuAn.TabIndex = 81;
             this.lblSLDuAn.Text = "0";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::CNPM_QLNS.Properties.Resources.welcome;
+            this.pictureBox4.Location = new System.Drawing.Point(405, 355);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(543, 317);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 84;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -243,28 +251,25 @@
             this.btnXuatNhanVien.UseVisualStyleBackColor = false;
             this.btnXuatNhanVien.Click += new System.EventHandler(this.btnXuatNhanVien_Click);
             // 
-            // chart
+            // label3
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart.Legends.Add(legend1);
-            this.chart.Location = new System.Drawing.Point(102, 305);
-            this.chart.Name = "chart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart.Series.Add(series1);
-            this.chart.Size = new System.Drawing.Size(300, 300);
-            this.chart.TabIndex = 84;
-            this.chart.Text = "chart1";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label3.Location = new System.Drawing.Point(311, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(776, 52);
+            this.label3.TabIndex = 85;
+            this.label3.Text = "ỨNG DỤNG QUẢN LÝ NHÂN SỰ 1.0";
             // 
             // Admin_FormTongQuan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1386, 684);
-            this.Controls.Add(this.chart);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -278,11 +283,12 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -303,6 +309,7 @@
         private System.Windows.Forms.Label lblSLDuAn;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnXuatDuAn;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label3;
     }
 }

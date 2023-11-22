@@ -17,9 +17,9 @@ namespace CNPM_QLNS.BS_Layer
         {
             db = new DBMain();
         }
-        public List<KyLuat> LayDanhSachTatCaKyLuat()
+        public List<KyLuatNV> LayDanhSachTatCaKyLuat()
         {
-            List<KyLuat> danhSachKyLuat = new List<KyLuat>();
+            List<KyLuatNV> danhSachKyLuat = new List<KyLuatNV>();
 
             string query = "SELECT * FROM KyLuat"; // Đảm bảo bảng trong cơ sở dữ liệu có tên là KyLuat
 
@@ -29,7 +29,7 @@ namespace CNPM_QLNS.BS_Layer
             {
                 foreach (DataRow row in result.Tables[0].Rows)
                 {
-                    KyLuat kyLuat = new KyLuat
+                    KyLuatNV kyLuat = new KyLuatNV
                     {
                         MaKL = row["MaKL"].ToString(),
                         LoaiKL = row["LoaiKL"].ToString().Trim(),
@@ -42,9 +42,57 @@ namespace CNPM_QLNS.BS_Layer
 
             return danhSachKyLuat;
         }
-        public List<KyLuat> LayDanhSachKyLuatTheoMaKL(string maKL)
+        public bool CapNhatKyLuat(string maKL, string loaiKL, int tienPhat)
         {
-            List<KyLuat> danhSachKyLuat = new List<KyLuat>();
+            DBMain db = new DBMain();
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaKL", maKL),
+        new SqlParameter("@LoaiKL", loaiKL),
+        new SqlParameter("@TienPhat", tienPhat)
+            };
+
+            string strSQL = "UPDATE KYLUAT SET LoaiKL=@LoaiKL, TienPhat=@TienPhat WHERE MaKL=@MaKL";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+        public bool ThemMoiKyLuat(string maKL, string loaiKL, int tienPhat)
+        {
+            DBMain db = new DBMain();
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaKL", maKL),
+        new SqlParameter("@LoaiKL", loaiKL),
+        new SqlParameter("@TienPhat", tienPhat)
+            };
+
+            string strSQL = "INSERT INTO KYLUAT (MaKL, LoaiKL, TienPhat) VALUES (@MaKL, @LoaiKL, @TienPhat)";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
+        public bool XoaKyLuat(string maKL)
+        {
+            DBMain db = new DBMain();
+            string error = "";
+
+            SqlParameter[] parameterValues = new SqlParameter[]
+            {
+        new SqlParameter("@MaKL", maKL)
+            };
+
+            string strSQL = "DELETE FROM KYLUAT WHERE MaKL=@MaKL";
+
+            return db.MyExecuteNonQuery(strSQL, CommandType.Text, ref error, parameterValues);
+        }
+
+        public List<KyLuatNV> LayDanhSachKyLuatTheoMaKL(string maKL)
+        {
+            List<KyLuatNV> danhSachKyLuat = new List<KyLuatNV>();
 
             string query = "SELECT * FROM KyLuat WHERE MaKL = @MaKL";
             SqlParameter[] parameters = new SqlParameter[]
@@ -58,7 +106,7 @@ namespace CNPM_QLNS.BS_Layer
             {
                 foreach (DataRow row in result.Tables[0].Rows)
                 {
-                    KyLuat kyLuat = new KyLuat
+                    KyLuatNV kyLuat = new KyLuatNV
                     {
                         MaKL = row["MaKL"].ToString(),
                         LoaiKL = row["LoaiKL"].ToString(),

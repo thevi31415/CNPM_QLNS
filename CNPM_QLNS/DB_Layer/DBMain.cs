@@ -38,6 +38,7 @@ namespace CNPM_QLNS.DB_Layer
             da = new SqlDataAdapter(comm);
             System.Data.DataSet ds = new System.Data.DataSet();
             da.Fill(ds);
+            conn.Close();
             return ds;
         }
 
@@ -69,6 +70,7 @@ namespace CNPM_QLNS.DB_Layer
             {
                 conn.Close();
             }
+            conn.Close();
             return f;
         }
     }
