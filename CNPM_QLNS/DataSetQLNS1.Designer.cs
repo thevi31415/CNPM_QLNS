@@ -5086,9 +5086,9 @@ namespace CNPM_QLNS {
             
             private global::System.Data.DataColumn columnNgayCong;
             
-            private global::System.Data.DataColumn columnGiaTriPC;
+            private global::System.Data.DataColumn columnPhuCap;
             
-            private global::System.Data.DataColumn columnTienPhat;
+            private global::System.Data.DataColumn columnKyLuat;
             
             private global::System.Data.DataColumn columnTongLuong;
             
@@ -5167,17 +5167,17 @@ namespace CNPM_QLNS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn GiaTriPCColumn {
+            public global::System.Data.DataColumn PhuCapColumn {
                 get {
-                    return this.columnGiaTriPC;
+                    return this.columnPhuCap;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TienPhatColumn {
+            public global::System.Data.DataColumn KyLuatColumn {
                 get {
-                    return this.columnTienPhat;
+                    return this.columnKyLuat;
                 }
             }
             
@@ -5226,7 +5226,7 @@ namespace CNPM_QLNS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ReportLuongNVRow AddReportLuongNVRow(string MaNV, int LuongCoBan, int Thang, int Nam, int NgayCong, int GiaTriPC, int TienPhat, double TongLuong) {
+            public ReportLuongNVRow AddReportLuongNVRow(string MaNV, int LuongCoBan, int Thang, int Nam, int NgayCong, int PhuCap, int KyLuat, int TongLuong) {
                 ReportLuongNVRow rowReportLuongNVRow = ((ReportLuongNVRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         MaNV,
@@ -5234,8 +5234,8 @@ namespace CNPM_QLNS {
                         Thang,
                         Nam,
                         NgayCong,
-                        GiaTriPC,
-                        TienPhat,
+                        PhuCap,
+                        KyLuat,
                         TongLuong};
                 rowReportLuongNVRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowReportLuongNVRow);
@@ -5264,8 +5264,8 @@ namespace CNPM_QLNS {
                 this.columnThang = base.Columns["Thang"];
                 this.columnNam = base.Columns["Nam"];
                 this.columnNgayCong = base.Columns["NgayCong"];
-                this.columnGiaTriPC = base.Columns["GiaTriPC"];
-                this.columnTienPhat = base.Columns["TienPhat"];
+                this.columnPhuCap = base.Columns["PhuCap"];
+                this.columnKyLuat = base.Columns["KyLuat"];
                 this.columnTongLuong = base.Columns["TongLuong"];
             }
             
@@ -5282,11 +5282,11 @@ namespace CNPM_QLNS {
                 base.Columns.Add(this.columnNam);
                 this.columnNgayCong = new global::System.Data.DataColumn("NgayCong", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNgayCong);
-                this.columnGiaTriPC = new global::System.Data.DataColumn("GiaTriPC", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGiaTriPC);
-                this.columnTienPhat = new global::System.Data.DataColumn("TienPhat", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTienPhat);
-                this.columnTongLuong = new global::System.Data.DataColumn("TongLuong", typeof(double), null, global::System.Data.MappingType.Element);
+                this.columnPhuCap = new global::System.Data.DataColumn("PhuCap", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhuCap);
+                this.columnKyLuat = new global::System.Data.DataColumn("KyLuat", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnKyLuat);
+                this.columnTongLuong = new global::System.Data.DataColumn("TongLuong", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTongLuong);
                 this.columnMaNV.AllowDBNull = false;
                 this.columnMaNV.MaxLength = 10;
@@ -7141,42 +7141,42 @@ namespace CNPM_QLNS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int GiaTriPC {
+            public int PhuCap {
                 get {
                     try {
-                        return ((int)(this[this.tableReportLuongNV.GiaTriPCColumn]));
+                        return ((int)(this[this.tableReportLuongNV.PhuCapColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'GiaTriPC\' in table \'ReportLuongNV\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'PhuCap\' in table \'ReportLuongNV\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableReportLuongNV.GiaTriPCColumn] = value;
+                    this[this.tableReportLuongNV.PhuCapColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int TienPhat {
+            public int KyLuat {
                 get {
                     try {
-                        return ((int)(this[this.tableReportLuongNV.TienPhatColumn]));
+                        return ((int)(this[this.tableReportLuongNV.KyLuatColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TienPhat\' in table \'ReportLuongNV\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'KyLuat\' in table \'ReportLuongNV\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableReportLuongNV.TienPhatColumn] = value;
+                    this[this.tableReportLuongNV.KyLuatColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public double TongLuong {
+            public int TongLuong {
                 get {
                     try {
-                        return ((double)(this[this.tableReportLuongNV.TongLuongColumn]));
+                        return ((int)(this[this.tableReportLuongNV.TongLuongColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'TongLuong\' in table \'ReportLuongNV\' is DBNull.", e);
@@ -7213,26 +7213,26 @@ namespace CNPM_QLNS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsGiaTriPCNull() {
-                return this.IsNull(this.tableReportLuongNV.GiaTriPCColumn);
+            public bool IsPhuCapNull() {
+                return this.IsNull(this.tableReportLuongNV.PhuCapColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetGiaTriPCNull() {
-                this[this.tableReportLuongNV.GiaTriPCColumn] = global::System.Convert.DBNull;
+            public void SetPhuCapNull() {
+                this[this.tableReportLuongNV.PhuCapColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTienPhatNull() {
-                return this.IsNull(this.tableReportLuongNV.TienPhatColumn);
+            public bool IsKyLuatNull() {
+                return this.IsNull(this.tableReportLuongNV.KyLuatColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTienPhatNull() {
-                this[this.tableReportLuongNV.TienPhatColumn] = global::System.Convert.DBNull;
+            public void SetKyLuatNull() {
+                this[this.tableReportLuongNV.KyLuatColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13400,8 +13400,8 @@ SELECT MaTD, TenTD, MoTa FROM TRINHDO WHERE (MaTD = @MaTD)";
             tableMapping.ColumnMappings.Add("Thang", "Thang");
             tableMapping.ColumnMappings.Add("Nam", "Nam");
             tableMapping.ColumnMappings.Add("NgayCong", "NgayCong");
-            tableMapping.ColumnMappings.Add("GiaTriPC", "GiaTriPC");
-            tableMapping.ColumnMappings.Add("TienPhat", "TienPhat");
+            tableMapping.ColumnMappings.Add("PhuCap", "PhuCap");
+            tableMapping.ColumnMappings.Add("KyLuat", "KyLuat");
             tableMapping.ColumnMappings.Add("TongLuong", "TongLuong");
             this._adapter.TableMappings.Add(tableMapping);
         }
@@ -13419,18 +13419,14 @@ SELECT MaTD, TenTD, MoTa FROM TRINHDO WHERE (MaTD = @MaTD)";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT lg.MaNV, cv.LuongCoBan, lg.Thang, lg.Nam, lg.NgayCong, pc.GiaTriPC, kl.TienPhat, lg.TongLuong
-FROM Luong lg LEFT JOIN CHUCVU cv ON lg.MaCV = cv.MaCV
-	          LEFT JOIN PHUCAP pc ON lg.PhuCap = pc.MaPC
-	          LEFT JOIN KyLuat kl ON lg.KyLuat = kl.MaKL";
+            this._commandCollection[0].CommandText = "SELECT lg.MaNV, cv.LuongCoBan, lg.Thang, lg.Nam, lg.NgayCong, lg.PhuCap, lg.KyLua" +
+                "t, lg.TongLuong\r\nFROM Luong lg LEFT JOIN CHUCVU cv ON lg.MaCV = cv.MaCV";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT lg.MaNV, cv.LuongCoBan, lg.Thang, lg.Nam, lg.NgayCong, pc.GiaTriPC, kl.TienPhat, lg.TongLuong
-FROM Luong lg LEFT JOIN CHUCVU cv ON lg.MaCV = cv.MaCV
-	          LEFT JOIN PHUCAP pc ON lg.PhuCap = pc.MaPC
-	          LEFT JOIN KyLuat kl ON lg.KyLuat = kl.MaKL
-WHERE Thang = @Thang AND Nam = @Nam";
+            this._commandCollection[1].CommandText = "SELECT lg.MaNV, cv.LuongCoBan, lg.Thang, lg.Nam, lg.NgayCong, lg.PhuCap, lg.KyLua" +
+                "t, lg.TongLuong\r\nFROM Luong lg LEFT JOIN CHUCVU cv ON lg.MaCV = cv.MaCV\r\nWHERE l" +
+                "g.Thang = @Thang AND lg.Nam = @Nam";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Thang", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Thang", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nam", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Nam", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));

@@ -705,7 +705,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportLuong.rdlc" />
-    <EmbeddedResource Include="Reports\ReportLuongNV.rdlc" />
     <None Include="DataSetQLNS.xsc">
       <DependentUpon>DataSetQLNS.xsd</DependentUpon>
     </None>
