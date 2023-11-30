@@ -193,5 +193,14 @@ namespace CNPM_QLNS.Admin
             txtPhuCap.Text = phucap.ToString();
 
         }
+
+        private void txtSoNgayCong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Kiểm tra xem ký tự nhập vào có phải là số không
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Loại bỏ ký tự không phải số
+            }
+        }
     }
 }

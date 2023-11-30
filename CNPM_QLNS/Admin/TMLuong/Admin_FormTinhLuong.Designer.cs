@@ -129,6 +129,7 @@
             this.txtSoNgayCong.Name = "txtSoNgayCong";
             this.txtSoNgayCong.Size = new System.Drawing.Size(615, 34);
             this.txtSoNgayCong.TabIndex = 99;
+            this.txtSoNgayCong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoNgayCong_KeyPress);
             // 
             // label2
             // 

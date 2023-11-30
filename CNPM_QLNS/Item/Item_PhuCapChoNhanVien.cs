@@ -31,10 +31,14 @@ namespace CNPM_QLNS.Item
                 pc = blpc.LayThongTinPhuCapTheoMaPC(pcnv.MaPC)[0];
                 lblID.Text = pcnv.ID;
                 lblMaNV.Text = pcnv.MaNV;
-                lblHoTen.Text = blnv.LayDanhSachNhanVienTheoMaNV(pcnv.MaNV)[0].HoTen;
-                lblTenPC.Text = pc.LoaiPC;
-                lblSoTien.Text = pc.GiaTriPC.ToString();
-                lblSoQD.Text = pcnv.SoQD;
+                if(blnv.LayDanhSachNhanVienTheoMaNV(pcnv.MaNV).Count() > 0)
+                {
+                    lblHoTen.Text = blnv.LayDanhSachNhanVienTheoMaNV(pcnv.MaNV)[0].HoTen;
+                    lblTenPC.Text = pc.LoaiPC;
+                    lblSoTien.Text = pc.GiaTriPC.ToString();
+                    lblSoQD.Text = pcnv.SoQD;
+                }
+               
             }
            
             if (formain == null)

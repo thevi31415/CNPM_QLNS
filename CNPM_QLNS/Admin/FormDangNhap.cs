@@ -34,20 +34,30 @@ namespace CNPM_QLNS.Admin
 
                 tk = bltaikhoan.LayTaiKhoanTheoEmailMatKhau(txtEmail.Text, txtMatKhau.Text)[0];
 
-                if (tk.PhanQuyen == "Admin")
+                if(tk.TrangThai == "Inactive")
                 {
-                    Admin_FormMain frmmainadmin = new Admin_FormMain(tk.MaNV);
-                    this.Hide();
-                    frmmainadmin.ShowDialog();
-                    this.Show();
+                    MessageBox.Show("Tài khoản đã bị khóa không thể đăng nhập !");
                 }
                 else
                 {
-                    NhanVien_FormMain frmformnhanvien = new NhanVien_FormMain(tk.MaNV);
-                    this.Hide();
-                    frmformnhanvien.ShowDialog();
-                    this.Show();
+                    if (tk.PhanQuyen == "Admin")
+                    {
+                        Admin_FormMain frmmainadmin = new Admin_FormMain(tk.MaNV);
+                        this.Hide();
+                        frmmainadmin.ShowDialog();
+                        this.Show();
+                    }
+                    else
+                    {
+                        NhanVien_FormMain frmformnhanvien = new NhanVien_FormMain(tk.MaNV);
+                        this.Hide();
+                        frmformnhanvien.ShowDialog();
+                        this.Show();
+                    }
+
+
                 }
+                
                 txtEmail.Clear();
                 txtMatKhau.Clear();
             }
