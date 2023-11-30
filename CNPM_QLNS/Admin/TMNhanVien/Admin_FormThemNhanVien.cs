@@ -141,7 +141,7 @@ namespace CNPM_QLNS.Admin
                 }
                 else
                 {
-                    MessageBox.Show("Them that bai");
+                    MessageBox.Show("Không thể thêm !");
                 }
 
 
